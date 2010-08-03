@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="jpgGenerator">
+        <wb-resource deploy-path="/" source-path="/WebContent"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="imageModel.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/imageModel/imageModel">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="threedFramework.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/threedFramework/threedFramework">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jBdd.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jBdd/jBdd">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="featureModelBdd.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/featureModelBdd/featureModelBdd">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="util.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/util/util">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jpgGen.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jpgGen/jpgGen">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="featureModel.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/featureModel/featureModel">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="threedCore.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/threedCore/threedCore">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/lib/commons-logging/1.0.3/commons-logging-1.0.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/lib/google-collect/1.0/google-collect-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/lib/gwt/2.0.1/jsr305.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/lib/gwt/2.0.3/gwt-user.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/lib/jackson/1.5.0/jackson-core-asl-1.5.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/lib/jackson/1.5.0/jackson-mapper-asl-1.5.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/lib/dom4j/1.6.1/dom4j-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/lib/dom4j/1.6.1/jaxen-1.1-beta-6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="jpgGenerator"/>
+        <property name="java-output-path"/>
+    </wb-module>
+</project-modules>

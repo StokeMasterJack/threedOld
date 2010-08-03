@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context reloadable="true" antiJARLocking="true">
+    <Loader checkInterval="1"/>
+    <Manager pathname=""/>
+    <!-- turns off session persistence -->
+</Context>

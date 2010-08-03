@@ -1,0 +1,16 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.0//EN"
+        "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
+<module>
+
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name="com.tms.threed.previewPane.PreviewPane"/>
+    <inherits name="com.tms.threed.featurePicker.FeaturePicker"/>
+    <inherits name='com.google.gwt.user.Debug'/>
+
+
+    <inherits name="com.google.gwt.user.theme.chrome.Chrome"/>
+    
+    <entry-point class='com.tms.threed.testHarness.client.TestHarness'/>
+    <!--<servlet path="/ThreedService" class="com.tms.threed.testHarness.server.services.ThreedServiceRpcServlet"/>-->
+
+</module>

@@ -1,0 +1,24 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.0//EN"
+        "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
+<module>
+
+    <inherits name='com.tms.threed.util.Util'/>
+    <inherits name="com.tms.threed.threedCore.ThreedCore"/>
+    <inherits name="com.tms.threed.featureModel.FeatureModel"/>
+    <inherits name="com.google.gwt.json.JSON"/>
+    <inherits name="com.tms.threed.imageModel.ImageModel"/>
+
+    <source path="config/shared"/>
+    <source path="core"/>
+
+    <source path="threedModel/shared"/>
+    <source path="threedModel/client"/>
+
+    <source path="featureModel/shared"/>
+    <source path="featureModel/client"/>
+    <source path="featureModel/data"/>
+
+    <source path="imageModel/shared"/>
+    <source path="imageModel/client"/>
+
+</module>

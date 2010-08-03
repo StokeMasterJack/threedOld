@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="gwt" name="GWT">
+      <configuration>
+        <setting name="compilerMaxHeapSize" value="128" />
+        <setting name="gwtScriptOutputStyle" value="DETAILED" />
+        <setting name="gwtSdkUrl" value="file://$MODULE_DIR$/../../../../../../../p-java/gwt-2.0.3" />
+        <packaging>
+          <module name="com.tms.csp.Csp" path="/com.tms.csp.Csp" />
+          <module name="com.tms.threed.Threed" path="/com.tms.threed.Threed" />
+        </packaging>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="util" />
+    <orderEntry type="module" module-name="threedCore" />
+    <orderEntry type="module" module-name="featureModel" />
+    <orderEntry type="module" module-name="imageModel" />
+    <orderEntry type="library" name="guava-2010-03-03" level="project" />
+    <orderEntry type="library" name="dom4j-1.6.1" level="project" />
+    <orderEntry type="library" name="jsr305" level="project" />
+    <orderEntry type="library" name="jackson-1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="junit-3.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="jmagick-6.3.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="log4j-1.2.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="commons-logging-1.0.3" level="project" />
+    <orderEntry type="library" name="gwt-user-2.1" level="project" />
+  </component>
+</module>
+
