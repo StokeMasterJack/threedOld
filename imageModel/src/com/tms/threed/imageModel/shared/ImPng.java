@@ -116,6 +116,17 @@ public class ImPng extends ImChildBase implements ImFeatureOrPng, IsLeaf {
         return false;
     }
 
+    public boolean hasFeature(String  varCode) {
+        IsParent p = parent;
+        while (p.isFeature()) {
+            ImFeature imFeature = (ImFeature) p;
+            if (imFeature.getVar().getCode().equals(varCode)) return true;
+            p = imFeature.getParent();
+        }
+
+        return false;
+    }
+
     public Path getBlinkPath(Path root) {
         return getParent().getPath(root).append(getBlinkLocalPath());
     }

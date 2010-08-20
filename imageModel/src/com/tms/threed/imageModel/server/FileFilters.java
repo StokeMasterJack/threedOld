@@ -25,7 +25,7 @@ public class FileFilters {
 
     public static boolean isEmptyPng(File f) {
         if (!png(f)) return false;
-        if (f.length() > 2000) return false;
+        if (f.length() > 5000) return false;
         return ImageUtil.isEmpty(f);
     }
 

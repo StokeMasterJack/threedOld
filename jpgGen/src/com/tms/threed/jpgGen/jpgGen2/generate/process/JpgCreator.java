@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
 
+import com.tms.threed.jpgGen.jpgGen2.PreAndPostProcessor;
 import com.tms.threed.jpgGen.jpgGen2.generate.FileForProcess;
 import com.tms.threed.jpgGen.jpgGen2.generate.ProcessCanceledException;
 import com.tms.threed.jpgGen.jpgGen2.generate.ProcessStatus;
@@ -46,9 +47,16 @@ public class JpgCreator extends Thread {
 				JpgSpec jpgSpec = buildJpgSpec(unitOfWork, inputFile);
 				
 				strategy.processFileForProcess(unitOfWork, jpgSpec);
-				unitOfWork.getProcess().getProgressTracker().addComplete();
 				
 				renameInputFile(unitOfWork, inputFile);
+				unitOfWork.getProcess().getProgressTracker().addComplete();
+				
+				if( unitOfWork.getProcess().getProgressTracker().getComplete() == unitOfWork.getProcess().getProgressTracker().getTotal())
+				{
+					//we're done... (yes, DONE done)
+					PreAndPostProcessor.postProcess(unitOfWork.getProcess().getThreedConfig().getPngRootFileSystem(), unitOfWork.getProcess().getSeriesKey());
+				}
+				
 			}
 			catch( Throwable t )
 			{

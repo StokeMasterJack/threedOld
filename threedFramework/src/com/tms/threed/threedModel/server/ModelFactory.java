@@ -59,10 +59,12 @@ public class ModelFactory {
          * the PNGs and JPGs and discontinue use of
          * the Java-based FMs.
          *
+         * [Update - DF - Aug 13] Going all xml
+         *
          */
-        if (seriesKey.isa(SeriesKey.CAMRY) || seriesKey.isa(SeriesKey.AVALON)) {
-            useJavaFmConfig = true;
-        }
+//        if (seriesKey.isa(SeriesKey.CAMRY) || seriesKey.isa(SeriesKey.AVALON)) {
+//            useJavaFmConfig = true;
+//        }
 
         if (useJavaFmConfig && jFeatureModelFactory.canCreate(seriesKey)) {
             log.warn("Using JFeatureModel for " + seriesKey);

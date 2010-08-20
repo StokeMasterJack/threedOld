@@ -128,7 +128,7 @@ public class Jpg {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Jpg that = (Jpg) o;
-        return this.localPath.equals(that.localPath);
+        return this.toString().equals(that.toString());
 
     }
 

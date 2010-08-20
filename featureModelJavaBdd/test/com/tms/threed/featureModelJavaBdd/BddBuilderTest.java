@@ -16,6 +16,8 @@ import com.tms.threed.threedCore.shared.ThreedConfig;
 import com.tms.threed.util.lang.shared.Path;
 import junit.framework.TestCase;
 
+import java.io.File;
+import java.io.PrintWriter;
 import java.util.List;
 import java.util.Set;
 
@@ -31,7 +33,7 @@ public class BddBuilderTest extends TestCase {
     BddBuilder bddBuilder;
 
     @Override protected void setUp() throws Exception {
-        seriesKey = SeriesKey.TACOMA_2011;
+        seriesKey = SeriesKey.SEQUOIA_2011;
 
         seriesInfo = SeriesInfoBuilder.createSeriesInfo(seriesKey);
 
@@ -53,6 +55,66 @@ public class BddBuilderTest extends TestCase {
     public void testIteratorCountWithAllFmVars() throws Exception {
         long iteratorCount = bddBuilder.iteratorCount();
         System.out.println("iteratorCount(allFmVars): " + iteratorCount);
+    }
+
+    /**
+     * [7916, 040, Graphite, Fabric, 2Q, 2WD, SR5, V8, 6AT, FG13]
+     *
+     * User Picks: 7916, 040, Graphite, Fabric, 2Q,
+     * Implied Picks: 2WD, SR5, V8, 6AT, FG13
+     *
+     * Fixed up [7916, 040, Graphite, Fabric, 2Q, 2WD, SR5, V8, 6AT, FG13]
+     */
+    public void testIteratorWithAllFmVars() throws Exception {
+        File satAllSequoia = new File("/temp/satAllSequoia.txt");
+
+        PrintWriter out = new PrintWriter(satAllSequoia);
+
+        BDD.BDDIterator it = bddBuilder.iterator();
+        while (it.hasNext()) {
+            boolean[] product = it.next();
+            Picks picks = new Picks(fm, product);
+            String sPicks = picks.toString();
+            if (
+                //user picks
+                    sPicks.contains("2Q") &&
+                            sPicks.contains("7916") &&
+                            sPicks.contains("Fabric") &&
+                            sPicks.contains("040") &&
+                            sPicks.contains("Graphite") &&
+
+                            //implied picks (i.e. derived, i.e. fixed)
+                            sPicks.contains("2WD") &&
+                            sPicks.contains("SR5") &&
+                            sPicks.contains("V8") &&
+                            sPicks.contains("6AT") &&
+                            sPicks.contains("FG13")
+                    ) {
+                out.println(picks);
+            }
+        }
+
+        //2WD, SR5, V8, 6AT, FG13
+
+        out.close();
+    }
+
+    boolean matchesShit(Picks picks) {
+        String sPicks = picks.toString();
+        return
+                //user picks
+                sPicks.contains("2Q") &&
+                sPicks.contains("7916") &&
+                sPicks.contains("Fabric") &&
+                sPicks.contains("040") &&
+                sPicks.contains("Graphite") &&
+
+                //implied picks (i.e. derived, i.e. fixed)
+                sPicks.contains("2WD") &&
+                sPicks.contains("SR5") &&
+                sPicks.contains("V8") &&
+                sPicks.contains("6AT") &&
+                sPicks.contains("FG13");
     }
 
     public void testWithImageFeatures() throws Exception {

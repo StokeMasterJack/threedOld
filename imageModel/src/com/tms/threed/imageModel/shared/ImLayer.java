@@ -53,6 +53,10 @@ public class ImLayer extends ImChildBase implements ImLayerOrFeature, IsChild, I
     }
 
     public ImPng getPng(PicksRO picks, int angle) {
+        assert picks != null;
+//        if(name.equals("03_FloorMats")){
+//            System.out.println("QQQQQ");
+//        }
         PngMatch bestMatch = new PngMatch();
         for (ImFeatureOrPng featureOrPng : childNodes) {
             featureOrPng.getMatchingPngs(bestMatch, picks, angle);

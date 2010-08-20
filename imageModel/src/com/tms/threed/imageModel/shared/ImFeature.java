@@ -59,9 +59,9 @@ public class ImFeature extends ImChildBase implements ImFeatureOrPng, ImLayerOrF
     }
 
     @Override public void getMatchingPngs(PngMatch bestMatch, PicksRO picks, int angle) {
-        if (picks == null) throw new IllegalArgumentException("picks must be non-null");
-        if (bestMatch == null) throw new IllegalArgumentException("bestMatch must be non-null");
-        if (var == null) throw new IllegalStateException("var must be non-null before calling getMatchingPngs");
+        assert picks != null:"picks must be non-null";
+        assert bestMatch != null:"bestMatch must be non-null";
+        assert var != null:"var must be non-null before calling getMatchingPngs";
 
         boolean varPicked = picks.isPicked(var);
 

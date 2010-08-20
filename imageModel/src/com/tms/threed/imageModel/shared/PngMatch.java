@@ -9,6 +9,9 @@ public class PngMatch {
         if (png == null) {
             this.png = newPng;
         } else {
+            if (newPng.hasFeature("2Q")) {
+                System.out.println();
+            }
             if (newPng.getFeatureCount() > png.getFeatureCount()) {
                 this.png = newPng;
             }

@@ -1,5 +1,6 @@
 package com.tms.threed.jpgGen.jpgGen2.generate;
 
+import com.tms.threed.jpgGen.jpgGen2.PreAndPostProcessor;
 import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ThreedConfig;
 import com.tms.threed.threedModel.server.ModelFactory;
@@ -22,6 +23,15 @@ public class JpgGenerationProcess {
     {
     	this.seriesKey = seriesKey;
         this.threedConfig = threedConfig;
+		try
+		{
+			PreAndPostProcessor.preProcess(getThreedConfig().getPngRootFileSystem(), getSeriesKey());
+		}
+		catch( Exception e ) {
+			e.printStackTrace();
+		}
+		
+        
         ModelFactory modelFactory = new ModelFactory(threedConfig);
         model = modelFactory.createModel(seriesKey);
     }

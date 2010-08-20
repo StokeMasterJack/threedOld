@@ -76,6 +76,7 @@ public class SeriesKey implements Serializable, Comparable<SeriesKey> {
     public static final String VENZA = "venza";
     public static final String CAMRY = "camry";
     public static final String SIENNA = "sienna";
+    public static final String SEQUOIA = "sequoia";
     public static final String TUNDRA = "tundra";
     public static final String FOUR_RUNNER = "4runner";
 
@@ -92,6 +93,7 @@ public class SeriesKey implements Serializable, Comparable<SeriesKey> {
     public static final SeriesKey AVALON_2011 = new SeriesKey(2011, AVALON);
     public static final SeriesKey AVALON_2010 = new SeriesKey(2010, AVALON);
     public static final SeriesKey CAMRY_2011 = new SeriesKey(2011, CAMRY);
+    public static final SeriesKey SEQUOIA_2011 = new SeriesKey(2011, SEQUOIA);
     public static final SeriesKey SIENNA_2011 = new SeriesKey(2011, SIENNA);
     public static final SeriesKey VENZA_2011 = new SeriesKey(2011, VENZA);
     public static final SeriesKey VENZA_2010 = new SeriesKey(2010, VENZA);
@@ -106,6 +108,7 @@ public class SeriesKey implements Serializable, Comparable<SeriesKey> {
         a.add(VENZA_2009);
         a.add(VENZA_2010);
         a.add(VENZA_2011);
+        a.add(YARIS_2010);
         return a;
     }
 

@@ -328,11 +328,19 @@ public class Picks implements PicksRO, PicksMutable {
     }
 
     public Set<Var> getVarsByValue(Bit filter, boolean leafOnly) {
+        assert filter != null;
         Set<Var> set = new HashSet<Var>();
 
         for (int i = 0; i < map.length; i++) {
             Assignment assignment = map[i];
-            if (assignment.getValue().equals(filter)) {
+            Bit value;
+            if (assignment == null) {
+                value = Bit.UNASSIGNED;
+            } else {
+                value = assignment.getValue();
+            }
+            assert value != null;
+            if (value.equals(filter)) {
                 Var var = fm.getVar(i);
                 if (!leafOnly || var.isLeaf()) set.add(var);
             }
@@ -493,7 +501,11 @@ public class Picks implements PicksRO, PicksMutable {
     }
 
     @Override public String toString() {
-        return getVarsByValue(Bit.TRUE, true).toString();
+        Set<Var> varSet = null;
+        varSet = getVarsByValue(Bit.TRUE, true);
+        assert varSet != null;
+        return varSet.toString();
+
     }
 
     @Override

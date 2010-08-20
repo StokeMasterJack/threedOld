@@ -54,7 +54,7 @@ public class ImageModelBuilderTest extends TestCase {
     }
 
     public void testPrintFeaturesPerAngleReport() throws Exception {
-        SeriesKey seriesKey = SeriesKey.TACOMA_2011;
+        SeriesKey seriesKey = SeriesKey.SEQUOIA_2011;
         FeatureModel fm = new FeatureModelBuilderXml(pngRoot).buildModel(seriesKey);
         SeriesInfo seriesInfo = SeriesInfoBuilder.createSeriesInfo(seriesKey);
         ImageModelBuilder imageModelBuilder = new ImageModelBuilder(fm, seriesInfo, pngRoot);

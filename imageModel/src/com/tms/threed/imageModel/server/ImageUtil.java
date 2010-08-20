@@ -14,8 +14,8 @@ import java.security.NoSuchAlgorithmException;
 
 public class ImageUtil {
 
-    private static final int IMAGE_WIDTH = 599;
-    private static final int IMAGE_HEIGHT = 366;
+//    private static final int IMAGE_WIDTH = 599;
+//    private static final int IMAGE_HEIGHT = 366;
 
     public static boolean isEmpty(File imageFile) {
         if(imageFile == null) throw new IllegalArgumentException();

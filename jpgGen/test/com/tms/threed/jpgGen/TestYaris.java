@@ -47,7 +47,7 @@ public class TestYaris extends TestCase {
     private int angle;
 
     @Override protected void setUp() throws Exception {
-        seriesKey = SeriesKey.VENZA_2010;
+        seriesKey = SeriesKey.SEQUOIA_2011;
         threedModel = SThreedModels.get().getModel(seriesKey).getModel();
         seriesInfo = threedModel.getSeriesInfo();
 
@@ -81,7 +81,7 @@ public class TestYaris extends TestCase {
 //        ViewKey[] viewKeys = seriesInfo.getViewsKeys();
 //        for (ViewKey viewKey : viewKeys) {
         this.viewKey = seriesInfo.getInterior();
-        for (int angle = 3; angle <= viewKey.getAngleCount(); angle++) {
+        for (int angle = 1; angle <= viewKey.getAngleCount(); angle++) {
             this.angle = angle;
             genJpgsForCurrentViewState();
         }
@@ -109,6 +109,7 @@ public class TestYaris extends TestCase {
         while (it.hasNext()) {
             boolean[] productAsBoolArray = it.next();
             Picks picks = bddBuilder.boolArrayToPicks(productAsBoolArray);
+            assert picks != null;
             Jpg jpg = imView.getJpg(picks, angle);
             set.add(jpg);
             counter++;
