@@ -1,5 +1,6 @@
-repo=/Users/dford/smart-soft/clients/tms/svnFun/tmsThreed/trunk
-lib=/Users/dford/smart-soft/clients/tms/svnFun/tmsTools/lib
+repos=/repos
+repo=$repos/threed
+lib=/Users/dford/smart-soft/clients/tms/jarRepo
 
 src1=$repo/previewPanel/src
 src2=$repo/threedFramework/src
