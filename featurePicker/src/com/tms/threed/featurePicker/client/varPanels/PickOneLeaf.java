@@ -8,10 +8,10 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.RadioButton;
 import com.tms.threed.featureModel.shared.ProposePickResponse;
 import com.tms.threed.featureModel.shared.Var;
+import com.tms.threed.featureModel.shared.picks.IllegalPicksStateException;
 import com.tms.threed.featureModel.shared.picks.PickTester;
 import com.tms.threed.featurePicker.client.VarPanel;
 import com.tms.threed.featurePicker.client.VarPanelModel;
-import com.tms.threed.util.gwt.client.Console;
 
 import javax.annotation.Nonnull;
 
@@ -41,8 +41,15 @@ public class PickOneLeaf extends VarPanel {
                     public void execute() {
                         picks.resetAutoAssignments();
                         picks.pick(var);
-                        picks.fixup();
+
+                        try {
+                            picks.fixup();
+                        } catch (IllegalPicksStateException e) {
+                            //ignore
+                        }
+
                         picks.firePicksChangeEvent();
+
                     }
                 });
 
@@ -51,18 +58,17 @@ public class PickOneLeaf extends VarPanel {
     }
 
     private PickTester pickTester = new PickTester();
-    
+
     public void refresh() {
         ProposePickResponse response = pickTester.proposePick(picks, var, true);
 
         if (response.valid) {
             getElement().getStyle().setColor("black");
+            setTitle("");
         } else {
             getElement().getStyle().setColor("#BBBBBB");
-            String responseText = response.toString();
-            setTitle(responseText);
+            setTitle(response.errorMessage);
         }
-        Boolean value = picks.isTrue(var);
-        radioButton.setValue(value);
+        radioButton.setValue(picks.isTrue(var));
     }
 }

@@ -72,4 +72,7 @@ public interface PicksRO {
 
     Picks copyIgnoreFixupPicks();
 
+    boolean isValid();
+
+    String getErrorMessage();
 }

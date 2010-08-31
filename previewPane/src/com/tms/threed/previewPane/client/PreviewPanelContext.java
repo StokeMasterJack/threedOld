@@ -1,5 +1,7 @@
 package com.tms.threed.previewPane.client;
 
+import com.google.gwt.event.dom.client.ErrorEvent;
+import com.google.gwt.event.dom.client.ErrorHandler;
 import com.google.gwt.event.dom.client.LoadEvent;
 import com.google.gwt.event.dom.client.LoadHandler;
 import com.google.gwt.event.shared.HandlerManager;
@@ -97,6 +99,12 @@ public class PreviewPanelContext {
         mainThreedImagePanel.addBaseJpgLoadHandler(new LoadHandler() {
             @Override public void onLoad(LoadEvent event) {
                 refreshButtonPanels();
+            }
+        });
+
+        mainThreedImagePanel.addBaseJpgErrorHandler(new ErrorHandler() {
+            @Override public void onError(ErrorEvent event) {
+                hideButtonPanels();
             }
         });
 

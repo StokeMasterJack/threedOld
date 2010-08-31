@@ -15,16 +15,20 @@ public class PicksChangeEvent extends GwtEvent<PicksChangeHandler> {
     @Nonnull private final PicksSnapshot newPicks;
     @Nonnull private final Var mostRecentSinglePick;
 
-    public PicksChangeEvent(PicksSnapshot oldPicks, PicksSnapshot newPicks) {
-        this.oldPicks = oldPicks;
-        this.newPicks = newPicks;
-        this.mostRecentSinglePick = null;
-    }
+//    public PicksChangeEvent(PicksSnapshot oldPicks, PicksSnapshot newPicks) {
+//        this.oldPicks = oldPicks;
+//        this.newPicks = newPicks;
+//        this.mostRecentSinglePick = null;
+//    }
 
     public PicksChangeEvent(PicksSnapshot oldPicks, PicksSnapshot newPicks, Var mostRecentSinglePick) {
         this.oldPicks = oldPicks;
         this.newPicks = newPicks;
         this.mostRecentSinglePick = mostRecentSinglePick;
+    }
+
+    public boolean areNewPicksValid() {
+        return newPicks.isValid();
     }
 
     public boolean isBlinkEvent() {

@@ -3,7 +3,7 @@ package com.tms.threed.previewPane.client;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.tms.threed.featureModel.shared.picks.PicksChangeEvent;
 import com.tms.threed.previewPane.client.externalState.picks.SeriesNotSetException;
-import com.tms.threed.previewPane.client.externalState.series.SeriesContext;
+import com.tms.threed.previewPane.client.series.SeriesContext;
 import com.tms.threed.previewPanel.client.ChatInfo;
 import com.tms.threed.previewPanel.client.PreviewPanel;
 import com.tms.threed.previewPanel.shared.viewModel.AngleChangeHandler;
@@ -11,7 +11,6 @@ import com.tms.threed.previewPanel.shared.viewModel.ViewChangeHandler;
 import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ViewSnap;
 import com.tms.threed.threedModel.shared.ThreedModel;
-import com.tms.threed.util.gwt.client.Console;
 import com.tms.threed.util.gwt.client.MvcModel;
 
 /**
@@ -53,6 +52,10 @@ public class PreviewPaneContext extends MvcModel {
     public void setPicks(PicksChangeEvent picksChangeEvent) {
         if (seriesContext == null) throw new SeriesNotSetException();
         seriesContext.setPicks(picksChangeEvent);
+
+        if (!picksChangeEvent.areNewPicksValid()) {
+            previewPanelContext.hideButtonPanels();
+        }
     }
 
     public SeriesContext getSeriesContext() {
@@ -77,7 +80,7 @@ public class PreviewPaneContext extends MvcModel {
         return previewPanelContext.getViewSnap();
     }
 
-     public HandlerRegistration addViewChangeHandler(ViewChangeHandler handler) {
+    public HandlerRegistration addViewChangeHandler(ViewChangeHandler handler) {
         return previewPanelContext.addViewChangeHandler(handler);
     }
 

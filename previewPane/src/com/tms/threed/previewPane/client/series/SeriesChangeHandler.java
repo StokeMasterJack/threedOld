@@ -1,4 +1,4 @@
-package com.tms.threed.previewPane.client.externalState.series;
+package com.tms.threed.previewPane.client.series;
 
 import com.google.gwt.event.shared.EventHandler;
 

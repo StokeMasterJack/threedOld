@@ -63,7 +63,7 @@ public class ImView extends ImChildBase implements IsParent<ImLayer> {
     }
 
     public List<ImPng> getPngs(PicksRO picks, int angle) {
-        assert picks != null;
+        assert picks != null:"picks is required";
         ArrayList<ImPng> a = new ArrayList<ImPng>();
         for (ImLayer layer : layers) {
             ImPng png = layer.getPng(picks, angle);
@@ -79,7 +79,7 @@ public class ImView extends ImChildBase implements IsParent<ImLayer> {
     }
 
     public Jpg getJpg(PicksRO picks, int angle) {
-        assert picks != null;
+        assert picks != null:"picks is required";
         List<ImPng> pngs = getPngs(picks, angle);
         if (pngs == null) return null;
         assert pngs.size() != 0;

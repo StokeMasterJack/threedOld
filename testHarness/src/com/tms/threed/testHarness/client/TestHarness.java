@@ -20,6 +20,7 @@ import com.tms.threed.featureModel.shared.Var;
 import com.tms.threed.featureModel.shared.picks.Picks;
 import com.tms.threed.featureModel.shared.picks.PicksChangeEvent;
 import com.tms.threed.featureModel.shared.picks.PicksChangeHandler;
+import com.tms.threed.featureModel.shared.picks.PicksSnapshot;
 import com.tms.threed.featurePicker.client.VarPanel;
 import com.tms.threed.featurePicker.client.VarPanelFactory;
 import com.tms.threed.featurePicker.client.VarPanelModel;
@@ -304,7 +305,7 @@ public class TestHarness implements EntryPoint {
             } else {
 
                 summaryPane.setSeries(threedModel);
-                summaryPane.setPicks(new PicksChangeEvent(null, picks.createSnapshot()));
+                summaryPane.setPicks(new PicksChangeEvent(null, picks.createSnapshot(),null));
 
                 DialogBox popup = new MyDialogBox("Summary");
                 popup.setAnimationEnabled(true);
@@ -431,10 +432,15 @@ public class TestHarness implements EntryPoint {
         picks = featureModel.getInitialVisiblePicks();
         picks.fixup();
 
+        assert picks.isValid();
+
         previewPane.setMsrp("$11,111");
         previewPane.setChatInfo(null);
 
-        previewPane.setPicks(new PicksChangeEvent(null, picks.createSnapshot()));
+        PicksSnapshot picksSnap = picks.createSnapshot();
+        assert picksSnap.isValid();
+
+        previewPane.setPicks(new PicksChangeEvent(null, picksSnap,null));
 
         varPanelFactory = new VarPanelFactory();
         varPanelFactory.setVarPanelContext(new MyVarPanelModel());

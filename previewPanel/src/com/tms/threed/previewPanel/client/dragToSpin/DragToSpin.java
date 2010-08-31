@@ -39,6 +39,7 @@ public class DragToSpin<T extends UIObject & HasAllMouseHandlers> {
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
+        target.setVisibility(enabled);
     }
 
     private static native void fixIE(Element img) /*-{
@@ -137,6 +138,10 @@ public class DragToSpin<T extends UIObject & HasAllMouseHandlers> {
 
         void addAllHandlers(HandlesAllMouseEvents handlers) {
             handlers.handle(target);
+        }
+
+        public void setVisibility(boolean b){
+            target.setVisible(b);
         }
 
 

@@ -1,16 +1,16 @@
 repos=/repos
-repo=$repos/testHarness
+repo=$repos/threed/testHarness
 lib=/Users/dford/smart-soft/clients/tms/jarRepo
 
-src1=$repos/previewPanel/src
-src2=$repos/threedFramework/src
-src3=$repos/imageModel/src
-src4=$repos/featureModel/src
-src5=$repos/featurePicker/src
-src6=$repos/threedCore/src
-src7=$repos/util/src
-src8=$repos/previewPane/src
-src9=$repos/testHarness/src
+src1=$repos/threed/previewPanel/src
+src2=$repos/threed/threedFramework/src
+src3=$repos/threed/imageModel/src
+src4=$repos/threed/featureModel/src
+src5=$repos/threed/featurePicker/src
+src6=$repos/threed/threedCore/src
+src7=$repos/threed/util/src
+src8=$repos/threed/previewPane/src
+src9=$repos/threed/testHarness/src
 
 src="$src1:$src2:$src3:$src4:$src5:$src6:$src7:$src8:$src9"
 
@@ -50,8 +50,8 @@ gwtCompileParams="$g1 $g2 -style OBF -XdisableCastChecking $modName"
 
 gwtParams=$gwtDevModeParams
 mainClass=com.google.gwt.dev.DevMode
-#gwtParams=$gwtCompileParams
-#mainClass=com.google.gwt.dev.Compiler
+gwtParams=$gwtCompileParams
+mainClass=com.google.gwt.dev.Compiler
 
 jvmParams="$j3 $j0 $j1 $j2"
 

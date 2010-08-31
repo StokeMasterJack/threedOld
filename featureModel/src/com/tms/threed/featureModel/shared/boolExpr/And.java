@@ -40,8 +40,7 @@ public class And extends Junction {
             Bit value = boolExpr.eval(picks);
             if (value.isFalse()) {
                 String s1 = boolExpr.toString();
-                String s2 = this.toString();
-                throw new IllegalPicksStateException("And: expr[" + i + "][" + s1 + "] of and expr [" + s2 + "] evals to false");
+                throw new IllegalPicksStateException(s1 + " evals to false");
             }
         }
 

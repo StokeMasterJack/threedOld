@@ -9,6 +9,7 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Panel;
 import com.tms.threed.featureModel.shared.ProposePickResponse;
 import com.tms.threed.featureModel.shared.Var;
+import com.tms.threed.featureModel.shared.picks.IllegalPicksStateException;
 import com.tms.threed.featureModel.shared.picks.PickTester;
 import com.tms.threed.featurePicker.client.VarPanel;
 import com.tms.threed.featurePicker.client.VarPanelModel;
@@ -47,8 +48,14 @@ public class OptionLeaf extends VarPanel {
                         } else {
                             picks.unpick(var);
                         }
-                        picks.fixup();
+
+                        try {
+                            picks.fixup();
+                        } catch (IllegalPicksStateException e) {
+                            //ignore
+                        }
                         picks.firePicksChangeEvent();
+
                     }
                 });
             }
@@ -68,10 +75,12 @@ public class OptionLeaf extends VarPanel {
 
         if (response.valid) {
             getElement().getStyle().setColor("black");
+            setTitle("");
         } else {
             getElement().getStyle().setColor("#BBBBBB");
-            setTitle(response.toString());
+            setTitle(response.errorMessage);
         }
+        
         checkBox.setValue(picks.isTrue(var));
     }
 

@@ -65,24 +65,25 @@ public class ThreedModel  {
 //    }
 
     public Jpg getJpg(String viewName, int angleValue, PicksRO picks) {
+        assert picks != null:"Picks is required";
         return imageModel.getJpg(viewName, angleValue, picks);
     }
 
     public Jpg getJpg(ViewSnap viewState, PicksRO picks) {
-        assert picks != null;
+        assert picks != null:"Picks is required";
         assert viewState != null;
         return imageModel.getJpg(viewState.getView(), viewState.getAngle(), picks);
     }
 
     public Path getJpgUrl(ViewSnap viewState, PicksRO picks) {
-        assert picks != null;
+        assert picks != null:"Picks is required";
         assert viewState != null;
         return this.getJpg(viewState, picks).getPath(threedConfig.getJpgRootHttp());
     }
 
     @Nullable
     public Path getBlinkPngUrl(ViewSnap viewState, PicksRO picks, Var blinkFeature) {
-        assert picks != null;
+        assert picks != null:"Picks is required";
         assert viewState != null;
         assert blinkFeature != null;
 

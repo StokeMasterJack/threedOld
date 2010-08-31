@@ -62,16 +62,19 @@ public class ImSeries extends ImNodeBase implements IsParent<ImView>, IsRoot {
     }
 
     public List<ImPng> getPngs(ViewKey viewKey, int angle, PicksRO picks) {
+        assert picks != null:"Picks is required";
         ImView view = getView(viewKey);
         return view.getPngs(picks, angle);
     }
 
     public Jpg getJpg(ViewKey viewKey, int angle, PicksRO picks) {
+        assert picks != null:"Picks is required";
         ImView view = getView(viewKey);
         return view.getJpg(picks, angle);
     }
 
     public Jpg getJpg(String viewName, int angle, PicksRO picks) {
+        assert picks != null:"Picks is required";
         ViewKey viewKey = seriesInfo.getViewKeyByName(viewName);
         return getJpg(viewKey, angle, picks);
     }

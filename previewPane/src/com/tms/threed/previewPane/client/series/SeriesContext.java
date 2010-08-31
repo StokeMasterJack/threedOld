@@ -1,4 +1,4 @@
-package com.tms.threed.previewPane.client.externalState.series;
+package com.tms.threed.previewPane.client.series;
 
 import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.DeferredCommand;
@@ -26,7 +26,6 @@ import com.tms.threed.threedCore.shared.ThreedConfig;
 import com.tms.threed.threedCore.shared.ViewSnap;
 import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.gwt.client.Browser;
-import com.tms.threed.util.gwt.client.Console;
 import com.tms.threed.util.lang.shared.Path;
 
 import javax.annotation.Nonnull;
@@ -139,6 +138,7 @@ public class SeriesContext {
 
     private void refreshImagePanelsWithBlink(PicksChangeEvent e) {
         refreshMainImage();
+
         doBlink(e, new Command() {
             @Override public void execute() {
                 refreshThumbImages();
@@ -170,33 +170,46 @@ public class SeriesContext {
 
     private void refreshImagePanel(ThreedImagePanel threedImagePanel, int panelIndex) {
         ViewSnap viewState = previewPanel.getViewSnapForPanel(panelIndex);
-        Jpg jpg = getJpg(viewState);
-        if (pngMode) {
-            List<ImPng> pngs = jpg.getPngs();
-            ArrayList<Path> a = new ArrayList<Path>();
 
-            for (int i = 0; i < pngs.size(); i++) {
-                ImPng png = pngs.get(i);
-                if (!png.isVisible()) continue;
-                ImLayer layer = png.getLayer();
-                if (!layer.isVisible()) continue;
-                Path url = png.getPath(pngRootHttp);
-                a.add(url);
-            }
-            threedImagePanel.setImageUrls(a);
+        if (!picks.isValid()) {
+            refreshImagePanelBadPicks(threedImagePanel);
         } else {
-//            threedImagePanel.setImageUrl(jpg.getPath(jpgRootHttp));
-            ImageStack imageStack = jpg.getImageStack();
-
-            if (Browser.isIe6()) {
-                imageStack.purgeZLayers();
-            } 
-
-            List<Path> urls = imageStack.getPaths(pngRootHttp, jpgRootHttp);
-            threedImagePanel.setImageUrls(urls);
+            Jpg jpg = getJpg(viewState);
+            if (pngMode) {
+                refreshImagePanelPngMode(threedImagePanel, jpg);
+            } else {
+                refreshImagePanelJpgMode(threedImagePanel, jpg);
+            }
         }
     }
 
+    private void refreshImagePanelBadPicks(ThreedImagePanel threedImagePanel) {
+        threedImagePanel.showMessage("Invalid Build", picks.getErrorMessage(), "#ffdddd");
+        previewPanel.hideButtonPanels();
+    }
+
+    private void refreshImagePanelPngMode(ThreedImagePanel threedImagePanel, Jpg jpg) {
+        List<ImPng> pngs = jpg.getPngs();
+        ArrayList<Path> a = new ArrayList<Path>();
+        for (int i = 0; i < pngs.size(); i++) {
+            ImPng png = pngs.get(i);
+            if (!png.isVisible()) continue;
+            ImLayer layer = png.getLayer();
+            if (!layer.isVisible()) continue;
+            Path url = png.getPath(pngRootHttp);
+            a.add(url);
+        }
+        threedImagePanel.setImageUrls(a);
+    }
+
+    private void refreshImagePanelJpgMode(ThreedImagePanel threedImagePanel, Jpg jpg) {
+        ImageStack imageStack = jpg.getImageStack();
+        if (Browser.isIe6()) {
+            imageStack.purgeZLayers();
+        }
+        List<Path> urls = imageStack.getPaths(pngRootHttp, jpgRootHttp);
+        threedImagePanel.setImageUrls(urls);
+    }
 
     private void refreshMainImage() {
         ThreedImagePanel mainImagePanel = previewPanel.getMainThreedImagePanel();
@@ -217,7 +230,9 @@ public class SeriesContext {
     }
 
     private void prefetch() {
-        getPrefetcher().prefetch();
+        if (picks.isValid()) {
+            getPrefetcher().prefetch();
+        }
     }
 
     @Nullable
@@ -229,8 +244,11 @@ public class SeriesContext {
     private void doBlink(PicksChangeEvent e, Command postCommand) {
         Path blinkUrl = getBlinkPngUrl(e);
         //null blinkUrl means that accessory is not visible at the current angle
-        if (blinkUrl == null) return;
-        previewPanel.doFeatureBlink(blinkUrl, postCommand);
+        if (blinkUrl == null || !picks.isValid()) {
+            DeferredCommand.addCommand(postCommand);
+        } else {
+            previewPanel.doFeatureBlink(blinkUrl, postCommand);
+        }
     }
 
     public void close() {

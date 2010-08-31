@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" line="86" mnemonic="G" />
+    <bookmark url="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" line="88" mnemonic="G" />
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="674f6dc2-6df2-44a8-8318-029d73441737" name="Default" comment="">
@@ -44,32 +44,6 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PickTester.java" line="65" class="com.tms.threed.featureModel.shared.picks.PickTester" package="com.tms.threed.featureModel.shared.picks">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PickTester.java" line="74" class="com.tms.threed.featureModel.shared.picks.PickTester" package="com.tms.threed.featureModel.shared.picks">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/PngMatch.java" line="12" class="com.tms.threed.imageModel.shared.PngMatch" package="com.tms.threed.imageModel.shared">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -145,7 +119,28 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="OldOrNew.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$repos$/tms/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfiguredImageProviderEBro.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ConfiguredImageProviderEBro.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="13" selection-start="844" selection-end="844" vertical-scroll-proportion="0.20652173">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -159,22 +154,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/Jpg.java" />
-        <option value="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/TestYaris2.java" />
-        <option value="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/server/FileFilters.java" />
-        <option value="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/server/ImageUtil.java" />
-        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/servletUtil/http/ResponseDecorator.java" />
-        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ModelFactory.java" />
-        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/FeatureModel.java" />
-        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/FeatureModelBuilderXml.java" />
-        <option value="$PROJECT_DIR$/tmsDb/src/com/tms/threed/tmsDb/Main.java" />
-        <option value="$PROJECT_DIR$/threedCore/test/com/tms/threed/threedCore/shared/SeriesKeyTest.java" />
-        <option value="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesKey.java" />
-        <option value="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/_notes/picks.txt" />
-        <option value="$PROJECT_DIR$/testHarness/dev.sh" />
+        <option value="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/VarPanel.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java" />
+        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/dragToSpin/DragToSpin.java" />
+        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PicksRO.java" />
+        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/And.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java" />
+        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/ProposePickResponse.java" />
+        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PickTester.java" />
+        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/Picks.java" />
         <option value="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/varPanels/PickOneLeaf.java" />
         <option value="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/varPanels/OptionLeaf.java" />
-        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/Picks.java" />
+        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/ThreedImagePanel.java" />
+        <option value="$PROJECT_DIR$/testHarness/dev.sh" />
+        <option value="$repos$/tms/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/ShowMainConfigurationAction.java" />
+        <option value="$repos$/tms/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" />
       </list>
     </option>
   </component>
@@ -319,14 +314,14 @@
       <recent name="com.tms.threed.featureModel.shared.picks" />
       <recent name="com.tms.threed.previewPanel.client.buttonBars.interior" />
     </key>
-    <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="com.tms.threed.imageModel.shared.ImView" />
-    </key>
     <key name="IntroduceConstantDialog.RECENTS_KEY">
       <recent name="com.tms.ebrochure.toyota.generator.AbstractSectionBuilder" />
       <recent name="com.tms.threed.previewPanel.client.TopImagePanel" />
       <recent name="com.tms.threed.imageModel.shared.ImPng" />
       <recent name="com.tms.threed.imageModelBuilder2.ImNode" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.tms.threed.imageModel.shared.ImView" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.tms.threed.util.gwt.client.logging" />
@@ -335,19 +330,19 @@
       <recent name="com.tms.threed.previewPanel.client" />
       <recent name="com.tms.threed.previewPanel.client.buttonBars.exterior" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.tms.threed.jpgGen.jpgGen2" />
-      <recent name="com.tms.threed.featureModel.shared.exprParser" />
-      <recent name="com.tms.threed.featureModelJavaBdd" />
-      <recent name="com.tms.threed.util.fileWalker" />
-      <recent name="com.tms.threed.imageModel.imageModelBuilders.server" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="/../_projects/tmsRepo/TMS/htdocs/configurator_toyota/source/web/scratch" />
       <recent name="/../_projects/tmsRepo/TMS/htdocs/configurator_toyota/pub/configurator/images/start_page" />
       <recent name="$PROJECT_DIR$/previewPaneAdapter" />
       <recent name="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/jsonTest" />
       <recent name="$PROJECT_DIR$/previewPane/web" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tms.threed.jpgGen.jpgGen2" />
+      <recent name="com.tms.threed.featureModel.shared.exprParser" />
+      <recent name="com.tms.threed.featureModelJavaBdd" />
+      <recent name="com.tms.threed.util.fileWalker" />
+      <recent name="com.tms.threed.imageModel.imageModelBuilders.server" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.SeriesKeyTest.test">
@@ -720,6 +715,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48929337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.75384617" sideWeight="0.9992598" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49871793" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -729,12 +725,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.6615385" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.6615385" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40503597" sideWeight="0.6025641" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39208633" sideWeight="0.6025641" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38846153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="-144" y="140" width="1440" height="874" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.75384617" sideWeight="0.9992598" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -799,64 +794,124 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/SFeatureModel.java">
+    <entry file="file://$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/Var.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="28" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" />
+        <state line="467" column="0" selection-start="13037" selection-end="13037" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threedCore/test/com/tms/threed/threedCore/shared/SeriesKeyTest.java">
+    <entry file="file://$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/ProposePickResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="414" selection-end="414" vertical-scroll-proportion="0.23882681" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/Tracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="57" selection-end="57" vertical-scroll-proportion="0.051630434" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="12" selection-start="2201" selection-end="2201" vertical-scroll-proportion="0.33288947" />
+        <state line="7" column="11" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/Picks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="311" column="6" selection-start="9052" selection-end="9052" vertical-scroll-proportion="0.56058586" />
+        <state line="241" column="24" selection-start="6777" selection-end="6777" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/featureModelJavaBdd/src/com/tms/threed/featureModelJavaBdd/BddBuilder.java">
+    <entry file="file://$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PickTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="479" column="22" selection-start="14319" selection-end="14319" vertical-scroll-proportion="0.7976032" />
+        <state line="13" column="24" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/TestYaris.java">
+    <entry file="file://$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/And.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="30" selection-start="3018" selection-end="3018" vertical-scroll-proportion="0.4144022" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/_notes/picks.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="8" selection-start="2458" selection-end="2458" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/varPanels/OptionLeaf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="32" selection-start="1719" selection-end="1758" vertical-scroll-proportion="0.07065217" />
+        <state line="42" column="36" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/varPanels/PickOneLeaf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="41" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.17391305" />
+        <state line="48" column="32" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/varPanels/OptionLeaf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="36" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="30" selection-start="6126" selection-end="6126" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/ThreedImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="23" selection-start="5691" selection-end="5691" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testHarness/dev.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="11" selection-start="292" selection-end="292" vertical-scroll-proportion="0.025815217" />
+        <state line="53" column="0" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$repos$/tms/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/ShowMainConfigurationAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="51" selection-start="4144" selection-end="4158" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SThreedModels.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="37" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$repos$/tms/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="230" column="14" selection-start="11403" selection-end="11403" vertical-scroll-proportion="-7.740741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="32" selection-start="4810" selection-end="4810" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$repos$/tms/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ConfiguredImageProviderEBro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="844" selection-end="844" vertical-scroll-proportion="0.20652173">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

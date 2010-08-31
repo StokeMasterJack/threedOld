@@ -39,6 +39,7 @@ public class PicksChangeHandlers extends MvcModel {
 
         PicksSnapshot oldFixedPicks = currentFixedPicks;
         Picks newPicks = newVarPicks.createPicks();
+
         newPicks.fixup();
 
         currentFixedPicks = newPicks.createSnapshot();

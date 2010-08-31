@@ -33,7 +33,9 @@ public abstract class VarPanel extends Composite {
             Var childVar = childVars.get(i);
             VarPanel childVarPanel = context.getVarPanel(childVar);
             
-            if (childVarPanel != null) childVarPanel.refresh();
+            if (childVarPanel != null) {
+                childVarPanel.refresh();
+            }
             
         }
     }

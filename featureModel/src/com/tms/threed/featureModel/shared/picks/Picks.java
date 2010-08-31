@@ -31,6 +31,9 @@ public class Picks implements PicksRO, PicksMutable {
     private Var mostRecentSinglePick;
     private PicksSnapshot lastState;
 
+    protected Boolean valid;
+    protected String errorMessage;
+
     public Picks(FeatureModel fm) {
         this.fm = fm;
 
@@ -67,6 +70,19 @@ public class Picks implements PicksRO, PicksMutable {
             Var var = varMap[i];
             map[var.index] = value ? Assignment.TRUE_INIT : Assignment.FALSE_FIXUP;
         }
+    }
+
+    public boolean getValid() {
+        return valid;
+    }
+
+    public boolean isValid() {
+        if (valid == null) throw new IllegalStateException();
+        return valid;
+    }
+
+    @Override public String getErrorMessage() {
+        return errorMessage;
     }
 
     public boolean isDirty() {
@@ -113,28 +129,24 @@ public class Picks implements PicksRO, PicksMutable {
 
     public void userAssign(Var var, Bit newValue) {
         Bit oldValue = map[var.index].getValue();
-        if (oldValue.equals(newValue)) return;
-
-        if (var.isPickOneChild() && newValue.isTrue()) {
-
-            Var pickOneGroup = var.getParent();
-            for (Var childVar : pickOneGroup.getChildVars()) {
-                if (childVar == var) continue;
-                if (isTrue(childVar) || isUnassigned(childVar)) {
-                    userAssign(childVar, false);
-                }
-
-                if (isTrue(childVar)) {
-                    map[var.index] = Assignment.UNASSIGNED;
-                }
-            }
+        if (oldValue.equals(newValue)) {
+            mostRecentSinglePick = null;
+            return;
         }
 
+        if (var.isPickOneChild()) {
+            if (newValue.isFalse()) throw new IllegalArgumentException();
+            if (newValue.isUnassigned()) throw new IllegalArgumentException();
+            Var pickOneGroup = var.getParent();
+            for (Var childVar : pickOneGroup.getChildVars()) {
+                map[childVar.index] = Assignment.create(Bit.FALSE, Source.User);
+            }
+
+        }
         map[var.index] = Assignment.create(newValue, Source.User);
         dirty = true;
+        mostRecentSinglePick = var;
 
-        if (newValue.isTrue()) mostRecentSinglePick = var;
-        else mostRecentSinglePick = null;
     }
 
     public void userAssign(Var var, boolean value) {
@@ -197,20 +209,41 @@ public class Picks implements PicksRO, PicksMutable {
 
 
     public boolean fixup() throws IllegalPicksStateException {
-        boolean ch1 = fixupBasedOnConstraints();
-        boolean ch2 = fixupLeafVarsBasedOnDefaults();
+        valid = null;
+        errorMessage = null;
+        try {
+            boolean ch1 = fixupBasedOnConstraints();
+            boolean ch2 = fixupLeafVarsBasedOnDefaults();
 
-        boolean ch3;
-        if (ch1 || ch2) {
-            ch3 = fixupBasedOnConstraints();
-        } else {
-            ch3 = false;
+            boolean ch3;
+            if (ch1 || ch2) {
+                ch3 = fixupBasedOnConstraints();
+            } else {
+                ch3 = false;
+            }
+
+            boolean ch4 = fixupNonLeafVarsBasedOnDefaults();
+
+            boolean anyChanges = ch1 || ch2 || ch3 || ch4;
+
+            valid = true;
+            return anyChanges;
+        } catch (IllegalPicksStateException e) {
+            valid = false;
+            errorMessage = e.getMessage();
+            this.resetAutoAssignments();
+            throw e;
+        } catch (RuntimeException e) {
+            valid = null;
+            this.resetAutoAssignments();
+            throw e;
         }
-
-        boolean ch4 = fixupNonLeafVarsBasedOnDefaults();
-
-        return ch1 || ch2 || ch3 || ch4;
+        catch (Exception e) {
+            this.resetAutoAssignments();
+            throw new RuntimeException(e);
+        }
     }
+
 
     private boolean fixupBasedOnConstraints() throws IllegalPicksStateException {
 
@@ -529,18 +562,21 @@ public class Picks implements PicksRO, PicksMutable {
         for (int i = 0; i < map.length; i++) {
             picksSnapshot.map[i] = map[i];
         }
+
+        picksSnapshot.valid = this.valid;
+        picksSnapshot.errorMessage = this.errorMessage;
         return picksSnapshot;
     }
 
     @Override public Picks copyIgnoreFixupPicks() {
         Picks picks = new Picks(fm);
-
         for (int i = 0; i < map.length; i++) {
-            Assignment assignment = map[i];
-            if (!assignment.getSource().isFixup()) {
-                picks.map[i] = map[i];
-            }
+            Source source = map[i].getSource();
+            if (source != null && source.isFixup()) map[i] = Assignment.UNASSIGNED;
+            else picks.map[i] = map[i];
         }
+        picks.valid = this.valid;
+        picks.errorMessage = this.errorMessage;
         return picks;
     }
 
