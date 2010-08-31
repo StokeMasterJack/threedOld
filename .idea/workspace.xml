@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="threed.jar" />
+      <artifact name="Configurator-ToyotaFramework" />
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
@@ -10,10 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="674f6dc2-6df2-44a8-8318-029d73441737" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/FeatureModelBuilderXml.java" afterPath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/FeatureModelBuilderXml.java" />
+      <change type="DELETED" beforePath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iws" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/FeatureModel.java" afterPath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/FeatureModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/dev.sh" afterPath="$PROJECT_DIR$/testHarness/dev.sh" />
+      <change type="DELETED" beforePath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.ipr" afterPath="" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iml" afterPath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iml" />
     </list>
     <list id="c92f8435-0af5-46bf-8a50-127d5152783a" name="Failed commit: Default (3)" comment="Commit before adding accessory png loader" />
     <list id="229d6cae-4042-4709-9202-621ef1e681bb" name="Failed commit: Default" comment="added server package" />
@@ -105,8 +106,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -119,17 +120,7 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SThreedModel.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SThreedModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="46" selection-start="4586" selection-end="4586" vertical-scroll-proportion="0.15730338">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -222,122 +213,13 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="threed" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testHarness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -353,19 +235,18 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
@@ -375,14 +256,14 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="preferences.applicationServers" />
+    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -808,13 +689,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="150" width="1440" height="746" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48929337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7410256" sideWeight="0.9992598" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49871793" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -824,11 +703,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.6615385" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.6615385" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39208633" sideWeight="0.6025641" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36978418" sideWeight="0.55641025" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38846153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="-144" y="140" width="1440" height="874" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7410256" sideWeight="0.9992598" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -895,117 +776,50 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ConfiguredImageProviderEBro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="25" column="13" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$tmsRepoThreedTools$/struts/1.1/src/share/org/apache/struts/action/RequestProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="27" selection-start="7578" selection-end="7578" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$repos$/tms/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/util/ConfiguratorRequestProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="18" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$repos$/tms/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/util/DefaultPickAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="27" selection-start="2620" selection-end="2682" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$repos$/tms/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/util/DefaultPickAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="27" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$repos$/tms/Configurator-ToyotaApp/src/docroot/WEB-INF/struts-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="23" selection-start="11330" selection-end="11330" vertical-scroll-proportion="0.3478261">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$repos$/tms/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="25" selection-start="12601" selection-end="12601" vertical-scroll-proportion="0.6784203">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$repos$/tms/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/ShowMainConfigurationAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="39" selection-start="4564" selection-end="4578" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$repos$/tms/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/SetStartOptionsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="33" selection-start="7249" selection-end="7266" vertical-scroll-proportion="0.5081522">
-          <folding />
-        </state>
+        <state line="219" column="27" selection-start="7578" selection-end="7578" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/TopImagePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="122" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="122" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="43" selection-start="3475" selection-end="3475" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="109" column="43" selection-start="3475" selection-end="3475" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/raw/ExternalStateSnapshot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="34" selection-start="8412" selection-end="8412" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$repos$/tms/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="34" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="238" column="34" selection-start="8412" selection-end="8412" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/JsonMarshaller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="43" selection-start="0" selection-end="43" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="43" selection-start="0" selection-end="43" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesKey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="37" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="47" column="37" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SThreedModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="46" selection-start="4586" selection-end="4586" vertical-scroll-proportion="0.15730338">
-          <folding />
+        <state line="145" column="46" selection-start="4586" selection-end="4586" vertical-scroll-proportion="0.025299601" />
+      </provider>
+    </entry>
+    <entry file="file://$repos$/Configurator-ToyotaApp/src/test/com/tms/ebrochure/toyota/web/action/EBrochureActionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="14" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.2540761">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,9 +842,9 @@
           <settings>
             <show-content>
               <type id="javaee-facet-resources" />
+              <type id="jpa-descriptors" />
               <type id="library" />
               <type id="artifact" />
-              <type id="jpa-descriptors" />
             </show-content>
           </settings>
         </UIState>
