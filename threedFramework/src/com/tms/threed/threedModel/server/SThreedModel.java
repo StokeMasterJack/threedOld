@@ -148,11 +148,9 @@ public class SThreedModel {
 
         ObjectNode jsSeriesKey = f.objectNode();
 
-        int y = seriesKey.getYear();
-        jsSeriesKey.put("year", y);
+        jsSeriesKey.put("year", seriesKey.getYear());
 
-        String n = seriesKey.getName();
-        jsSeriesKey.put("name", n);
+        jsSeriesKey.put("name", seriesKey.getOriginalName());
 
         ObjectNode jsModel = f.objectNode();
 
