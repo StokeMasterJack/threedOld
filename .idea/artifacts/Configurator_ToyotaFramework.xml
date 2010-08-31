@@ -1,8 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="TMS.jar">
+  <artifact type="jar" name="Configurator-ToyotaFramework">
     <output-path>/temp</output-path>
-    <root id="archive" name="TMS.jar">
-      <element id="module-output" name="Configurator-ToyotaApp" />
+    <root id="archive" name="Configurator-ToyotaFramework-1.0.154.jar">
       <element id="module-output" name="Configurator-ToyotaFramework" />
     </root>
   </artifact>
