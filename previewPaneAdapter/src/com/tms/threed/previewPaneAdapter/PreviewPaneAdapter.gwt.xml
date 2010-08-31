@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module rename-to='previewpanel'>
+
+    <inherits name='com.google.gwt.user.User'/>
+
+    <!--<inherits name='com.google.gwt.user.theme.standard.Standard'/>-->
+
+    <inherits name='com.tms.threed.previewPane.PreviewPane'/>
+
+
+    <entry-point class='com.tms.threed.previewPaneAdapter.client.PreviewPanelAdaptor'/>
+
+    <source path='client'/>
+
+    <!--<set-property name="user.agent" value="gecko1_8" />-->
+
+
+</module>

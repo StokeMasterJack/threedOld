@@ -6,7 +6,7 @@
         <setting name="additionalCompilerParameters" value="-XdisableCastChecking" />
         <setting name="compilerMaxHeapSize" value="512" />
         <setting name="gwtScriptOutputStyle" value="PRETTY" />
-        <setting name="gwtSdkUrl" value="file://$MODULE_DIR$/../../../../../../../p-java/gwt-2.0.3" />
+        <setting name="gwtSdkUrl" value="file:///../../../../p-java/gwt-2.0.3" />
         <packaging>
           <module name="com.tms.threed.previewPane.PreviewPane" path="/com.tms.threed.previewPane.PreviewPane" />
           <module name="com.tms.threed.previewPane.PreviewPaneTest" path="/com.tms.threed.previewPane.PreviewPaneTest" />

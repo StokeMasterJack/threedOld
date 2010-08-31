@@ -13,7 +13,6 @@ import com.tms.threed.imageModel.shared.ImView;
 import com.tms.threed.imageModel.shared.Jpg;
 import com.tms.threed.javabdd.BDD;
 import com.tms.threed.javabdd.BDDVarSet;
-import com.tms.threed.jpgGen.jpgGen2.PreAndPostProcessor;
 import com.tms.threed.jpgGen.jpgGen2.generate.JpgGenerationProcess;
 import com.tms.threed.jpgGen.jpgGen2.generate.ProcessCanceledException;
 import com.tms.threed.jpgGen.jpgGen2.generate.ProcessStatus;
@@ -106,11 +105,15 @@ public class ProcessKickoff extends Thread {
 
 		        HashSet<Jpg> set = new HashSet<Jpg>();
 		        BDD.BDDIterator it = bdd.iterator(bddVarSet);
+		        int counter = 0;
 		        while (it.hasNext()) {
 		            boolean[] productAsBoolArray = it.next();
 		            Picks picks = bddBuilder.boolArrayToPicks(productAsBoolArray);
 		            Jpg jpg = imView.getJpg(picks, angle);
 		            set.add(jpg);
+		            counter++;
+//		            if (satAllCount % counter == 10000)
+//		                System.out.println(counter + " of " + satAllCount + "  jpgCount[" + set.size() + "]");
 		        }
 		        
 		        totalResultingJpgs += set.size();
@@ -122,7 +125,6 @@ public class ProcessKickoff extends Thread {
 				}
 				
 				jpgGenerationProcess.getAnalysisProgress().addComplete();
-		 
 			}
 		}
 

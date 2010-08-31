@@ -14,6 +14,7 @@
     <orderEntry type="module" module-name="util" />
     <orderEntry type="module" module-name="threedCore" />
     <orderEntry type="module" module-name="imageModel" />
+    <orderEntry type="library" name="guava-2010-03-03" level="project" />
   </component>
 </module>
 

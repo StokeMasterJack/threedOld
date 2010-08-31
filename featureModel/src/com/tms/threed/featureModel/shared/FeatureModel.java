@@ -20,6 +20,7 @@ import static com.tms.threed.util.lang.shared.Strings.isEmpty;
 public class FeatureModel {
 
     private SeriesKey seriesKey;
+    private String version;
 
     private final VarCollection vars = new VarCollection(); //0th element is always the root-var
 
@@ -38,6 +39,8 @@ public class FeatureModel {
         vars.add(rootVar);
     }
 
+
+
     public FeatureModel(String rootVarCode) {
         this(rootVarCode, null);
     }
@@ -48,6 +51,14 @@ public class FeatureModel {
 
     public void setSeriesKey(SeriesKey seriesKey) {
         this.seriesKey = seriesKey;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
     }
 
     public SeriesKey getSeriesKey() {

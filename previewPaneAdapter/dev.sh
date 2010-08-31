@@ -44,7 +44,7 @@ libs=$lib1:$lib2:$lib3:$lib4:$lib5
 cp="$src:$libs"
 
 gwtDevModeParams="$g1 $g2 $g3 $modName"
-gwtCompileParams="$g1 $g2 -style OBF -XdisableCastChecking $modName"
+gwtCompileParams="$g1 $g2 -style PRETTY -XdisableCastChecking $modName"
 
 #-XdisableCastChecking
 

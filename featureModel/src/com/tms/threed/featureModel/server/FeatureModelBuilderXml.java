@@ -40,8 +40,7 @@ public class FeatureModelBuilderXml {
     public static final String CONFLICTS = "conflicts";
     public static final String IFFS = "iffs";
     public static final String DERIVED = "derived";
-
-
+    private static final String VERSION = "version";
     private static final String MODEL_TAG_NAME = "model";
     private static final String FEATURE_TAG_NAME = "feature";
     private static final String FEATURES_TAG_NAME = FEATURE_TAG_NAME + "s";
@@ -49,7 +48,7 @@ public class FeatureModelBuilderXml {
 
     private SeriesKey seriesKey;
     private FeatureModel fm;
-    private SFeatureModel sfm;
+//    private SFeatureModel sfm;
     private Var root;
 
 //    private File modelPngRoot;
@@ -94,9 +93,9 @@ public class FeatureModelBuilderXml {
         fm.setSeriesKey(seriesKey);
 //        root = fm.addVar(seriesKey.getName().toLowerCase());
 
-        root = fm.getRootVar();
-        sfm = new SFeatureModel(new FeatureModel());
 
+
+        root = fm.getRootVar();
 
         parseDom();
         processModelElement();
@@ -148,6 +147,8 @@ public class FeatureModelBuilderXml {
 
     private void processModelElement() {
         modelElement = doc.getRootElement();
+        fm.setVersion(parseVersion());
+
         featuresElement = modelElement.element(FEATURES_TAG_NAME);
 
         Var rootVar = fm.getRootVar();
@@ -160,6 +161,11 @@ public class FeatureModelBuilderXml {
 
     }
 
+    private String parseVersion() {
+        String version = modelElement.attributeValue(VERSION);
+        if (notEmpty(version)) return version.trim();
+        return "";
+    }
 
     private void processXors() {
         final List<Var> vars = fm.getVars();

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="javaee-5">
+    <CLASSES>
+      <root url="jar://$tmsRepoThreedTools$/javaee/5/javaee.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file:///../../../../p-java/jetty-6.1.11/modules/servlet-api-2.5/src/main/java" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jpgGen">
+    <output-path>/temp</output-path>
+    <root id="archive" name="jpgGen.jar">
+      <element id="module-output" name="featureModel" />
+      <element id="module-output" name="featureModelJavaBdd" />
+      <element id="module-output" name="imageModel" />
+      <element id="module-output" name="previewPane" />
+      <element id="module-output" name="threedCore" />
+      <element id="module-output" name="threedFramework" />
+      <element id="module-output" name="util" />
+      <element id="module-output" name="jpgGen" />
+      <element id="module-output" name="javaBdd" />
+    </root>
+  </artifact>
+</component>

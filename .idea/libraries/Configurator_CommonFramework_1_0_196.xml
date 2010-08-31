@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Configurator-CommonFramework-1.0.196">
+    <CLASSES>
+      <root url="jar://$tmsRepoThreedTools$/Configurator-CommonFramework/1.0.196/Configurator-CommonFramework-1.0.196.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$tmsRepoThreedTools$/Configurator-CommonFramework/1.0.196/src" />
+    </SOURCES>
+  </library>
+</component>

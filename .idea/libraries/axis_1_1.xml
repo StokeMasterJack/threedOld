@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="axis-1.1">
+    <CLASSES>
+      <root url="jar://$tmsRepoThreedTools$/axis/1.1/saaj.jar!/" />
+      <root url="jar://$tmsRepoThreedTools$/axis/1.1/axis.jar!/" />
+      <root url="jar://$tmsRepoThreedTools$/axis/1.1/wsdl4j.jar!/" />
+      <root url="jar://$tmsRepoThreedTools$/axis/1.1/jaxrpc.jar!/" />
+      <root url="jar://$tmsRepoThreedTools$/google-collect/1.0/google-collect-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$tmsRepoThreedTools$/google-collect/1.0/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$tmsRepoThreedTools$/axis/1.1/src" />
+      <root url="jar://$tmsRepoThreedTools$/google-collect/1.0/src-1.0.zip!/" />
+    </SOURCES>
+  </library>
+</component>

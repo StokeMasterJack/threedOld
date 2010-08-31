@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="guava-2010-03-03">
+    <CLASSES>
+      <root url="jar://$tmsRepoThreedTools$/guava/2010-03-03/guava_2010_03_03.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$tmsRepoThreedTools$/guava/2010-03-03/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$tmsRepoThreedTools$/guava/2010-03-03/src" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bingproxy-1.0">
+    <CLASSES>
+      <root url="jar://$tmsRepoThreedTools$/bingproxy/1.0/bingproxy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

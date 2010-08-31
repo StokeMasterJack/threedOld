@@ -1,17 +1,18 @@
-repo=/Users/dford/smart-soft/clients/tms/svnFun/tmsThreed/trunk
-lib=/Users/dford/smart-soft/clients/tms/svnFun/tmsTools/lib
+repos=/repos
+repo=$repos/testHarness
+lib=/Users/dford/smart-soft/clients/tms/jarRepo
 
-src1=$repo/previewPanel/src
-src2=$repo/threedFramework/src
-src3=$repo/imageModel/src
-src4=$repo/featureModel/src
-src5=$repo/featurePicker/src
-src6=$repo/threedCore/src
-src7=$repo/util/src
-src8=$repo/previewPane/src
-src9=$repo/testHarness/src
-src10=$repo/gwtCollections/src
-src11=$repo/gwtCollections/super
+src1=$repos/previewPanel/src
+src2=$repos/threedFramework/src
+src3=$repos/imageModel/src
+src4=$repos/featureModel/src
+src5=$repos/featurePicker/src
+src6=$repos/threedCore/src
+src7=$repos/util/src
+src8=$repos/previewPane/src
+src9=$repos/testHarness/src
+
+src="$src1:$src2:$src3:$src4:$src5:$src6:$src7:$src8:$src9"
 
 gwtVersion=2.1.0.M2
 gwtHome=$lib/gwt/$gwtVersion
@@ -40,11 +41,11 @@ j0="-Xmx512m "
 j1="-DconfigDir=/temp/tmsConfig "
 j2="-Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml "
 
-src="$src1:$src2:$src3:$src4:$src5:$src6:$src7:$src8:$src9"
+
 libs=$lib1:$lib2:$lib3:$lib4:$lib5
 cp="$src:$libs"
 
-gwtDevModeParams="$g0 $g1 $g2 $g3 $modName"
+gwtDevModeParams="$g1 $g2 $g3 $modName"
 gwtCompileParams="$g1 $g2 -style OBF -XdisableCastChecking $modName"
 
 gwtParams=$gwtDevModeParams

@@ -13,11 +13,10 @@ public class SeriesKey implements Serializable, Comparable<SeriesKey> {
     private /*final*/ int year;
     private /*final*/ String name;
 
-
     public SeriesKey(final int year, @Nonnull final String name) {
         assert Strings.notEmpty(name);
         this.year = year;
-        this.name = name.trim().toLowerCase();
+        this.name = name.trim().toLowerCase().replaceAll(" ","");
     }
 
     public SeriesKey(@Nonnull final String year, @Nonnull final String name) {
@@ -108,7 +107,6 @@ public class SeriesKey implements Serializable, Comparable<SeriesKey> {
         a.add(VENZA_2009);
         a.add(VENZA_2010);
         a.add(VENZA_2011);
-        a.add(YARIS_2010);
         return a;
     }
 
