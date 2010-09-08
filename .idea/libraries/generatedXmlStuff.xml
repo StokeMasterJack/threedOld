@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="generatedXmlStuff">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/generatedXmlStuff/1.0/generatedXmlStuff.jar!/" />
+      <root url="jar://$jarRepo$/generatedXmlStuff/1.0/generatedXmlStuff.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

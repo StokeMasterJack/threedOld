@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="commons-configuration-1.2">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/commons-configuration/1.2/commons-configuration-1.2.jar!/" />
+      <root url="jar://$jarRepo$/commons-configuration/1.2/commons-configuration-1.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

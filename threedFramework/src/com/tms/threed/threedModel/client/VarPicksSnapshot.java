@@ -26,7 +26,7 @@ public class VarPicksSnapshot {
     public final int packageCount;
     public final int accessoryCount;
 
-    public static VarPicksSnapshot createVarPicksSnapshot(@Nonnull RawPicksSnapshot picksRaw, FeatureModel fm) {
+    public static VarPicksSnapshot createVarPicksSnapshot(@Nonnull RawPicksSnapshot picksRaw, FeatureModel fm) throws UnknownVarCodeFromLeftSideException{
         Var modelCode = parseVar(fm, picksRaw.modelCode,VarCodeType.MODEL_CODE);
         Var exteriorColor = parseVar(fm,picksRaw.exteriorColorFixed,VarCodeType.EXTERIOR_COLOR);
         Var interiorColor = parseVar(fm,picksRaw.interiorColor,VarCodeType.INTERIOR_COLOR);
@@ -35,7 +35,7 @@ public class VarPicksSnapshot {
         return new VarPicksSnapshot(modelCode, exteriorColor, interiorColor, packageVars, accessoryVars);
     }
 
-    private static Var parseVar(FeatureModel fm,String varCode,VarCodeType varCodeType){
+    private static Var parseVar(FeatureModel fm,String varCode,VarCodeType varCodeType) throws UnknownVarCodeFromLeftSideException{
         try {
             return fm.getVar(varCode);
         } catch (UnknownVarCodeException e) {

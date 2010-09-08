@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="TheEarDude">
+    <output-path>/temp/TheEarDude</output-path>
+    <root id="archive" name="TheEarDude.ear">
+      <element id="dir-copy" path="/temp/Configurator_Toyota" />
+    </root>
+  </artifact>
+</component>

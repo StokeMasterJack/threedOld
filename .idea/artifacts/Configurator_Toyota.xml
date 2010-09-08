@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact name="Configurator_Toyota">
+    <output-path>/temp/Configurator_Toyota</output-path>
+    <properties id="ant-postprocessing">
+      <options enabled="true">
+        <file>file://$repos$/Configurator-ToyotaApp/dave.xml</file>
+        <target>refreshArtifacts</target>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="lib">
+        <element id="file-copy" path="$repos$/Configurator-ToyotaApp/_gen/Configurator-ToyotaApp.jar" />
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$repos$/Configurator-ToyotaApp/src/ear/application.xml" output-file-name="application.xml" />
+        <element id="file-copy" path="$repos$/Configurator-ToyotaApp/src/ear/weblogic-application.xml" output-file-name="weblogic-application.xml" />
+      </element>
+      <element id="directory" name="Configurator-ToyotaAppWebApp.war">
+        <element id="dir-copy" path="$repos$/Configurator-ToyotaApp/src/docroot" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="lib">
+            <element id="archive" name="Configurator-ToyotaApp-warlib.jar">
+              <element id="module-output" name="Configurator-ToyotaApp" />
+            </element>
+          </element>
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

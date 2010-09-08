@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="commons-io-1.4">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/commons-io/1.4/commons-io-1.4.jar!/" />
+      <root url="jar://$jarRepo$/commons-io/1.4/commons-io-1.4.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="file://$tmsRepoThreedTools$/commons-io/1.4/docs" />
+      <root url="file://$jarRepo$/commons-io/1.4/docs" />
     </JAVADOC>
     <SOURCES>
-      <root url="file://$tmsRepoThreedTools$/commons-io/1.4/src" />
+      <root url="file://$jarRepo$/commons-io/1.4/src" />
     </SOURCES>
   </library>
 </component>

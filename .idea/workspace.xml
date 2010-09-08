@@ -2,25 +2,151 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Configurator-ToyotaFramework" />
+      <artifact name="Configurator_Toyota" />
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" line="88" mnemonic="G" />
+    <bookmark url="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" line="90" mnemonic="G" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="674f6dc2-6df2-44a8-8318-029d73441737" name="Default" comment="">
-      <change type="DELETED" beforePath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iws" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" readonly="true" id="674f6dc2-6df2-44a8-8318-029d73441737" name="Default" comment="Camry and Avalon to use XML configs">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/shared/viewModel/AngleAndViewChangeEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/http___ssdev_toyota_com_17771.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedCore/test/com/tms/threed/threedCore/shared/SeriesInfoTest.java" />
       <change type="DELETED" beforePath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.ipr" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gwt_servlet_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gwt_servlet_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/guava_2010_03_03.xml" afterPath="$PROJECT_DIR$/.idea/libraries/guava_2010_03_03.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/trillium_7_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/trillium_7_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/VarPicksSnapshot.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/VarPicksSnapshot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_collections_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_collections_3_0.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/public/modelDataXml.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/oscache_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/oscache_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/ThreedImagePanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/ThreedImagePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/nonFlashConfig/ExternalState.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/nonFlashConfig/ExternalState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/logging/ScriptConsoleGecko.java" afterPath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/logging/ScriptConsoleGecko.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/xmlbeans_2_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/xmlbeans_2_2_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/picocontainer_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/picocontainer_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/MapPoint_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/MapPoint_1_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/previewPane_Web_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/previewPane_Web_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/nekohtml_0_9_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/nekohtml_0_9_1.xml" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/lib.properties" afterPath="$repos$/Configurator-ToyotaApp/lib.properties" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/classes/resources/application.properties" afterPath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/classes/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp" afterPath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Configurator_CommonFramework_1_0_196.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Configurator_CommonFramework_1_0_196.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/TMSTrillium_2_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/TMSTrillium_2_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jmagick_6_3_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jmagick_6_3_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/dealerlocatorwebservices_client_1_2_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/dealerlocatorwebservices_client_1_2_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/bingproxy_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/bingproxy_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/TMSTrillium_2_1_37.xml" afterPath="$PROJECT_DIR$/.idea/libraries/TMSTrillium_2_1_37.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneSummary.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneSummary.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/NotificationCenter.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_digester_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_digester_1_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/oro_2_0_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/oro_2_0_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/axis_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/axis_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/oracleJdbc_8_1_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/oracleJdbc_8_1_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/xerces2_2_5_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/xerces2_2_5_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/javaee_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javaee_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/generatedXmlStuff.xml" afterPath="$PROJECT_DIR$/.idea/libraries/generatedXmlStuff.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_io_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_1_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/ehcache_1_5_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/ehcache_1_5_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/MapPoint_4_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/MapPoint_4_1_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/threed_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/threed_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/struts_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/struts_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maritz_1_0_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maritz_1_0_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/PicksInfoPanel.java" afterPath="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/PicksInfoPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/logging/ScriptConsoleNull.java" afterPath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/logging/ScriptConsoleNull.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/shared/viewModel/AngleAndViewChangeHandler.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/.cvsignore" afterPath="$repos$/Configurator-ToyotaApp/.cvsignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_lang_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gwt_dev_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gwt_dev_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/TheEarDude.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/itext_2_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/itext_2_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/notification/JsVehicle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_6_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jackson_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_1_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gwt_servlet_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gwt_servlet_2_0.xml" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/web.xml" afterPath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/DealerLocator_1_3_5_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/DealerLocator_1_3_5_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/ViewSnap.java" afterPath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/ViewSnap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gwt_user_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gwt_user_2_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Configurator_ToyotaApp_warlib.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/velocity_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/velocity_1_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/p6spy_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/p6spy_1_3.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/configurator_toyota_Web_exploded.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/oracleJdbc_10_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/oracleJdbc_10_1_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/TMSTrillium_2_1_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/TMSTrillium_2_1_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_httpclient_2_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_httpclient_2_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesInfo.java" afterPath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$repos$/Configurator-ToyotaApp/dave.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/struts_el_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/struts_el_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/oracleJdbc_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/oracleJdbc_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneTest.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jmxtools_1_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jmxtools_1_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commonj_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commonj_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/notification/NotificationCenterBridge.java" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iml" afterPath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/raw/ExternalStateChangeEvent.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/raw/ExternalStateChangeEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/xalan_2_7_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/xalan_2_7_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/client/PreviewPanelAdaptor.java" afterPath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/client/PreviewPanelAdaptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/backport_concurrent_util_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/backport_concurrent_util_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/TMSFramework_2_2_16.xml" afterPath="$PROJECT_DIR$/.idea/libraries/TMSFramework_2_2_16.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/notification/JsAcc.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/CacheDefaultPicks.java" afterPath="$repos$/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/CacheDefaultPicks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/logging/ScriptConsoleIE.java" afterPath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/logging/ScriptConsoleIE.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml" afterPath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/ShowMainConfigurationAction.java" afterPath="$repos$/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/ShowMainConfigurationAction.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_your_vehicle.jsp" afterPath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_your_vehicle.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mockobjects_0_09.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mockobjects_0_09.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneImpl.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneImpl.java" />
+      <change type="DELETED" beforePath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iws" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_13.xml" afterPath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPane.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/httpunit_1_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/httpunit_1_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/testHarness_Web_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/testHarness_Web_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SalesLeadProcessor_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SalesLeadProcessor_2_3_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/dom4j_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/dom4j_1_6_1.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/client/PreviewPanelFactory.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/raw/ExternalStateSnapshot.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/raw/ExternalStateSnapshot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gwt_log_3_01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gwt_log_3_01.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_configuration_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_configuration_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jstl_jakarta_1_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jstl_jakarta_1_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/pdf_2_2_dhap.xml" afterPath="$PROJECT_DIR$/.idea/libraries/pdf_2_2_dhap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_validator_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_validator_1_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/picks/PicksChangeHandlers.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/picks/PicksChangeHandlers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/axis_client_config_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/axis_client_config_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/google_collect_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/google_collect_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/dozer_4_4_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/dozer_4_4_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPaneAdapter/dev.sh" afterPath="$PROJECT_DIR$/previewPaneAdapter/dev.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gwt_user_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gwt_user_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/junit_3_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/junit_3_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jsr305.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jsr305.xml" />
+      <change type="MODIFICATION" beforePath="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" afterPath="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Configurator_Toyota.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/notification/AccessoryWithFlashOrientationHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/shared/viewModel/ViewStates.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/shared/viewModel/ViewStates.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_discovery_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_discovery_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/logging/ScriptConsole.java" afterPath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/logging/ScriptConsole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/TrilliumWebServices_0_0_52.xml" afterPath="$PROJECT_DIR$/.idea/libraries/TrilliumWebServices_0_0_52.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/Console.java" afterPath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/Console.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/SetStartOptionsAction.java" afterPath="$repos$/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/SetStartOptionsAction.java" />
     </list>
     <list id="c92f8435-0af5-46bf-8a50-127d5152783a" name="Failed commit: Default (3)" comment="Commit before adding accessory png loader" />
     <list id="229d6cae-4042-4709-9202-621ef1e681bb" name="Failed commit: Default" comment="added server package" />
     <list id="a85d6a27-d74e-494e-936e-18dffe5a1466" name="Failed commit: Default (2)" comment="Failed commit: Default (2)" />
-    <ignored path="tmsRepoThreed.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="tmsRepoThreed.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,22 +260,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/ProposePickResponse.java" />
-        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PickTester.java" />
-        <option value="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/Picks.java" />
-        <option value="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/varPanels/PickOneLeaf.java" />
-        <option value="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/varPanels/OptionLeaf.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java" />
+        <option value="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesInfo.java" />
+        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/shared/viewModel/ViewStates.java" />
+        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/shared/viewModel/AngleAndViewChangeHandler.java" />
+        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/shared/viewModel/AngleAndViewChangeEvent.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java" />
+        <option value="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/ViewSnap.java" />
+        <option value="$PROJECT_DIR$/threedCore/test/com/tms/threed/threedCore/shared/SeriesInfoTest.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/notification/AccessoryWithFlashOrientationHandler.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/notification/NotificationCenterBridge.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/nonFlashConfig/ExternalState.java" />
         <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/ThreedImagePanel.java" />
-        <option value="$PROJECT_DIR$/testHarness/dev.sh" />
-        <option value="$repos$/tms/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" />
-        <option value="$PROJECT_DIR$/previewPaneAdapter/dev.sh" />
-        <option value="$repos$/tms/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/util/DefaultPickAccess.java" />
-        <option value="$repos$/tms/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/util/DefaultPickAccess.java" />
-        <option value="$repos$/tms/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/ShowMainConfigurationAction.java" />
-        <option value="$repos$/tms/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp" />
-        <option value="$repos$/tms/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/SetStartOptionsAction.java" />
-        <option value="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesKey.java" />
-        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SThreedModel.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/picks/PicksChangeHandlers.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneImpl.java" />
+        <option value="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/client/PreviewPanelAdaptor.java" />
       </list>
     </option>
   </component>
@@ -181,7 +307,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>NonJREEmulationClassesInClientCode</id>
+            <id>Java EE issues</id>
           </State>
         </selected-state>
       </profile-state>
@@ -201,7 +327,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="PackagesPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -221,9 +347,216 @@
               <option name="myItemId" value="threed" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threedCore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threedCore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threedCore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threedCore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threedCore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="previewPaneAdapter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="previewPane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="previewPane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="previewPane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="previewPane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="previewPane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="previewPane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="previewPane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -232,38 +565,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurator-ToyotaApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="options.lastSelected" value="project.propCompiler" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="project.structure.side.proportion" value="0.21991701" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig" serverName="vag" serverId="197e4d54-0a95-4e33-964f-0d67f7281ea1" autoUpload="true">
+    <servers>
+      <server id="197e4d54-0a95-4e33-964f-0d67f7281ea1">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/servers/examplesServer/upload" local="/temp/TheEarDude" web="http://ssdev.toyota.com:17771/byt4/pub/init.do?zipCode=92673&amp;seriesId=&amp;seriesCategory=14&amp;debug=true" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -274,11 +632,11 @@
       <recent name="com.tms.threed.featureModelJavaBdd" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tms.threed.threedCore.shared" />
+      <recent name="com.tms.threed.previewPanel.shared.viewModel" />
+      <recent name="com.tms.threed.previewPane.client.notification" />
       <recent name="com.tms.threed.jpgGen" />
       <recent name="com.tms.threed.util.gwt.client.logging" />
-      <recent name="com.tms.threed.util.gwt.client.events2" />
-      <recent name="com.tms.threed.previewPane.client" />
-      <recent name="com.tms.threed.featureModelJavaBdd" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/testHarness" />
@@ -325,24 +683,7 @@
       <recent name="com.tms.threed.imageModel.imageModelBuilders.server" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SeriesKeyTest.test">
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <option name="MAIN_CLASS_NAME" value="com.tms.threed.tmsDb.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="tmsDb" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.SeriesInfoTest.test">
     <configuration default="false" name="BddBuilderTest.testSatCountWithAllFmVars" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="featureModelJavaBdd" />
@@ -442,6 +783,28 @@
         <option name="Make" enabled="false" />
       </method>
     </configuration>
+    <configuration default="false" name="SeriesInfoTest.test" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="threedCore" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.tms.threed.threedCore.shared" />
+      <option name="MAIN_CLASS_NAME" value="com.tms.threed.threedCore.shared.SeriesInfoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Xmx512m  -DconfigDir=/temp/tmsConfig -Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -451,6 +814,20 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="WebLogic Instance" factoryName="Remote">
+      <option name="PORT" value="7001" />
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="WEBLOGIC_DOMAIN_LOG_FILE" enabled="true" />
+      <predefined_log_file id="WEBLOGIC_SERVER_LOG_FILE" enabled="true" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -621,15 +998,16 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+    <list size="9">
+      <item index="0" class="java.lang.String" itemvalue="Application.ModelCode" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BddBuilderTest.testSatCountWithAllFmVars" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.BddBuilderTest.testIteratorCountWithAllFmVars" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.BddBuilderTest.testIteratorWithAllFmVars" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.SeriesKeyTest.test" />
-      <item index="5" class="java.lang.String" itemvalue="Application.ModelCode" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.Unnamed" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.TestYaris.test" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.Unnamed" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.TestYaris.test" />
+      <item index="7" class="java.lang.String" itemvalue="WebLogic Instance.http://ssdev.toyota.com:17771" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.SeriesInfoTest.test" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -689,27 +1067,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48929337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20503597" sideWeight="0.44487178" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50256413" sideWeight="0.9992598" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.55641025" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.6615385" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49871793" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43461537" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328777" sideWeight="0.33589745" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.6615385" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30791366" sideWeight="0.43974358" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.6615385" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36978418" sideWeight="0.55641025" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647483" sideWeight="0.55641025" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38846153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="-144" y="140" width="1440" height="874" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4730769" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="-144" y="140" width="1440" height="874" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7410256" sideWeight="0.9992598" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -772,54 +1152,143 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+    <buildFile url="file://$repos$/Configurator-ToyotaApp/dave.xml">
+      <antCommandLine value="" />
+      <runInBackground value="true" />
+      <targetFilters />
+      <treeView value="true" />
+      <verbose value="true" />
+      <viewClosedWhenNoErrors value="false" />
+    </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ConfiguredImageProviderEBro.java">
+    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" />
+        <state line="79" column="37" selection-start="3396" selection-end="3396" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$tmsRepoThreedTools$/struts/1.1/src/share/org/apache/struts/action/RequestProcessor.java">
+    <entry file="file://$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/ViewSnap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="27" selection-start="7578" selection-end="7578" vertical-scroll-proportion="0.0" />
+        <state line="51" column="4" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/TopImagePanel.java">
+    <entry file="file://$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="122" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0" />
+        <state line="152" column="45" selection-start="3912" selection-end="3912" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanel.java">
+    <entry file="file://$PROJECT_DIR$/threedCore/test/com/tms/threed/threedCore/shared/SeriesKeyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="43" selection-start="3475" selection-end="3475" vertical-scroll-proportion="0.0" />
+        <state line="4" column="21" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/raw/ExternalStateSnapshot.java">
+    <entry file="file://$PROJECT_DIR$/threedCore/test/com/tms/threed/threedCore/shared/SeriesInfoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="34" selection-start="8412" selection-end="8412" vertical-scroll-proportion="0.0" />
+        <state line="11" column="101" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/JsonMarshaller.java">
+    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="43" selection-start="0" selection-end="43" vertical-scroll-proportion="0.0" />
+        <state line="92" column="16" selection-start="3199" selection-end="3199" vertical-scroll-proportion="0.7880435">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesKey.java">
+    <entry file="file://$PROJECT_DIR$/previewPaneAdapter/dev.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="37" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0" />
+        <state line="39" column="0" selection-start="851" selection-end="851" vertical-scroll-proportion="0.11451398">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SThreedModel.java">
+    <entry file="file://$repos$/htdocs/source/js/prototype_common_additions/NotificationCenter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="46" selection-start="4586" selection-end="4586" vertical-scroll-proportion="0.025299601" />
+        <state line="41" column="0" selection-start="1487" selection-end="1487" vertical-scroll-proportion="0.9429348">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$repos$/Configurator-ToyotaApp/src/test/com/tms/ebrochure/toyota/web/action/EBrochureActionTest.java">
+    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/notification/AccessoryWithFlashOrientationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="14" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.2540761">
+        <state line="2" column="22" selection-start="79" selection-end="79" vertical-scroll-proportion="0.050599203">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/ThreedImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="27" selection-start="3546" selection-end="3546" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/nonFlashConfig/ExternalState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="37" selection-start="2985" selection-end="2985" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/picks/PicksChangeHandlers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="29" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/notification/NotificationCenterBridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="11" selection-start="4091" selection-end="4291" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1283956168000" expanded="true" signature="3626:3808" placeholder="{...}" />
+            <marker date="1283956168000" expanded="true" signature="3626:3808" placeholder="{...}" />
+            <marker date="1283956168000" expanded="true" signature="3935:4393" placeholder="{...}" />
+            <marker date="1283956168000" expanded="true" signature="3935:4393" placeholder="{...}" />
+            <marker date="1283956168000" expanded="true" signature="4082:4291" placeholder="//..." />
+            <marker date="1283956168000" expanded="true" signature="4172:4291" placeholder="{...}" />
+            <marker date="1283956168000" expanded="true" signature="4577:4715" placeholder="{...}" />
+            <marker date="1283956168000" expanded="true" signature="4577:4715" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="60" selection-start="2557" selection-end="2557" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/client/PreviewPanelAdaptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="27" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1283957022000" expanded="true" signature="1309:1347" placeholder="{...}" />
+            <marker date="1283957022000" expanded="true" signature="1309:1347" placeholder="{...}" />
+            <marker date="1283957022000" expanded="true" signature="1399:1777" placeholder="/*...*/" />
+            <marker date="1283957022000" expanded="true" signature="1403:1777" placeholder="{...}" />
+            <marker date="1283957022000" expanded="true" signature="1403:1777" placeholder="{...}" />
+            <marker date="1283957022000" expanded="true" signature="1404:1777" placeholder="{...}" />
+            <marker date="1283957022000" expanded="true" signature="1703:1777" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$repos$/htdocs/source/js/build_page/PackagePane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="29" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.32336956">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -832,19 +1301,19 @@
             <SplitterProportionsDataImpl>
               <option name="proportions">
                 <list>
-                  <option value="0.2" />
+                  <option value="0.21991701" />
                   <option value="0.5" />
                 </list>
               </option>
             </SplitterProportionsDataImpl>
           </splitter-proportions>
-          <last-edited>Configurator-ToyotaApp-warlib</last-edited>
+          <last-edited>TheEarDude</last-edited>
           <settings>
             <show-content>
               <type id="javaee-facet-resources" />
-              <type id="jpa-descriptors" />
               <type id="library" />
               <type id="artifact" />
+              <type id="jpa-descriptors" />
             </show-content>
           </settings>
         </UIState>

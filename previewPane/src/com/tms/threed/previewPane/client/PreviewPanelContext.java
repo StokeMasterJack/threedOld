@@ -25,6 +25,8 @@ import com.tms.threed.previewPanel.client.thumbsPanel.ThumbClickEvent;
 import com.tms.threed.previewPanel.client.thumbsPanel.ThumbClickHandler;
 import com.tms.threed.previewPanel.client.thumbsPanel.ThumbPanel;
 import com.tms.threed.previewPanel.client.thumbsPanel.ThumbsPanel;
+import com.tms.threed.previewPanel.shared.viewModel.AngleAndViewChangeEvent;
+import com.tms.threed.previewPanel.shared.viewModel.AngleAndViewChangeHandler;
 import com.tms.threed.previewPanel.shared.viewModel.AngleChangeEvent;
 import com.tms.threed.previewPanel.shared.viewModel.AngleChangeHandler;
 import com.tms.threed.previewPanel.shared.viewModel.ViewChangeEvent;
@@ -128,6 +130,31 @@ public class PreviewPanelContext {
         }
     }
 
+    public void setCurrentViewAndAngle(@Nonnull ViewSnap newViewSnap) {
+        ViewSnap oldViewSnap = viewStates.getCurrentViewSnap();
+        if(newViewSnap.equals(oldViewSnap)) return;
+        boolean angleChanged = newViewSnap.getAngle() != oldViewSnap.getAngle();
+        boolean viewChanged = !newViewSnap.getView().equals(oldViewSnap.getView());
+
+
+        if(angleChanged && viewChanged){
+            viewStates.setCurrentViewAndAngle(newViewSnap);
+            fireAngleAndViewChangeEvent(newViewSnap);
+        }else if(angleChanged){
+            viewStates.setCurrentAngle(newViewSnap.getAngle());
+            fireAngleChangeEvent(newViewSnap.getAngle());
+        }
+        else if(viewChanged){
+            viewStates.setCurrentView(newViewSnap.getView());
+            fireViewChangeEvent(newViewSnap.getView());
+        }
+
+    }
+
+    public void setCurrentViewAndAngle(int orientation) {
+        ViewSnap viewSnap = seriesInfo.getViewSnapFromOrientation(orientation);
+        setCurrentViewAndAngle(viewSnap);
+    }
 
     public ViewStates getViewStatesCopy() {
         if (viewStates == null) return null;
@@ -297,6 +324,10 @@ public class PreviewPanelContext {
         bus.fireEvent(new AngleChangeEvent(newAngle));
     }
 
+    private void fireAngleAndViewChangeEvent(ViewSnap newViewSnap) {
+        bus.fireEvent(new AngleAndViewChangeEvent(newViewSnap));
+    }
+
     public HandlerRegistration addViewChangeHandler(ViewChangeHandler handler) {
         return bus.addHandler(ViewChangeEvent.TYPE, handler);
     }
@@ -304,5 +335,10 @@ public class PreviewPanelContext {
     public HandlerRegistration addAngleChangeHandler(AngleChangeHandler handler) {
         return bus.addHandler(AngleChangeEvent.TYPE, handler);
     }
+
+    public HandlerRegistration addAngleAndViewChangeHandler(AngleAndViewChangeHandler handler) {
+        return bus.addHandler(AngleAndViewChangeEvent.TYPE, handler);
+    }
+
 
 }

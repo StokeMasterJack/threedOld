@@ -40,7 +40,6 @@ public class PicksInfoPanel extends LayoutPanel {
 
         picksInfo.addPicksChangeHandler(new PicksChangeHandler() {
             @Override public void onPicksChange(PicksChangeEvent e) {
-                System.out.println("picksInfoPanel.onChange(PicksChangeEvent)");
                 fld.setHTML(picksInfo.isValid() + "");
             }
         });

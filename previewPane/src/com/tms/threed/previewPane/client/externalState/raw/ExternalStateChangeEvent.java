@@ -30,15 +30,15 @@ public class ExternalStateChangeEvent {
         return !Objects.eq(oldState, newState);
     }
 
-    public boolean seriesNameChanged() {
-        if (oldState == null) return true;
-        return ne(oldState.getSeriesName(), newState.getSeriesName());
-    }
-
-    public boolean modelYearChanged() {
-        if (oldState == null) return true;
-        return ne(oldState.getModelYear(), newState.getModelYear());
-    }
+//    public boolean seriesNameChanged() {
+//        if (oldState == null) return true;
+//        return ne(oldState.getSeriesName(), newState.getSeriesName());
+//    }
+//
+//    public boolean modelYearChanged() {
+//        if (oldState == null) return true;
+//        return ne(oldState.getModelYear(), newState.getModelYear());
+//    }
 
     boolean modelCodeChanged() {
         if (oldState == null) return true;
@@ -98,10 +98,10 @@ public class ExternalStateChangeEvent {
         return chatActionUrlChanged() || chatVehicleIconUrlChanged();
     }
 
-    public boolean seriesInfoChanged() {
-        if (oldState == null) return true;
-        return seriesNameChanged() || modelYearChanged();
-    }
+//    public boolean seriesInfoChanged() {
+//        if (oldState == null) return true;
+//        return seriesNameChanged() || modelYearChanged();
+//    }
 
     public boolean rawPicksChanged() {
         if (oldState == null) return true;

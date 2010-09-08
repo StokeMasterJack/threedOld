@@ -3,8 +3,6 @@ package com.tms.threed.previewPane.client.nonFlashConfig;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.event.shared.UmbrellaException;
-import com.tms.threed.featureModel.shared.picks.IllegalPicksStateException;
 import com.tms.threed.featureModel.shared.picks.PicksChangeHandler;
 import com.tms.threed.previewPane.client.externalState.picks.PicksChangeHandlers;
 import com.tms.threed.previewPane.client.externalState.raw.ExternalStateChangeEvent;
@@ -14,13 +12,9 @@ import com.tms.threed.previewPanel.client.ChatInfo;
 import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedModel.client.JsonUnmarshaller;
 import com.tms.threed.threedModel.client.RawPicksSnapshot;
-import com.tms.threed.threedModel.client.VarPicksSnapshot;
 import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.gwt.client.Console;
 import com.tms.threed.util.gwt.client.events2.ValueChangeHandlers;
-
-import java.util.Iterator;
-import java.util.Set;
 
 public class ExternalState {
 
@@ -51,47 +45,33 @@ public class ExternalState {
         if (!ev.hasChanged()) return;
 
         if (ev.chatInfoChanged()) {
-            Console.log("\t ChatInfoChange: " + newState.getChatInfo());
-            chatChangeHandlers.fire(newState.getChatInfo());
+            Console.log("ChatInfoChange: " + newState.getChatInfo());
+            try {
+                chatChangeHandlers.fire(newState.getChatInfo());
+            } catch (Exception e) {
+                Console.log("\t Unexpected exception processing ChatInfoChange [" + e + "]");
+                e.printStackTrace();
+            }
         }
 
         if (ev.msrpChanged()) {
-            Console.log("\t MsrpChange: " + newState.getMsrp());
-            msrpChangeHandlers.fire(newState.getMsrp());
+            Console.log("MsrpChange: " + newState.getMsrp());
+            try {
+                msrpChangeHandlers.fire(newState.getMsrp());
+            } catch (Exception e) {
+                Console.log("\t Unexpected exception processing MsrpChange [" + e + "]");
+                e.printStackTrace();
+            }
         }
 
         if (ev.rawPicksChanged()) {
+            Console.log("PicksChange: " + newState.getPicksRaw());
             try {
-                Console.log("\t PicksChange: " + newState.getPicksRaw());
-                picksChangeHandlers.processPicksChange(newState.getPicksRaw());
-                Console.log("\t\t PicksAreValid");
-            }
-            catch (UmbrellaException umbrellaException) {
-                Set<Throwable> causes = umbrellaException.getCauses();
-                Iterator<Throwable> it = causes.iterator();
-                while (it.hasNext()) {
-                    Throwable cause = it.next();
-                    if (cause instanceof IllegalPicksStateException) {
-                        Console.log("\t\t InvalidPicksFromLeftSide: " + cause.getMessage());
-                    } else if (cause instanceof VarPicksSnapshot.UnknownVarCodeFromLeftSideException) {
-                        Console.log("\t\t InvalidVarCodeFromLeftSide: " + cause.getMessage());
-                    } else {
-                        Console.log("\t\t Unexpected exception processing picksChange [" + cause + "]");
-                        cause.printStackTrace();
-                    }
-                }
-            }
-            catch (IllegalPicksStateException e) {
-                Console.log("\t\t InvalidPicksFromLeftSide: " + e.getMessage());
-            }
-            catch (VarPicksSnapshot.UnknownVarCodeFromLeftSideException e) {
-                Console.log("\t\t InvalidVarCodeFromLeftSide: " + e.getMessage());
-            }
-            catch (Exception e) {
-                Console.log("\t\t Unexpected exception processing picksChange [" + e + "]");
+                picksChangeHandlers.fire(newState.getPicksRaw());
+            } catch (Exception e) {
+                Console.log("\t Unexpected exception processing PicksChange [" + e + "]");
                 e.printStackTrace();
             }
-
         }
 
     }
@@ -112,9 +92,9 @@ public class ExternalState {
         return picksChangeHandlers.addPicksChangeHandler(handler);
     }
 
-    public SeriesInfo getSeries() {
-        return currentState == null ? null : currentState.getSeriesInfo();
-    }
+//    public SeriesInfo getSeries() {
+//        return currentState == null ? null : currentState.getSeriesInfo();
+//    }
 
     public String getMsrp() {
         return currentState == null ? null : currentState.getMsrp();

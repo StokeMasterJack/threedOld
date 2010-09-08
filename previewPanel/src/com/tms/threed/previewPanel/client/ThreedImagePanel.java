@@ -93,7 +93,11 @@ public class ThreedImagePanel extends Composite {
 
         if (urls == null) return;
 
-        Console.log("ThreedImagePanel[" + panelIndex + "].setImageUrls[" + urls.get(0) + "]");
+        Console.log("\tLoading " + urls.size() + " image(s) into panels[" + panelIndex + "]");
+
+        for (int zIndex = 0; zIndex < urls.size(); zIndex++) {
+            Console.log("\tz[" + zIndex + "]: " + urls.get(zIndex));
+        }
 
         final List<Image> oldImages = new ArrayList<Image>(images);
 
@@ -108,7 +112,6 @@ public class ThreedImagePanel extends Composite {
             image.addLoadHandler(new LoadHandler() {
                 @Override public void onLoad(LoadEvent event) {
                     if (isFirst) {
-                        Console.log("\t ThreedImagePanel[" + panelIndex + "] base image loaded[" + url + "]");
                         for (int j = 0; j < oldImages.size(); j++) {
                             Image oldImage = oldImages.get(j);
                             p.remove(oldImage);
@@ -127,7 +130,6 @@ public class ThreedImagePanel extends Composite {
                         showMessage("404", image.getUrl(), "#dddddd");
                         baseJpgErrorHandlers.fireEvent(event);
                     }
-                    Console.log("Unable to load image[" + image.getUrl() + "]");
                 }
             });
 

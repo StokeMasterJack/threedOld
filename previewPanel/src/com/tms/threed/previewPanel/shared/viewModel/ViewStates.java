@@ -181,5 +181,8 @@ public class ViewStates {
         return getCurrentView().isInterior();
     }
 
-
+    public void setCurrentViewAndAngle(ViewSnap viewSnap) {
+        setCurrentView(viewSnap.getView());
+        setCurrentAngle(viewSnap.getAngle());
+    }
 }

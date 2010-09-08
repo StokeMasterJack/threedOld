@@ -31,17 +31,17 @@ public class PreviewPaneTest implements EntryPoint {
 
         if (seriesKey.isa(SeriesKey.CAMRY)) {
             //[Fabric, Ash, 040, 13, 2513]
-            newState = new ExternalStateSnapshot("camry", "2011", "2513", "040", "13", null, null, "$33,333", null, null, null, null);
+            newState = new ExternalStateSnapshot("2513", "040", "13", null, null, "$33,333", null, null, null, null);
 //            newState = new ExternalStateSnapshot("camry", "2011", "2513", "040", "13", "CF", "WB", "$33,333", null, null, null, null);
             addAccessoryPickButtons();
         } else if (seriesKey.isa(SeriesKey.VENZA)) {
-            newState = new ExternalStateSnapshot("venza", "2010", "2810", "202", "FA01", null, null, "22,222", "67938111", "http://www.google.com", null, null);
+            newState = new ExternalStateSnapshot("2810", "202", "FA01", null, null, "22,222", "67938111", "http://www.google.com", null, null);
         } else if (seriesKey.isa(SeriesKey.AVALON)) {
-            newState = new ExternalStateSnapshot("avalon", "2011", "3544", "1F7", "FE17", "CF", "EJ", "$55,555", null, null, null, null);
+            newState = new ExternalStateSnapshot( "3544", "1F7", "FE17", "CF", "EJ", "$55,555", null, null, null, null);
         } else {
             throw new IllegalStateException("Unknown Series Key: " + seriesKey);
         }
-        previewPane.updateImage(newState);
+        previewPane.updateImage2(newState);
     }
 
 
@@ -55,7 +55,7 @@ public class PreviewPaneTest implements EntryPoint {
             @Override public void onClick(ClickEvent event) {
                 map.put(code, !isPicked(code));
                 b.setText(getCaption(code, name));
-                previewPane.updateImage(getPicks());
+                previewPane.updateImage2(getPicks());
             }
         });
         RootPanel.get().add(b);
@@ -66,7 +66,7 @@ public class PreviewPaneTest implements EntryPoint {
         for (String code : map.keySet()) {
             if (isPicked(code)) accessoryCodes += "," + code;
         }
-        return new ExternalStateSnapshot("camry", "2011", "2513", "040", "13", "CF", accessoryCodes, "$33,333", null, null, null, null);
+        return new ExternalStateSnapshot( "2513", "040", "13", "CF", accessoryCodes, "$33,333", null, null, null, null);
 //        return new RawPicksSnapshot("2513", "040", "13", "CF", accessoryCodes);
     }
 

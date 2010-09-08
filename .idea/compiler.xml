@@ -18,6 +18,7 @@
       <entry name="?*.tld" />
       <entry name="?*.ftl" />
       <entry name="?*.pdf" />
+      <entry name="?*.dtd" />
     </wildcardResourcePatterns>
     <annotationProcessing enabled="false" useClasspath="true" />
   </component>

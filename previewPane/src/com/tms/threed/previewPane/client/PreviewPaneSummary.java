@@ -6,6 +6,7 @@ import com.tms.threed.previewPane.client.externalState.raw.ExternalStateSnapshot
 import com.tms.threed.previewPane.client.nonFlashConfig.ExternalState;
 import com.tms.threed.previewPane.client.summaryPane.SummaryPaneContext;
 import com.tms.threed.threedCore.shared.SeriesKey;
+import com.tms.threed.util.gwt.client.Console;
 
 public class PreviewPaneSummary extends PreviewPane {
 
@@ -21,7 +22,16 @@ public class PreviewPaneSummary extends PreviewPane {
 
         externalState.addPicksChangeHandler(new PicksChangeHandler() {
             @Override public void onPicksChange(PicksChangeEvent e) {
-                previewPaneContext.setPicks(e);
+                try {
+                    previewPaneContext.setPicks(e);
+                } catch (Exception e1) {
+                    Console.log("\t\tUnexpected exception processing PicksChangeEvent");
+                    Console.log("\t\t\tNewPicks[" + e.getNewPicks() + "]");
+                    Console.log("\t\t\t " + e1);
+                    e1.printStackTrace();
+                }
+
+
             }
         });
 
@@ -45,10 +55,9 @@ public class PreviewPaneSummary extends PreviewPane {
             String seriesName,
             String chatVehicleIconMediaId,
             String chatActionUrl,
-            String flashDescription,
-            String modelYear) {
+            String flashDescription) {
 
-        this.externalState.updateExternalState(new ExternalStateSnapshot(seriesName, modelYear, modelCode, exteriorColor, interiorColor, optionCodes, accessoryCodes, msrp, chatVehicleIconMediaId, chatActionUrl, flash_key, flashDescription));
+        this.externalState.updateExternalState(new ExternalStateSnapshot(modelCode, exteriorColor, interiorColor, optionCodes, accessoryCodes, msrp, chatVehicleIconMediaId, chatActionUrl, flash_key, flashDescription));
 
     }
 

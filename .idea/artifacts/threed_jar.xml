@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="threed.jar">
-    <output-path>/temp</output-path>
+    <output-path>$jarRepo$/threed_framework/SNAPSHOT</output-path>
     <root id="archive" name="threed.jar">
       <element id="module-output" name="featureModel" />
       <element id="module-output" name="imageModel" />

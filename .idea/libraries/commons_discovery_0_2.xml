@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="commons-discovery-0.2">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/commons-discovery/0.2/commons-discovery-0.2.jar!/" />
+      <root url="jar://$jarRepo$/commons-discovery/0.2/commons-discovery-0.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

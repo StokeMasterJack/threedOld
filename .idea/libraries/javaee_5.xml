@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="javaee-5">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/javaee/5/javaee.jar!/" />
+      <root url="jar://$jarRepo$/javaee/5/javaee.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="gwt-servlet-2.1">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/gwt/2.1.0.M2/gwt-servlet.jar!/" />
+      <root url="jar://$jarRepo$/gwt/2.1.0.M2/gwt-servlet.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="file://$tmsRepoThreedTools$/gwt/2.1.0.M2/javadoc" />
+      <root url="file://$jarRepo$/gwt/2.1.0.M2/javadoc" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$tmsRepoThreedTools$/gwt/2.1.0.M2/gwt-servlet.jar!/" />
-      <root url="jar://$tmsRepoThreedTools$/gwt/2.1.0.M2/gwt-servlet.jar!/" />
-      <root url="jar://$tmsRepoThreedTools$/gwt/2.1.0.M2/gwt-servlet.jar!/" />
+      <root url="jar://$jarRepo$/gwt/2.1.0.M2/gwt-servlet.jar!/" />
+      <root url="jar://$jarRepo$/gwt/2.1.0.M2/gwt-servlet.jar!/" />
+      <root url="jar://$jarRepo$/gwt/2.1.0.M2/gwt-servlet.jar!/" />
       <root url="file:///../../../../p-java-checkouts/google-web-toolkit-read-only/user/src" />
     </SOURCES>
   </library>

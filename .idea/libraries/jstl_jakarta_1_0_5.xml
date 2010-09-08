@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="jstl-jakarta-1.0.5">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/jstl-jakarta/1.0.5/jstl-jakarta.jar!/" />
-      <root url="jar://$tmsRepoThreedTools$/jstl-jakarta/1.0.5/jstl-api.jar!/" />
+      <root url="jar://$jarRepo$/jstl-jakarta/1.0.5/jstl-jakarta.jar!/" />
+      <root url="jar://$jarRepo$/jstl-jakarta/1.0.5/jstl-api.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

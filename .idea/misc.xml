@@ -84,7 +84,7 @@
     </default-configurations>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6 Lite" project-jdk-type="JavaSDK">
-    <output url="file://$tmsOut$" />
+    <output url="file:///temp/_out/threed" />
   </component>
   <component name="SvnBranchConfigurationManager">
     <option name="myConfigurationMap">

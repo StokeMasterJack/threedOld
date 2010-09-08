@@ -21,8 +21,8 @@ import javax.annotation.Nonnull;
  */
 public final class ExternalStateSnapshot {
 
-    private final String seriesName;
-    private final String modelYear;
+//    private final String seriesName;
+//    private final String modelYear;
 
     private final String modelCode; //4 digit
     private final String exteriorColor;
@@ -38,9 +38,9 @@ public final class ExternalStateSnapshot {
     private final String flashKey;  //??
     private final String flashDescription; //??
 
-    public ExternalStateSnapshot(String seriesName, String modelYear, String modelCode, String exteriorColor, String interiorColor, String optionCodes, String accessoryCodes, String msrp, String chatVehicleIconMediaId, String chatActionUrl, String flashKey, String flashDescription) {
-        this.seriesName = nullZeroNormalize(seriesName);
-        this.modelYear = modelYear;
+    public ExternalStateSnapshot(String modelCode, String exteriorColor, String interiorColor, String optionCodes, String accessoryCodes, String msrp, String chatVehicleIconMediaId, String chatActionUrl, String flashKey, String flashDescription) {
+//        this.seriesName = nullZeroNormalize(seriesName);
+//        this.modelYear = modelYear;
         this.modelCode = modelCode;
         this.exteriorColor = exteriorColor;
         this.interiorColor = interiorColor;
@@ -90,9 +90,7 @@ public final class ExternalStateSnapshot {
 
     public boolean same(@Nonnull ExternalStateSnapshot that) {
         assert that != null;
-        return seriesNameChanged(that) &&
-                modelYearChanged(that) &&
-                modelCodeChanged(that) &&
+        return modelCodeChanged(that) &&
                 exteriorColorChanged(that) &&
                 interiorColorChanged(that) &&
                 optionCodesChanged(that) &&
@@ -113,9 +111,7 @@ public final class ExternalStateSnapshot {
     @Override
     public int hashCode() {
         Console.log("ExternalStateSnapshot.hashCode(..)");
-        int result = seriesName != null ? seriesName.hashCode() : 0;
-        result = 31 * result + (modelYear != null ? modelYear.hashCode() : 0);
-        result = 31 * result + (modelCode != null ? modelCode.hashCode() : 0);
+        int result =  (modelCode != null ? modelCode.hashCode() : 0);
         result = 31 * result + (exteriorColor != null ? exteriorColor.hashCode() : 0);
         result = 31 * result + (interiorColor != null ? interiorColor.hashCode() : 0);
         result = 31 * result + (optionCodes != null ? optionCodes.hashCode() : 0);
@@ -129,13 +125,13 @@ public final class ExternalStateSnapshot {
         return result;
     }
 
-    public boolean seriesNameChanged(ExternalStateSnapshot that) {
-        return Objects.ne(seriesName, that.seriesName);
-    }
-
-    public boolean modelYearChanged(ExternalStateSnapshot that) {
-        return Objects.ne(modelYear, that.modelYear);
-    }
+//    public boolean seriesNameChanged(ExternalStateSnapshot that) {
+//        return Objects.ne(seriesName, that.seriesName);
+//    }
+//
+//    public boolean modelYearChanged(ExternalStateSnapshot that) {
+//        return Objects.ne(modelYear, that.modelYear);
+//    }
 
 
     public boolean modelCodeChanged(ExternalStateSnapshot that) {
@@ -179,13 +175,13 @@ public final class ExternalStateSnapshot {
         return Objects.ne(flashDescription, that.flashDescription);
     }
 
-    public String getSeriesName() {
-        return seriesName;
-    }
-
-    public String getModelYear() {
-        return modelYear;
-    }
+//    public String getSeriesName() {
+//        return seriesName;
+//    }
+//
+//    public String getModelYear() {
+//        return modelYear;
+//    }
 
     public String getModelCode() {
         return modelCode;
@@ -234,11 +230,11 @@ public final class ExternalStateSnapshot {
         else return new ChatInfo(new Path(mediaIdUrl + chatVehicleIconMediaId), new Path(chatActionUrl));
     }
 
-    public SeriesInfo getSeriesInfo() {
-        if (Strings.isEmpty(seriesName) || Strings.isEmpty(modelYear)) return null;
-        SeriesKey seriesKey = new SeriesKey(modelYear, seriesName);
-        return SeriesInfoBuilder.createSeriesInfo(seriesKey);
-    }
+//    public SeriesInfo getSeriesInfo() {
+//        if (Strings.isEmpty(seriesName) || Strings.isEmpty(modelYear)) return null;
+//        SeriesKey seriesKey = new SeriesKey(modelYear, seriesName);
+//        return SeriesInfoBuilder.createSeriesInfo(seriesKey);
+//    }
 
     public RawPicksSnapshot getPicksRaw() {
         if (Strings.isEmpty(modelCode)) throw new IllegalStateException("modelCode should be non null");
@@ -246,7 +242,7 @@ public final class ExternalStateSnapshot {
     }
 
     public void logToConsole(String prefix) {
-        Console.log(prefix + "SeriesInfo[" + this.getSeriesInfo() + "]");
+//        Console.log(prefix + "SeriesInfo[" + this.getSeriesInfo() + "]");
         Console.log(prefix + "PicksRaw[" + this.getPicksRaw() + "]");
         Console.log(prefix + "Msrp[" + this.getMsrp() + "]");
         Console.log(prefix + "ChatInfo[" + this.getChatInfo() + "]");

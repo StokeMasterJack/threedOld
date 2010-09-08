@@ -5,6 +5,9 @@ public class ScriptConsoleNull extends ScriptConsole {
     @Override public void log(String msg) {
     }
 
+    @Override public void error(String msg) {
+    }
+
     @Override public void time(String msg) {
     }
 

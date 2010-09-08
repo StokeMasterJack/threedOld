@@ -69,6 +69,10 @@ public class Console {
         getInstance().scriptConsole.log(msg);
     }
 
+    public static void error(String msg) {
+        getInstance().scriptConsole.error(msg);
+    }
+
     public static void time(String msg) {
         getInstance().scriptConsole.time(msg);
     }
@@ -84,5 +88,6 @@ public class Console {
     public static void profileEnd(String msg) {
         getInstance().scriptConsole.profileEnd(msg);
     }
+
 
 }

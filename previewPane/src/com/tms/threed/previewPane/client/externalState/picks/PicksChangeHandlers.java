@@ -2,6 +2,7 @@ package com.tms.threed.previewPane.client.externalState.picks;
 
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.tms.threed.featureModel.shared.FeatureModel;
+import com.tms.threed.featureModel.shared.picks.IllegalPicksStateException;
 import com.tms.threed.featureModel.shared.picks.Picks;
 import com.tms.threed.featureModel.shared.picks.PicksChangeEvent;
 import com.tms.threed.featureModel.shared.picks.PicksChangeHandler;
@@ -24,14 +25,20 @@ public class PicksChangeHandlers extends MvcModel {
         this.featureModel = featureModel;
     }
 
-    public void processPicksChange(RawPicksSnapshot newRawPicks) {
+    public void fire(RawPicksSnapshot newRawPicks) {
         assert newRawPicks != null;
         if (!rawPicksChanged(newRawPicks)) return;
 
-        Console.log("PicksChanged: " + newRawPicks.toString());
 
         this.currentRawPicks = newRawPicks;
-        VarPicksSnapshot newVarPicks = VarPicksSnapshot.createVarPicksSnapshot(newRawPicks, featureModel);
+        VarPicksSnapshot newVarPicks = null;
+        try {
+            newVarPicks = VarPicksSnapshot.createVarPicksSnapshot(newRawPicks, featureModel);
+        } catch (VarPicksSnapshot.UnknownVarCodeFromLeftSideException e) {
+            Console.error("\t" + e);
+            e.printStackTrace();
+            return;
+        }
         if (!varPicksChanged(newVarPicks)) return;
 
         VarPicksSnapshot oldVarPicks = currentVarPicks;
@@ -40,12 +47,15 @@ public class PicksChangeHandlers extends MvcModel {
         PicksSnapshot oldFixedPicks = currentFixedPicks;
         Picks newPicks = newVarPicks.createPicks();
 
-        newPicks.fixup();
-
+        try {
+            newPicks.fixup();
+            Console.log("\tPicks are valid");
+        } catch (IllegalPicksStateException e) {
+            Console.error("\t\t " + e);
+            return;
+        }
         currentFixedPicks = newPicks.createSnapshot();
-
         firePicksChangeEvent(newVarPicks, oldVarPicks, oldFixedPicks, currentFixedPicks);
-
     }
 
     private boolean varPicksChanged(VarPicksSnapshot newVarPicks) {
@@ -65,7 +75,13 @@ public class PicksChangeHandlers extends MvcModel {
         RawPicksChangeEvent rawPicksEvent = new RawPicksChangeEvent(oldVarPicks, newVarPicks, oldFixedPicks, newFixedPicks);
 
         PicksChangeEvent picksChangeEvent = new PicksChangeEvent(oldFixedPicks, newFixedPicks, rawPicksEvent.getBlinkAccessory());
-        fireEvent(picksChangeEvent);
+        try {
+            fireEvent(picksChangeEvent);
+        } catch (Exception e) {
+            Console.log("Unexpected exception dispatching PicksChangeEvent[" + e + "]");
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
     }
 
     public HandlerRegistration addPicksChangeHandler(PicksChangeHandler h) {

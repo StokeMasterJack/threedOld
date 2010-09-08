@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Configurator-ToyotaApp-warlib">
-    <output-path>/temp</output-path>
-    <root id="archive" name="Configurator-ToyotaApp-warlib.jar">
-      <element id="module-output" name="Configurator-ToyotaApp" />
-    </root>
-  </artifact>
-</component>

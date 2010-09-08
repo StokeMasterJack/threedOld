@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="oracleJdbc-8.1.7">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/oracleJdbc/8.1.7/oracleJdbc-8.1.7.jar!/" />
+      <root url="jar://$jarRepo$/oracleJdbc/8.1.7/oracleJdbc-8.1.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

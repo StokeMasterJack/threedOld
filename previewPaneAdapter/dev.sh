@@ -1,6 +1,6 @@
 repos=/repos
 repo=$repos/threed
-lib=/Users/dford/smart-soft/clients/tms/jarRepo
+lib=/svnCheckouts/lib
 
 src1=$repo/previewPanel/src
 src2=$repo/threedFramework/src
@@ -13,7 +13,7 @@ src8=$repo/testHarness/src
 src9=$repo/previewPaneAdapter/src
 
 gwtVersion=2.0.3
-gwtVersion=2.1.0.M2
+gwtVersion=2.1.0.M3
 gwtHome=$lib/gwt/$gwtVersion
 
 lib1=$gwtHome/gwt-dev.jar

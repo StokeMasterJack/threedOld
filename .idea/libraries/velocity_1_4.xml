@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="velocity-1.4">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/velocity/1.4/velocity-1.4.jar!/" />
+      <root url="jar://$jarRepo$/velocity/1.4/velocity-1.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

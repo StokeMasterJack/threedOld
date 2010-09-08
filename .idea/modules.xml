@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/featureModel/featureModel.iml" filepath="$PROJECT_DIR$/featureModel/featureModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/featureModelJavaBdd/featureModelJavaBdd.iml" filepath="$PROJECT_DIR$/featureModelJavaBdd/featureModelJavaBdd.iml" />
       <module fileurl="file://$PROJECT_DIR$/featurePicker/featurePicker.iml" filepath="$PROJECT_DIR$/featurePicker/featurePicker.iml" />
+      <module fileurl="file://$repos$/htdocs/htdocs.iml" filepath="$repos$/htdocs/htdocs.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageModel/imageModel.iml" filepath="$PROJECT_DIR$/imageModel/imageModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageServer/imageServer.iml" filepath="$PROJECT_DIR$/imageServer/imageServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaBdd/javaBdd.iml" filepath="$PROJECT_DIR$/javaBdd/javaBdd.iml" />

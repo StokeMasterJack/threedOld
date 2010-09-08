@@ -1,11 +1,7 @@
 package com.tms.threed.util.gwt.client.logging;
 
 public class ScriptConsoleIE extends ScriptConsole {
-
-    public native void log(String msg) /*-{
-        console.log(msg);
-    }-*/;
-
+   
     @Override public void time(String msg) {
     }
 

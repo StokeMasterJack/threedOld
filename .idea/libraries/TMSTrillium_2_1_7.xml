@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="TMSTrillium-2.1.7">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/TMSTrillium/2.1.7/TMSTrillium-2.1.7.jar!/" />
+      <root url="jar://$jarRepo$/TMSTrillium/2.1.7/TMSTrillium-2.1.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

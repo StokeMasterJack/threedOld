@@ -137,6 +137,24 @@ public class SeriesInfo {
 
     public ViewSnap getInitialViewState() {
         ViewKey initialView = getInitialView();
-        return new ViewSnap(initialView,initialView.getInitialAngle());
+        return new ViewSnap(initialView, initialView.getInitialAngle());
+    }
+
+    public ViewSnap getViewSnapFromOrientation(int orientation) {
+        ViewKey viewKey;
+        int angle;
+        if (orientation >= 1 && orientation <= 12) {
+            viewKey = viewsKeys[0];
+            angle = orientation;
+        } else if (orientation >= 13 && orientation <= 15) {
+            viewKey = viewsKeys[1];
+            angle = orientation - 12;
+        } else if (orientation == 16) {
+            viewKey = viewsKeys[2];
+            angle = 1;
+        } else {
+            throw new IllegalStateException();
+        }
+        return new ViewSnap(viewKey, angle);
     }
 }

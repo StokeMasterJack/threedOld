@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="commons-digester-1.5">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/commons-digester/1.5/commons-digester-1.5.jar!/" />
+      <root url="jar://$jarRepo$/commons-digester/1.5/commons-digester-1.5.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" build-on-make="true" name="testHarness:Web exploded">
+  <artifact type="exploded-war" name="testHarness:Web exploded">
     <output-path>/temp/gwt-jetty/exploded-wars/testHarness</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="testHarness/web/Web" />

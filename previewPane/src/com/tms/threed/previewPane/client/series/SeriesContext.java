@@ -16,6 +16,8 @@ import com.tms.threed.previewPane.client.previewPanelModel.ImageUrlProvider;
 import com.tms.threed.previewPanel.client.ChatInfo;
 import com.tms.threed.previewPanel.client.ThreedImagePanel;
 import com.tms.threed.previewPanel.client.thumbsPanel.ThumbPanel;
+import com.tms.threed.previewPanel.shared.viewModel.AngleAndViewChangeEvent;
+import com.tms.threed.previewPanel.shared.viewModel.AngleAndViewChangeHandler;
 import com.tms.threed.previewPanel.shared.viewModel.AngleChangeEvent;
 import com.tms.threed.previewPanel.shared.viewModel.AngleChangeHandler;
 import com.tms.threed.previewPanel.shared.viewModel.ViewChangeEvent;
@@ -69,6 +71,12 @@ public class SeriesContext {
 
         previewPanel.addViewChangeHandler(new ViewChangeHandler() {
             @Override public void onChange(ViewChangeEvent e) {
+                refreshImagePanels();
+            }
+        });
+
+        previewPanel.addAngleAndViewChangeHandler(new AngleAndViewChangeHandler() {
+            @Override public void onChange(AngleAndViewChangeEvent e) {
                 refreshImagePanels();
             }
         });
@@ -256,4 +264,7 @@ public class SeriesContext {
     }
 
 
+    public void setViewAndAngle(int orientation) {
+        previewPanel.setCurrentViewAndAngle(orientation);
+    }
 }

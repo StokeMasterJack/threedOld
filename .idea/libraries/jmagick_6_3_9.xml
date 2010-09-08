@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="jmagick-6.3.9">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/jmagick/6.3.9/jmagick.jar!/" />
+      <root url="jar://$jarRepo$/jmagick/6.3.9/jmagick.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

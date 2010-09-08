@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" build-on-make="true" name="previewPane:Web exploded">
+  <artifact type="exploded-war" name="previewPane:Web exploded">
     <output-path>/temp/gwt-jetty/exploded-wars/previewPaneTest</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="previewPane/web/Web" />

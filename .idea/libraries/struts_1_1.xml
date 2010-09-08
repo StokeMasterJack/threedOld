@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="struts-1.1">
     <CLASSES>
-      <root url="jar://$tmsRepoThreedTools$/struts/1.1/struts-1.1.jar!/" />
+      <root url="jar://$jarRepo$/struts/1.1/struts-1.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file://$tmsRepoThreedTools$/struts/1.1/src/share" />
+      <root url="file://$jarRepo$/struts/1.1/src/share" />
     </SOURCES>
   </library>
 </component>
