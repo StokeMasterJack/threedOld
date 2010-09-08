@@ -1,6 +1,8 @@
 package com.tms.threed.previewPaneAdapter.client;
 
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.dom.client.Document;
+import com.google.gwt.dom.client.Element;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.tms.threed.previewPane.client.PreviewPane;
 import com.tms.threed.previewPane.client.PreviewPaneImpl;
@@ -13,13 +15,18 @@ import com.tms.threed.util.gwt.client.Console;
 public class PreviewPanelAdaptor implements EntryPoint {
 
     private static PreviewPane previewPane = null;
+    private static boolean summary;
 
     public PreviewPanelAdaptor() {
         Console.log("PreviewPanelAdaptor Constructor");
     }
 
     private static boolean isSummaryPage() {
-        return false;
+        Element summaryElement = Document.get().getElementById("flashFrame");
+        Element mainElement = Document.get().getElementById("flash_frame");
+        if (summaryElement != null && mainElement == null) return true;
+        else if (summaryElement == null && mainElement != null) return false;
+        else throw new IllegalStateException();
     }
 
     private static String getDivId() {
@@ -38,6 +45,8 @@ public class PreviewPanelAdaptor implements EntryPoint {
         RootPanel.get(getDivId()).add(previewPane);
         setRhsLoadedFlag();
         registerHooks();
+
+        Console.log("PreviewPanelAdaptor onModuleLoad - complete");
     }
 
     private static native void setRhsLoadedFlag()/*-{

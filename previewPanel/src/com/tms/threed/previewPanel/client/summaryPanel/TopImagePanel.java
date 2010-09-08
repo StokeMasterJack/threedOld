@@ -20,6 +20,7 @@ public class TopImagePanel extends AbsolutePanel {
 
         ClearGif dragDiv = new ClearGif(PREFERRED_WIDTH_PX,PREFERRED_HEIGHT_PX);
         dragToSpin.attachToTarget(dragDiv);
+        dragToSpin.setEnabled(true);
 
         footerPanel.setPixelSize(PREFERRED_WIDTH_PX, footerPanel.getPreferredHeightPx());
         int footerPanelTop = PREFERRED_HEIGHT_PX - footerPanel.getPreferredHeightPx();

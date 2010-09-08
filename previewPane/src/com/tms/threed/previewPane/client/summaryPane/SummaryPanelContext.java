@@ -38,7 +38,6 @@ public class SummaryPanelContext {
     private SeriesInfo seriesInfo;
     private ViewStates viewStates;
 
-
     public SummaryPanel getSummaryPanel() {
         if (summaryPanel == null) {
             summaryPanel = new SummaryPanel(getTopImagePanel(), getBottomImagePanel());
@@ -63,7 +62,6 @@ public class SummaryPanelContext {
     public DragToSpin<ClearGif> getDragToSpin() {
         if (dragToSpin == null) {
             dragToSpin = new DragToSpin<ClearGif>();
-            dragToSpin.setEnabled(true);
             dragToSpin.setExteriorButtonHandler(angleButtonHandler);
         }
         return dragToSpin;

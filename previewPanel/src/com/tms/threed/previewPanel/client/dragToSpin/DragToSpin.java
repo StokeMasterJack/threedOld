@@ -38,6 +38,7 @@ public class DragToSpin<T extends UIObject & HasAllMouseHandlers> {
     }
 
     public void setEnabled(boolean enabled) {
+        if(target==null) throw new IllegalStateException("must call attachToTarget before calling setEnabled");
         this.enabled = enabled;
         target.setVisibility(enabled);
     }

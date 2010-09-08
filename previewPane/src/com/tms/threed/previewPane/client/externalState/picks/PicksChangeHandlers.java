@@ -36,7 +36,6 @@ public class PicksChangeHandlers extends MvcModel {
             newVarPicks = VarPicksSnapshot.createVarPicksSnapshot(newRawPicks, featureModel);
         } catch (VarPicksSnapshot.UnknownVarCodeFromLeftSideException e) {
             Console.error("\t" + e);
-            e.printStackTrace();
             return;
         }
         if (!varPicksChanged(newVarPicks)) return;
@@ -51,9 +50,10 @@ public class PicksChangeHandlers extends MvcModel {
             newPicks.fixup();
             Console.log("\tPicks are valid");
         } catch (IllegalPicksStateException e) {
-            Console.error("\t\t " + e);
+            Console.log("\t\t " + e);
             return;
         }
+
         currentFixedPicks = newPicks.createSnapshot();
         firePicksChangeEvent(newVarPicks, oldVarPicks, oldFixedPicks, currentFixedPicks);
     }

@@ -6,6 +6,8 @@
     <JAVADOC>
       <root url="file://$jarRepo$/gwt/2.1.0.M3/javadoc" />
     </JAVADOC>
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$jarRepo$/gwt/2.1.0.M3/gwt-user.jar!/" />
+    </SOURCES>
   </library>
 </component>
