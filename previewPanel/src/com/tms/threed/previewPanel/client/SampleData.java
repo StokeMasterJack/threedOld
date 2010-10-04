@@ -1,6 +1,8 @@
 package com.tms.threed.previewPanel.client;
 
-import com.tms.threed.threedCore.shared.*;
+import com.tms.threed.threedCore.shared.SeriesInfo;
+import com.tms.threed.threedCore.shared.SeriesInfoBuilder;
+import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.util.lang.shared.Path;
 
 public class SampleData {

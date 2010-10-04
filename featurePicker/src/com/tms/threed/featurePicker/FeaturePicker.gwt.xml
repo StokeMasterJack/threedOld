@@ -3,8 +3,7 @@
 <module>
 
     <inherits name='com.google.gwt.user.User'/>
-    <inherits name='com.tms.threed.featureModel.FeatureModel'/>
-    <inherits name='com.tms.threed.threedCore.ThreedCore'/>
+    <inherits name='com.tms.threed.Threed'/>
     <inherits name='com.tms.threed.util.Util'/>
     <inherits name="com.google.gwt.user.theme.chrome.Chrome"/>
 

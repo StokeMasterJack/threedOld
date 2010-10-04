@@ -4,7 +4,7 @@ import com.tms.threed.featureModel.shared.FeatureModel;
 import com.tms.threed.featureModel.shared.UnknownVarCodeException;
 import com.tms.threed.featureModel.shared.Var;
 import com.tms.threed.featureModel.shared.picks.Picks;
-import com.tms.threed.threedCore.shared.SeriesKey;
+import com.tms.threed.threedCore.shared.SeriesId;
 import com.tms.threed.util.gwt.client.Console;
 
 import javax.annotation.Nonnull;
@@ -39,7 +39,7 @@ public class VarPicksSnapshot {
         try {
             return fm.getVar(varCode);
         } catch (UnknownVarCodeException e) {
-            throw new UnknownVarCodeFromLeftSideException(e.getBadVarCode(), e.getSeriesKey(), varCodeType);
+            throw new UnknownVarCodeFromLeftSideException(e.getBadVarCode(), e.getSeriesId(), varCodeType);
         }
     }
 
@@ -155,8 +155,8 @@ public class VarPicksSnapshot {
 
         private final VarCodeType varCodeType;
 
-        public UnknownVarCodeFromLeftSideException(String badVarCode, SeriesKey seriesKey, VarCodeType varCodeType) {
-            super(badVarCode, seriesKey);
+        public UnknownVarCodeFromLeftSideException(String badVarCode, SeriesId seriesId, VarCodeType varCodeType) {
+            super(badVarCode, seriesId);
             this.varCodeType = varCodeType;
         }
 

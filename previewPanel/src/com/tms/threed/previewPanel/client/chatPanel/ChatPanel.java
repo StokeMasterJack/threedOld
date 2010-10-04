@@ -24,7 +24,6 @@ import com.tms.threed.previewPanel.client.ChatInfo;
 import com.tms.threed.previewPanel.client.PreviewPanelStyles;
 import com.tms.threed.previewPanel.client.headerPanel.ChatPanelDisplay;
 import com.tms.threed.threedCore.shared.SeriesKey;
-import com.tms.threed.util.gwt.client.Console;
 import com.tms.threed.util.lang.shared.Path;
 
 import static com.google.gwt.user.client.ui.HasHorizontalAlignment.ALIGN_CENTER;

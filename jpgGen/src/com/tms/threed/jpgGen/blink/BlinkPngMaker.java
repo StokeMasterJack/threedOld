@@ -9,9 +9,10 @@ import com.tms.threed.imageModel.shared.ImSeries;
 import com.tms.threed.imageModel.shared.ImView;
 import com.tms.threed.jpgGen.ezProcess.AbstractCommandBuilder;
 import com.tms.threed.jpgGen.ezProcess.EzProcess;
-import com.tms.threed.threedModel.server.SThreedModel;
+import com.tms.threed.threedModel.server.JsonMarshaller;
 import com.tms.threed.threedModel.server.SThreedModels;
 import com.tms.threed.threedCore.shared.SeriesKey;
+import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.lang.shared.Path;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -35,7 +36,7 @@ public class BlinkPngMaker {
 
     public void generateBlinkPngs(SeriesKey seriesKey) throws Exception {
         SThreedModels models = SThreedModels.get();
-        SThreedModel model = models.getModel(seriesKey);
+        ThreedModel model = models.getModel(seriesKey);
         ImSeries imageModel = model.getImageModel();
         List<ImView> views = imageModel.getViews();
         for (ImView view : views) {

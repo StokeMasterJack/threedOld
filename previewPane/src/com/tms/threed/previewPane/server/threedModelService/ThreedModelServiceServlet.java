@@ -1,7 +1,8 @@
 package com.tms.threed.previewPane.server.threedModelService;
 
-import com.tms.threed.threedModel.server.SThreedModel;
+import com.tms.threed.threedModel.server.JsonMarshaller;
 import com.tms.threed.threedModel.server.SThreedModels;
+import com.tms.threed.threedModel.shared.ThreedModel;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -22,11 +23,12 @@ public class ThreedModelServiceServlet extends HttpServlet {
 
 
             SThreedModels threedModels = SThreedModels.get();
-            SThreedModel model = threedModels.getModel(seriesYear, seriesName);
+            ThreedModel model = threedModels.getModel(seriesYear, seriesName);
 
             String contentType = "application/json;charset=UTF-8";
 
-            String s = model.toJsonString();
+            JsonMarshaller jsonMarshaller = new JsonMarshaller();
+            String s = jsonMarshaller.toJsonString(model);
 
             int contentLength = s.length();
 

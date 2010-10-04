@@ -48,7 +48,7 @@ public class TestYaris2 extends TestCase {
 
     @Override protected void setUp() throws Exception {
         seriesKey = SeriesKey.SEQUOIA_2011;
-        threedModel = SThreedModels.get().getModel(seriesKey).getModel();
+        threedModel = SThreedModels.get().getModel(seriesKey);
         seriesInfo = threedModel.getSeriesInfo();
 
         fm = threedModel.getFeatureModel();

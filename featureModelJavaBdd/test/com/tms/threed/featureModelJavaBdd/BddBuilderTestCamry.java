@@ -4,7 +4,6 @@ import com.tms.threed.featureModel.data.Camry2011;
 import com.tms.threed.featureModel.shared.FeatureModel;
 import com.tms.threed.featureModel.shared.Var;
 import com.tms.threed.featureModel.shared.picks.Picks;
-import com.tms.threed.imageModel.builders.server.ImageModelBuilder;
 import com.tms.threed.imageModel.shared.ImSeries;
 import com.tms.threed.imageModel.shared.ImView;
 import com.tms.threed.javabdd.BDD;
@@ -33,7 +32,7 @@ public class BddBuilderTestCamry extends TestCase {
         seriesKey = SeriesKey.CAMRY_2011;
         seriesInfo = SeriesInfoBuilder.createSeriesInfo(seriesKey);
         fm = new Camry2011();
-        im = new ImageModelBuilder(fm, seriesInfo, pngRoot).buildImageModel();
+//        im = new ImageModelBuilder(fm, seriesInfo, pngRoot).buildImageModel();
     }
 
     public void testSatCountNotUsingAnyCareSet() throws Exception {

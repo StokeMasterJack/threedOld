@@ -4,9 +4,8 @@
 
     <inherits name='com.google.gwt.user.User'/>
     <inherits name="com.google.gwt.resources.Resources" />
-    <inherits name='com.tms.threed.threedCore.ThreedCore'/>
-    <inherits name='com.tms.threed.util.Util'/>
-    <inherits name="com.allen_sauer.gwt.log.gwt-log-OFF"/>
+    <inherits name='com.tms.threed.Threed'/>
+    <!--<inherits name="com.allen_sauer.gwt.log.gwt-log-OFF"/>-->
 
     <source path="client"/>
     <source path="shared"/>

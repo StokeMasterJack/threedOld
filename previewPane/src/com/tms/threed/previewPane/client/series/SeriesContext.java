@@ -39,7 +39,6 @@ public class SeriesContext {
 
     @Nonnull private final PreviewPanelContext previewPanel;
     @Nonnull private final ThreedModel threedModel;
-    @Nonnull private final ThreedConfig threedConfig;
     @Nonnull private final Path jpgRootHttp;
     @Nonnull private final Path pngRootHttp;
 
@@ -57,11 +56,10 @@ public class SeriesContext {
 
         this.threedModel = threedModel;
         this.previewPanel = previewPanel;
-        this.threedConfig = threedModel.getThreedConfig();
-        this.jpgRootHttp = threedConfig.getJpgRootHttp();
-        this.pngRootHttp = threedConfig.getPngRootHttp();
+        this.jpgRootHttp = threedModel.getHttpJpgRoot();
+        this.pngRootHttp = threedModel.getHttpPngRoot();
 
-        this.previewPanel.setSeriesInfo(threedModel.getSeriesInfo());
+        this.previewPanel.setThreedModel(threedModel);
 
         previewPanel.addAngleChangeHandler(new AngleChangeHandler() {
             @Override public void onChange(AngleChangeEvent e) {
@@ -117,7 +115,7 @@ public class SeriesContext {
 
     public PrefetchStrategy getPrefetchStrategy() {
         if (prefetchStrategy == null) {
-            prefetchStrategy = new PrefetchStrategy2(imageUrlProvider, previewPanel.getViewStatesCopy(), threedConfig);
+            prefetchStrategy = new PrefetchStrategy2(imageUrlProvider, previewPanel.getViewStatesCopy(), threedModel);
         }
         return prefetchStrategy;
     }

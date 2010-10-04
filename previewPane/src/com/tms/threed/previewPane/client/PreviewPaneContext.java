@@ -9,7 +9,6 @@ import com.tms.threed.previewPanel.client.PreviewPanel;
 import com.tms.threed.previewPanel.shared.viewModel.AngleChangeHandler;
 import com.tms.threed.previewPanel.shared.viewModel.ViewChangeHandler;
 import com.tms.threed.threedCore.shared.SeriesKey;
-import com.tms.threed.threedCore.shared.ViewKey;
 import com.tms.threed.threedCore.shared.ViewSnap;
 import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.gwt.client.MvcModel;

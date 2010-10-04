@@ -3,7 +3,5 @@
 <module>
     <inherits name='com.google.gwt.user.Debug'/>
     <inherits name='com.tms.threed.previewPanel.PreviewPanel'/>
-    <inherits name='com.tms.threed.featureModel.FeatureModel'/>
-    <inherits name='com.tms.threed.imageModel.ImageModel'/>
     <inherits name='com.tms.threed.Threed'/>
 </module>

@@ -7,6 +7,7 @@ import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedCore.shared.ThreedConfig;
 import com.tms.threed.threedCore.shared.ViewKey;
 import com.tms.threed.threedCore.shared.ViewSnap;
+import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.lang.shared.Path;
 
 import java.util.ArrayList;
@@ -16,12 +17,12 @@ public class PrefetchStrategy2 implements PrefetchStrategy{
 
     private final ImageUrlProvider imageUrlProvider;
     private final SeriesInfo seriesInfo;
-    private final ThreedConfig threedConfig;
+    private final ThreedModel threedModel;
 
-    public PrefetchStrategy2(ImageUrlProvider imageUrlProvider, ViewStates viewStates, ThreedConfig threedConfig) {
+    public PrefetchStrategy2(ImageUrlProvider imageUrlProvider, ViewStates viewStates, ThreedModel threedModel) {
         this.imageUrlProvider = imageUrlProvider;
         this.seriesInfo = viewStates.getSeriesInfo();
-        this.threedConfig = threedConfig;
+        this.threedModel = threedModel;
     }
 
     public List<Path> getPrefetchUrls() {
@@ -54,7 +55,7 @@ public class PrefetchStrategy2 implements PrefetchStrategy{
         private void addUrls(ViewSnap viewSnap) {
             ImageStack imageStack = imageUrlProvider.getImageUrl(viewSnap);
 
-            List<Path> urls = imageStack.getPaths(threedConfig.getPngRootHttp(), threedConfig.getJpgRootHttp());
+            List<Path> urls = imageStack.getPaths(threedModel.getHttpPngRoot(), threedModel.getHttpJpgRoot());
             for (int i = 0; i < urls.size(); i++) {
                 Path url = urls.get(i);
                 this.urls.add(url);

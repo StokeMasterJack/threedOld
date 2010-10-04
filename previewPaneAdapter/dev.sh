@@ -4,15 +4,11 @@ lib=/svnCheckouts/lib
 
 src1=$repo/previewPanel/src
 src2=$repo/threedFramework/src
-src3=$repo/imageModel/src
-src4=$repo/featureModel/src
-src5=$repo/threedCore/src
-src6=$repo/util/src
-src7=$repo/previewPane/src
-src8=$repo/testHarness/src
-src9=$repo/previewPaneAdapter/src
+src3=$repo/util/src
+src4=$repo/previewPane/src
+src5=$repo/testHarness/src
+src6=$repo/previewPaneAdapter/src
 
-gwtVersion=2.0.3
 gwtVersion=2.1.0.M3
 gwtHome=$lib/gwt/$gwtVersion
 
@@ -29,6 +25,7 @@ startupUrl="TestHarness.html"
 
 #bindAddress=localhost
 war=/temp/gwt-jetty/exploded-wars/ppa
+war=/Users/dford/Oracle/Middleware/user_projects/domains/base_domain/autodeploy/webdocs/configurator
 gen=/temp/gwt-jetty/gen
 
 #g0="-bindAddress $bindAddress "
@@ -40,12 +37,12 @@ j0="-Xmx1028m "
 j1="-DconfigDir=/temp/tmsConfig "
 j2="-Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml "
 
-src="$src1:$src2:$src3:$src4:$src5:$src6:$src7:$src8:$src9"
+src="$src1:$src2:$src3:$src4:$src5:$src6"
 libs=$lib1:$lib2:$lib3:$lib4:$lib5
 cp="$src:$libs"
 
 gwtDevModeParams="$g1 $g2 $g3 $modName"
-gwtCompileParams="$g1 $g2 -style PRETTY -XdisableCastChecking $modName"
+gwtCompileParams="$g1 $g2 -style OBF -XdisableCastChecking $modName"
 
 #-XdisableCastChecking
 
@@ -54,7 +51,7 @@ mainClass=com.google.gwt.dev.DevMode
 gwtParams=$gwtCompileParams
 mainClass=com.google.gwt.dev.Compiler
 
-jvmParams="$j3 $j0 $j1 $j2"
+jvmParams="$j0 $j1 $j2"
 
 echo $jvmParams
 

@@ -8,12 +8,12 @@ public final class JsThreedModel extends JavaScriptObject {
 
     protected JsThreedModel() {}
 
-    public native JsThreedConfig getJsThreedConfig() /*-{
-        return this.threedConfig;
+    public native String getHttpImageRoot() /*-{
+        return this.httpImageRoot;
     }-*/;
 
-    public native JsSeriesKey getJsSeriesKey() /*-{
-        return this.seriesKey;
+    public native JsSeriesId getJsSeriesId() /*-{
+        return this.seriesId;
     }-*/;
 
     public native JsFeatureModel getJsFeatureModel() /*-{

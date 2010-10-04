@@ -1,10 +1,8 @@
 package com.tms.threed.featureModelJavaBdd;
 
-import com.tms.threed.featureModel.server.FeatureModelBuilderXml;
 import com.tms.threed.featureModel.shared.FeatureModel;
 import com.tms.threed.featureModel.shared.Var;
 import com.tms.threed.featureModel.shared.picks.Picks;
-import com.tms.threed.imageModel.builders.server.ImageModelBuilder;
 import com.tms.threed.imageModel.shared.ImSeries;
 import com.tms.threed.imageModel.shared.ImView;
 import com.tms.threed.javabdd.BDD;
@@ -13,6 +11,8 @@ import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedCore.shared.SeriesInfoBuilder;
 import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ThreedConfig;
+import com.tms.threed.threedModel.server.Repos;
+import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.lang.shared.Path;
 import junit.framework.TestCase;
 
@@ -37,11 +37,9 @@ public class BddBuilderTest extends TestCase {
 
         seriesInfo = SeriesInfoBuilder.createSeriesInfo(seriesKey);
 
-        FeatureModelBuilderXml fmBuilder = new FeatureModelBuilderXml(threedConfig);
-        fm = fmBuilder.buildModel(seriesKey);
-//        fm = new Camry2011();
-
-        im = new ImageModelBuilder(fm, seriesInfo, pngRoot).buildImageModel();
+        ThreedModel model = Repos.createModel(seriesKey);
+        fm = model.getFeatureModel();
+        im = model.getImageModel();
 
         bddBuilder = new BddBuilder(fm);
         bddBuilder.buildBdd();

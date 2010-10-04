@@ -35,12 +35,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="featureModel" />
     <orderEntry type="module" module-name="featurePicker" />
-    <orderEntry type="module" module-name="imageModel" />
     <orderEntry type="module" module-name="previewPane" />
     <orderEntry type="module" module-name="previewPanel" />
-    <orderEntry type="module" module-name="threedCore" />
     <orderEntry type="module" module-name="threedFramework" />
     <orderEntry type="module" module-name="util" />
     <orderEntry type="library" scope="TEST" name="junit-3.8" level="project" />
@@ -50,6 +47,7 @@
     <orderEntry type="module" module-name="featureModelJavaBdd" />
     <orderEntry type="library" name="gwt-user-2.1" level="project" />
     <orderEntry type="library" name="gwt-servlet-2.1" level="project" />
+    <orderEntry type="library" name="guava-r06" level="project" />
   </component>
 </module>
 

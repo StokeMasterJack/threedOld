@@ -5,7 +5,8 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file://$jarRepo$/Configurator-CommonFramework/1.0.196/src" />
+      <root url="file:///cvsCheckouts/Configurator-CommonFramework/src/test" />
+      <root url="file:///cvsCheckouts/Configurator-CommonFramework/src/java" />
     </SOURCES>
   </library>
 </component>

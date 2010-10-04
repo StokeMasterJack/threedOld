@@ -1,7 +1,5 @@
 package com.tms.threed.previewPane.client.externalState.picks;
 
-import com.google.gwt.event.shared.GwtEvent;
-import com.tms.threed.featureModel.shared.picks.Picks;
 import com.tms.threed.featureModel.shared.Var;
 import com.tms.threed.featureModel.shared.picks.PicksSnapshot;
 import com.tms.threed.threedModel.client.VarPicksSnapshot;

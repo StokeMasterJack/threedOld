@@ -1,12 +1,16 @@
 package com.tms.threed.threedModel.server;
 
 import com.tms.threed.featureModel.shared.picks.Picks;
+import com.tms.threed.featureModel.shared.picks.PicksRO;
 import com.tms.threed.imageModel.shared.ImPng;
 import com.tms.threed.imageModel.shared.ImView;
 import com.tms.threed.imageModel.shared.ImageStack;
 import com.tms.threed.imageModel.shared.Jpg;
+import com.tms.threed.threedCore.server.ThreedConfigHelper;
+import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ThreedConfig;
 import com.tms.threed.threedCore.shared.ViewKey;
+import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.lang.shared.Path;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -25,16 +29,19 @@ import java.util.List;
  */
 public class ConfiguredImageProviderEBro {
 
-    private final SThreedModel model;
+    private final ThreedModel model;
     private final Picks picksFixed;
 
-    public ConfiguredImageProviderEBro(String modelYear, String modelName, EBrochureRequest eBrochureRequest) {
-        log.debug("ConfiguredImageProviderEBro init [" + modelYear + " " + modelName + "]");
+    private final Path jpgRoot;
+    private final Path pngRoot;
+
+    public ConfiguredImageProviderEBro(SeriesKey seriesKey, EBrochureRequest eBrochureRequest) {
+        log.debug("ConfiguredImageProviderEBro init [" + seriesKey + "]");
         LinkedHashSet<String> picksRaw = eBrochureRequest.getFeatureCodes();
 
         log.debug("Getting ThreedModels");
         SThreedModels threedModels = SThreedModels.get();
-        model = threedModels.getModel(modelYear, modelName);
+        model = threedModels.getModel(seriesKey);
 
         log.debug("User picks (featureSet) before fixUp: [" + picksRaw + "]");
 
@@ -42,6 +49,11 @@ public class ConfiguredImageProviderEBro {
         picksFixed = model.fixupPicks(picksRaw);
 
         log.debug("User picks (featureSet) after fixUp: [" + picksFixed + "]");
+
+
+        ThreedConfig threedConfig = ThreedConfigHelper.get().getThreedConfig();
+        jpgRoot = threedConfig.getJpgRootFileSystem();
+        pngRoot = ThreedConfigHelper.get().getThreedConfig().getPngRootFileSystem();
     }
 
     /**
@@ -64,7 +76,6 @@ public class ConfiguredImageProviderEBro {
 
         Jpg jpg = model.getJpg(viewName, angle, picksFixed);
 
-        ThreedConfig threedConfig = model.getThreedConfig();
         ImageStack imageStack = jpg.getImageStack();
 
         URL jpgUrl = getJpgUrlSafe(imageStack.getJpg());
@@ -73,7 +84,7 @@ public class ConfiguredImageProviderEBro {
         urls.add(jpgUrl);
 
         for (ImPng png : imageStack.getPngs()) {
-            Path pngPath = png.getPath(threedConfig.getPngRootFileSystem());
+            Path pngPath = png.getPath(pngRoot);
             File pngFile = new File(pngPath.toString());
 
             if (pngFile.canRead()) {
@@ -104,7 +115,6 @@ public class ConfiguredImageProviderEBro {
     }
 
     public URL getJpgUrlSafe(Jpg jpg) {
-        Path jpgRoot = model.getJpgRootFileSystem();
         ImView view = jpg.getView();
         String viewName = view.getName();
 
@@ -127,6 +137,23 @@ public class ConfiguredImageProviderEBro {
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+     public ImageStack getImageStack(String viewName, int angle, PicksRO picks) {
+        return model.getJpg(viewName, angle, picks).getImageStack();
+    }
+
+    public List<Path> getImageUrls(String viewName, int angle, PicksRO picks) {
+        ImageStack imageStack = getImageStack(viewName, angle, picks);
+        return imageStack.getPaths(pngRoot, jpgRoot);
+    }
+
+    public List<Path> getExteriorImageUrls(int angle, PicksRO picks) {
+        return getImageUrls(ViewKey.EXTERIOR, angle, picks);
+    }
+
+    public List<Path> getInteriorImageUrls(int angle, PicksRO picks) {
+        return getImageUrls(ViewKey.INTERIOR, angle, picks);
     }
 
 

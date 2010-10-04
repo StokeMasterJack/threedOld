@@ -21,7 +21,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="previewPane" />
     <orderEntry type="module" module-name="previewPanel" />
-    <orderEntry type="module" module-name="threedCore" />
     <orderEntry type="module" module-name="threedFramework" />
     <orderEntry type="module" module-name="util" />
     <orderEntry type="library" name="gwt-user-2.1" level="project" />

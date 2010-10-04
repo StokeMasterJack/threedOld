@@ -146,6 +146,11 @@ public class Path implements Comparable<Path>, Serializable {
         return new Path(this, new Path(url));
     }
 
+    public Path appendName(String suffix) {
+        String s = this.url + suffix;
+        return new Path(s);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

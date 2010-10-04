@@ -1,6 +1,6 @@
 package com.tms.threed.threedModel.shared;
 
-import com.tms.threed.threedCore.shared.ThreedConfig;
+import com.tms.threed.threedCore.shared.SeriesId;
 import com.tms.threed.featureModel.shared.FeatureModel;
 import com.tms.threed.featureModel.shared.Var;
 import com.tms.threed.featureModel.shared.picks.Picks;
@@ -15,31 +15,43 @@ import com.tms.threed.threedCore.shared.ViewKey;
 import com.tms.threed.threedCore.shared.ViewSnap;
 import com.tms.threed.util.lang.shared.Path;
 
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.Set;
 
+import static com.tms.threed.util.lang.shared.Strings.isEmpty;
+
 public class ThreedModel  {
 
-    private final ThreedConfig threedConfig;
+    private final SeriesId seriesId;
     private final FeatureModel featureModel;
     private final ImSeries imageModel;
+    private final Path httpImageRoot;
+    private final Path httpJpgRoot;
+    private final Path httpPngRoot;
 
-    public ThreedModel(ThreedConfig threedConfig, FeatureModel featureModel, ImSeries imageModel) {
-        this.threedConfig = threedConfig;
+    public ThreedModel(@Nonnull FeatureModel featureModel, @Nonnull ImSeries imageModel,@Nonnull Path httpImageRoot) {
+        assert featureModel != null;
+        assert imageModel != null;
+        assert httpImageRoot != null;
+        assert !isEmpty(httpImageRoot.toString());
+
         this.featureModel = featureModel;
         this.imageModel = imageModel;
-    }
+        this.httpImageRoot = httpImageRoot;
 
-    public ThreedConfig getThreedConfig() {
-        return threedConfig;
+        this.seriesId = featureModel.getSeriesId();
+        this.httpJpgRoot = httpImageRoot.append("jpgs");
+        this.httpPngRoot = httpImageRoot.append("pngs");
+
     }
 
     public SeriesInfo getSeriesInfo() {
         return imageModel.getSeriesInfo();
     }
 
-    public SeriesKey getSeriesKey() {
-        return getSeriesInfo().getSeriesKey();
+    public SeriesId getSeriesId() {
+        return seriesId;
     }
 
     public FeatureModel getFeatureModel() {
@@ -78,7 +90,7 @@ public class ThreedModel  {
     public Path getJpgUrl(ViewSnap viewState, PicksRO picks) {
         assert picks != null:"Picks is required";
         assert viewState != null;
-        return this.getJpg(viewState, picks).getPath(threedConfig.getJpgRootHttp());
+        return this.getJpg(viewState, picks).getPath(httpJpgRoot);
     }
 
     @Nullable
@@ -91,8 +103,7 @@ public class ThreedModel  {
         ImPng png = view.getAccessoryPng(viewState.getAngle(), picks, blinkFeature);
         if (png == null) return null;
 
-        Path pngRootHttp = getThreedConfig().getPngRootHttp();
-        return png.getBlinkPath(pngRootHttp);
+        return png.getBlinkPath(httpPngRoot);
 
     }
 
@@ -104,9 +115,8 @@ public class ThreedModel  {
 
     public Path getJpgUrl(ViewKey viewKey, int angle, PicksRO picks) {
         assert picks != null;
-        Path jpgRootHttp = threedConfig.getJpgRootHttp();
         Jpg jpg = getJpg(viewKey, angle, picks);
-        return jpg.getPath(jpgRootHttp);
+        return jpg.getPath(httpJpgRoot);
     }
 
     public ImView getView(ViewKey viewKey) {
@@ -118,10 +128,28 @@ public class ThreedModel  {
         if (obj == null) return false;
         if (obj.getClass() != ThreedModel.class) return false;
         ThreedModel that = (ThreedModel) obj;
-        return getSeriesKey().equals(that.getSeriesKey());
+        return getSeriesId().equals(that.getSeriesId());
     }
 
     public ViewSnap getInitialViewState() {
         return getImageModel().getInitialViewState();
+    }
+
+    public SeriesKey getSeriesKey() {
+        return getSeriesId().getSeriesKey();
+    }
+
+    public Path getHttpImageRoot() {
+        assert httpImageRoot != null;
+        assert !isEmpty(httpImageRoot.toString());
+        return httpImageRoot;
+    }
+
+    public Path getHttpJpgRoot() {
+        return httpJpgRoot;
+    }
+
+    public Path getHttpPngRoot() {
+        return httpPngRoot;
     }
 }

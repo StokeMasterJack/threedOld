@@ -32,15 +32,12 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="util" />
     <orderEntry type="library" name="jsr305" level="project" />
-    <orderEntry type="module" module-name="featureModel" />
-    <orderEntry type="module" module-name="threedCore" />
     <orderEntry type="library" scope="TEST" name="junit-3.8" level="project" />
     <orderEntry type="module" module-name="threedFramework" />
-    <orderEntry type="module" module-name="imageModel" />
     <orderEntry type="library" name="commons-logging-1.0.3" level="project" />
     <orderEntry type="module" module-name="featureModelJavaBdd" />
     <orderEntry type="module" module-name="javaBdd" />
-    <orderEntry type="library" name="guava-2010-03-03" level="project" />
+    <orderEntry type="library" name="guava-r06" level="project" />
   </component>
 </module>
 

@@ -6,6 +6,8 @@ import com.google.gwt.user.client.ui.InlineHTML;
 import com.google.gwt.user.client.ui.LayoutPanel;
 import com.tms.threed.featureModel.shared.picks.PicksChangeEvent;
 import com.tms.threed.featureModel.shared.picks.PicksChangeHandler;
+//import com.tms.threed.featureModel.shared.picks.PicksChangeEvent;
+//import com.tms.threed.featureModel.shared.picks.PicksChangeHandler;
 
 public class PicksInfoPanel extends LayoutPanel {
 

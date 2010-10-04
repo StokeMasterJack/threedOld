@@ -9,7 +9,6 @@ import com.tms.threed.previewPane.client.externalState.raw.ExternalStateChangeEv
 import com.tms.threed.previewPane.client.externalState.raw.ExternalStateSnapshot;
 import com.tms.threed.previewPane.client.threedServiceClient.ThreedServiceJson;
 import com.tms.threed.previewPanel.client.ChatInfo;
-import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedModel.client.JsonUnmarshaller;
 import com.tms.threed.threedModel.client.RawPicksSnapshot;
 import com.tms.threed.threedModel.shared.ThreedModel;

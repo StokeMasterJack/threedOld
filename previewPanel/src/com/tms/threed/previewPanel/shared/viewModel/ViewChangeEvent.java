@@ -1,7 +1,7 @@
 package com.tms.threed.previewPanel.shared.viewModel;
 
 import com.google.gwt.event.shared.GwtEvent;
-import com.tms.threed.threedCore.shared.*;
+import com.tms.threed.threedCore.shared.ViewKey;
 
 import static com.tms.threed.util.lang.shared.Strings.getSimpleName;
 

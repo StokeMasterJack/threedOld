@@ -1,9 +1,6 @@
 package com.tms.threed.previewPane.client.externalState.raw;
 
 import com.tms.threed.previewPanel.client.ChatInfo;
-import com.tms.threed.threedCore.shared.SeriesInfo;
-import com.tms.threed.threedCore.shared.SeriesInfoBuilder;
-import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedModel.client.RawPicksSnapshot;
 import com.tms.threed.util.gwt.client.Console;
 import com.tms.threed.util.lang.shared.Objects;

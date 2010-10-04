@@ -2,8 +2,9 @@ package com.tms.threed.jpgGen.jpgGen2.generate;
 
 import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ThreedConfig;
-import com.tms.threed.threedModel.server.ModelFactory;
-import com.tms.threed.threedModel.server.SThreedModel;
+import com.tms.threed.threedModel.server.JsonMarshaller;
+import com.tms.threed.threedModel.server.Repos;
+import com.tms.threed.threedModel.shared.ThreedModel;
 
 public class JpgGenerationProcess {
 
@@ -12,18 +13,18 @@ public class JpgGenerationProcess {
 	protected ProgressTracker progressTracker = new ProgressTracker(this);
 	protected long creationTime = System.currentTimeMillis();
 
-	protected SThreedModel model = null;
+	protected ThreedModel model = null;
     protected ThreedConfig threedConfig = null;
     protected SeriesKey seriesKey = null;
     protected long jpgsToMake = 0;
-    
+
+
     
     public JpgGenerationProcess( ThreedConfig threedConfig, SeriesKey seriesKey )
     {
     	this.seriesKey = seriesKey;
         this.threedConfig = threedConfig;
-        ModelFactory modelFactory = new ModelFactory(threedConfig);
-        model = modelFactory.createModel(seriesKey);
+        model =  Repos.createModel(seriesKey);
     }
 
 	public ProcessStatus getProcessStatus() {
@@ -36,7 +37,7 @@ public class JpgGenerationProcess {
 	}
 
 
-	public SThreedModel getModel() {
+	public ThreedModel getModel() {
 		pukeIfCanceled();
 		return model;
 	}

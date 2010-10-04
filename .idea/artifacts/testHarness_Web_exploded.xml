@@ -6,12 +6,9 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="testHarness" />
-          <element id="module-output" name="featureModel" />
           <element id="module-output" name="featurePicker" />
-          <element id="module-output" name="imageModel" />
           <element id="module-output" name="previewPane" />
           <element id="module-output" name="previewPanel" />
-          <element id="module-output" name="threedCore" />
           <element id="module-output" name="threedFramework" />
           <element id="module-output" name="util" />
           <element id="module-output" name="featureModelJavaBdd" />
@@ -21,9 +18,9 @@
           <element id="library" level="project" name="jackson-1.5" />
           <element id="library" level="project" name="dom4j-1.6.1" />
           <element id="library" level="project" name="jsr305" />
-          <element id="library" level="project" name="guava-2010-03-03" />
           <element id="library" level="project" name="gwt-log-3.01" />
           <element id="library" level="project" name="gwt-servlet-2.1" />
+          <element id="library" level="project" name="guava-r06" />
         </element>
       </element>
     </root>

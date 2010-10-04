@@ -1,8 +1,14 @@
 <component name="ArtifactManager">
-  <artifact name="Configurator_Toyota">
+  <artifact type="exploded-ear" name="Configurator_Toyota">
     <output-path>/temp/Configurator_Toyota</output-path>
     <properties id="ant-postprocessing">
-      <options enabled="true">
+      <options>
+        <file>file://$repos$/Configurator-ToyotaApp/dave.xml</file>
+        <target>refreshArtifacts</target>
+      </options>
+    </properties>
+    <properties id="ant-preprocessing">
+      <options>
         <file>file://$repos$/Configurator-ToyotaApp/dave.xml</file>
         <target>refreshArtifacts</target>
       </options>
@@ -10,6 +16,7 @@
     <root id="root">
       <element id="directory" name="lib">
         <element id="file-copy" path="$repos$/Configurator-ToyotaApp/_gen/Configurator-ToyotaApp.jar" />
+        <element id="artifact" artifact-name="threed.jar" />
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$repos$/Configurator-ToyotaApp/src/ear/application.xml" output-file-name="application.xml" />
@@ -22,6 +29,7 @@
             <element id="archive" name="Configurator-ToyotaApp-warlib.jar">
               <element id="module-output" name="Configurator-ToyotaApp" />
             </element>
+            <element id="artifact" artifact-name="Configurator-ToyotaFramework" />
           </element>
         </element>
       </element>

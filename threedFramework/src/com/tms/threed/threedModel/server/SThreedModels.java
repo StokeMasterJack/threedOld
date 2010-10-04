@@ -1,45 +1,64 @@
 package com.tms.threed.threedModel.server;
 
+import com.tms.threed.imageModel.server.ImageModels;
 import com.tms.threed.threedCore.server.ThreedConfigHelper;
-import com.tms.threed.threedCore.shared.ThreedConfig;
-import com.tms.threed.imageModel.server.SImageModels;
+import com.tms.threed.threedCore.shared.SeriesId;
 import com.tms.threed.threedCore.shared.SeriesKey;
+import com.tms.threed.threedCore.shared.ThreedConfig;
+import com.tms.threed.threedModel.shared.ThreedModel;
+import com.tms.threed.util.lang.shared.Path;
 
 import java.util.HashMap;
 
 public class SThreedModels {
 
-    private HashMap<SeriesKey, SThreedModel> modelCache = new HashMap<SeriesKey, SThreedModel>();
+    private HashMap<SeriesId, ThreedModel> modelCache = new HashMap<SeriesId, ThreedModel>();
 
     private final ThreedConfig threedConfig;
-    private final ModelFactory modelBuilder;
+    private final Path httpImageRoot;
 
     public SThreedModels(ThreedConfig threedConfig) {
         this.threedConfig = threedConfig;
-        modelBuilder = new ModelFactory(threedConfig);
+        this.httpImageRoot = threedConfig.getThreedRootHttp();
     }
 
-    synchronized public SThreedModel getModel(SeriesKey seriesKey,boolean allowJavaFmConfig) {
-        return getModelInternal(seriesKey,allowJavaFmConfig);
+    synchronized public ThreedModel getModel(SeriesId seriesId) {
+        return getModelInternal(seriesId);
     }
 
-    synchronized public SThreedModel getModel(SeriesKey seriesKey) {
-        return getModelInternal(seriesKey,false);
+    synchronized public ThreedModel getModel(SeriesKey seriesKey, int version) {
+        return getModelInternal(new SeriesId(seriesKey, version));
     }
 
-    synchronized public SThreedModel getModel(String modelYear, String seriesName) {
-        return getModelInternal(new SeriesKey(modelYear, seriesName),false);
+    synchronized public ThreedModel getModel(int year, String seriesName, int version) {
+        return getModelInternal(new SeriesId(year, seriesName, version));
     }
 
-    synchronized public SThreedModel getModel(int modelYear, String seriesName) {
-        return getModelInternal(new SeriesKey(modelYear, seriesName),false);
+    synchronized public ThreedModel getModel(SeriesKey seriesKey) {
+        return getModelInternal(currentId(seriesKey));
     }
 
-    private SThreedModel getModelInternal(SeriesKey seriesKey,boolean allowJavaFmConfig) {
-        SThreedModel model = modelCache.get(seriesKey);
+    synchronized public ThreedModel getModel(int year, String seriesName) {
+        return getModel(new SeriesKey(year, seriesName));
+    }
+
+    synchronized public ThreedModel getModel(String year, String seriesName) {
+        return getModel(new SeriesKey(year, seriesName));
+    }
+
+    private SeriesRepo seriesRepo(SeriesKey seriesKey) {
+        return new SeriesRepo(seriesKey, threedConfig);
+    }
+
+    private SeriesId currentId(SeriesKey seriesKey) {
+        return seriesRepo(seriesKey).getCurrentSeriesId();
+    }
+
+    private ThreedModel getModelInternal(SeriesId seriesId) {
+        ThreedModel model = modelCache.get(seriesId);
         if (model == null) {
-            model = buildModel(seriesKey,allowJavaFmConfig);
-            modelCache.put(seriesKey, model);
+            model = buildModel(seriesId);
+            modelCache.put(seriesId, model);
         }
         return model;
     }
@@ -62,12 +81,20 @@ public class SThreedModels {
         return instance;
     }
 
-    private SThreedModel buildModel(SeriesKey seriesKey,boolean allowJavaFmConfig){
-        return modelBuilder.createModel(seriesKey,allowJavaFmConfig);
+    private ThreedModel buildModel(SeriesKey seriesKey) {
+        return new SeriesRepo(seriesKey, threedConfig).createModel(httpImageRoot);
     }
 
-    public SImageModels getImageModels() {
-        return new SImageModels(threedConfig);
+    private ThreedModel buildModel(SeriesId seriesId) {
+        return buildModel(seriesId.getSeriesKey(), seriesId.getVersion());
+    }
+
+    private ThreedModel buildModel(SeriesKey seriesKey, int version) {
+        return new SeriesRepo(seriesKey, threedConfig).createModel(version,httpImageRoot);
+    }
+
+    public ImageModels getImageModels() {
+        return new ImageModels(threedConfig);
     }
 
 

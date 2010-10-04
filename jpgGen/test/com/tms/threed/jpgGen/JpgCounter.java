@@ -8,6 +8,7 @@ import com.tms.threed.imageModel.shared.ImSeries;
 import com.tms.threed.imageModel.shared.ImView;
 import com.tms.threed.imageModel.shared.Jpg;
 import com.tms.threed.javabdd.BDD;
+import com.tms.threed.threedCore.server.ThreedConfigHelper;
 import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ThreedConfig;
@@ -33,13 +34,15 @@ public class JpgCounter extends TestCase {
     FeatureModel fm;
     ImSeries im;
 
+
+
     @Override protected void setUp() throws Exception {
 
         seriesKey = SeriesKey.TACOMA_2011;
-        threedModel = SThreedModels.get().getModel(seriesKey,true).getModel();
+        threedModel = SThreedModels.get().getModel(seriesKey);
         seriesInfo = threedModel.getSeriesInfo();
 
-        threedConfig = threedModel.getThreedConfig();
+        threedConfig = ThreedConfigHelper.get().getThreedConfig();
         pngRoot = threedConfig.getPngRootFileSystem();
 
         fm = threedModel.getFeatureModel();

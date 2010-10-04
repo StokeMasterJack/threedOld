@@ -1,11 +1,14 @@
 package com.tms.threed.threedModel.server;
 
 import com.tms.threed.threedCore.server.ThreedConfigHelper;
+import com.tms.threed.threedCore.shared.SeriesId;
+import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ThreedConfig;
 import com.tms.threed.featureModel.shared.FeatureModel;
 import com.tms.threed.featureModel.shared.picks.Picks;
 import com.tms.threed.imageModel.shared.ImSeries;
 import com.tms.threed.imageModel.shared.ImView;
+import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.lang.shared.Path;
 import junit.framework.TestCase;
 
@@ -27,8 +30,9 @@ public class JpgFallbackModelTest extends TestCase {
 
     private ThreedConfig threedConfig = ThreedConfigHelper.get().getThreedConfig();
     private Path jpgRoot = threedConfig.getJpgRootFileSystem();
-    private SThreedModel model;
+    private ThreedModel model;
     private FeatureModel fm;
+    
 
     @Override protected void setUp() throws Exception {
 
@@ -36,8 +40,7 @@ public class JpgFallbackModelTest extends TestCase {
     }
 
     public void test() throws Exception {
-        ModelFactory modelBuilder = new ModelFactory(threedConfig);
-        model = modelBuilder.createModel(2009, VENZA);
+        model = Repos.createModel(SeriesKey.VENZA_2009);
         fm = model.getFeatureModel();
         ImSeries imageModel = model.getImageModel();
         ImView exteriorView = imageModel.getExteriorView();

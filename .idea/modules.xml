@@ -4,11 +4,9 @@
     <modules>
       <module fileurl="file://$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iml" filepath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iml" />
       <module fileurl="file://$repos$/Configurator-ToyotaFramework/Configurator-ToyotaFramework.iml" filepath="$repos$/Configurator-ToyotaFramework/Configurator-ToyotaFramework.iml" />
-      <module fileurl="file://$PROJECT_DIR$/featureModel/featureModel.iml" filepath="$PROJECT_DIR$/featureModel/featureModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/featureModelJavaBdd/featureModelJavaBdd.iml" filepath="$PROJECT_DIR$/featureModelJavaBdd/featureModelJavaBdd.iml" />
       <module fileurl="file://$PROJECT_DIR$/featurePicker/featurePicker.iml" filepath="$PROJECT_DIR$/featurePicker/featurePicker.iml" />
       <module fileurl="file://$repos$/htdocs/htdocs.iml" filepath="$repos$/htdocs/htdocs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/imageModel/imageModel.iml" filepath="$PROJECT_DIR$/imageModel/imageModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageServer/imageServer.iml" filepath="$PROJECT_DIR$/imageServer/imageServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaBdd/javaBdd.iml" filepath="$PROJECT_DIR$/javaBdd/javaBdd.iml" />
       <module fileurl="file://$PROJECT_DIR$/jpgGen/jpgGen.iml" filepath="$PROJECT_DIR$/jpgGen/jpgGen.iml" />
@@ -16,7 +14,6 @@
       <module fileurl="file://$PROJECT_DIR$/previewPaneAdapter/previewPaneAdapter.iml" filepath="$PROJECT_DIR$/previewPaneAdapter/previewPaneAdapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/previewPanel/previewPanel.iml" filepath="$PROJECT_DIR$/previewPanel/previewPanel.iml" />
       <module fileurl="file://$PROJECT_DIR$/testHarness/testHarness.iml" filepath="$PROJECT_DIR$/testHarness/testHarness.iml" />
-      <module fileurl="file://$PROJECT_DIR$/threedCore/threedCore.iml" filepath="$PROJECT_DIR$/threedCore/threedCore.iml" />
       <module fileurl="file://$PROJECT_DIR$/threedFramework/threedFramework.iml" filepath="$PROJECT_DIR$/threedFramework/threedFramework.iml" />
       <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
     </modules>

@@ -1,20 +1,17 @@
 repos=/repos
-repo=$repos/threed/testHarness
-lib=/Users/dford/smart-soft/clients/tms/jarRepo
+repo=$repos/threed
+lib=/svnCheckouts/lib
 
 src1=$repos/threed/previewPanel/src
 src2=$repos/threed/threedFramework/src
-src3=$repos/threed/imageModel/src
-src4=$repos/threed/featureModel/src
-src5=$repos/threed/featurePicker/src
-src6=$repos/threed/threedCore/src
-src7=$repos/threed/util/src
-src8=$repos/threed/previewPane/src
-src9=$repos/threed/testHarness/src
+src3=$repos/threed/featurePicker/src
+src4=$repos/threed/util/src
+src5=$repos/threed/previewPane/src
+src6=$repos/threed/testHarness/src
 
-src="$src1:$src2:$src3:$src4:$src5:$src6:$src7:$src8:$src9"
+src="$src1:$src2:$src3:$src4:$src5:$src6"
 
-gwtVersion=2.1.0.M2
+gwtVersion=2.1.0.M3
 gwtHome=$lib/gwt/$gwtVersion
 
 lib1=$gwtHome/gwt-dev.jar

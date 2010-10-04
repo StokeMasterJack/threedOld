@@ -78,7 +78,7 @@ public class ProcessKickoff extends Thread {
 		
 		BDD bdd = bddBuilder.getBdd();
 		
-		SeriesInfo seriesInfo = jpgGenerationProcess.getModel().getModel().getSeriesInfo();
+		SeriesInfo seriesInfo = jpgGenerationProcess.getModel().getImageModel().getSeriesInfo();
 		
 		ViewKey[] viewsKeys = seriesInfo.getViewsKeys();
 		
@@ -99,7 +99,7 @@ public class ProcessKickoff extends Thread {
 		{
 			for( int angle = 1; angle <= viewKey.getAngleCount(); angle++ )
 			{
-				ImView imView = jpgGenerationProcess.getModel().getModel().getView(viewKey).copy(angle);
+				ImView imView = jpgGenerationProcess.getModel().getImageModel().getView(viewKey).copy(angle);
 
 				BDDVarSet bddVarSet = bddBuilder.getBddVarSet(imView.getVarSet());
 

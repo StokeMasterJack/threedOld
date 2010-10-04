@@ -5,13 +5,7 @@
     <option name="LOCAL" value="false" />
     <option name="OPEN_IN_BROWSER_URL" value="http://ssdev.toyota.com:17771/byt4/pub/init.do?zip_code=&amp;series_id=" />
     <option name="UPDATING_POLICY" value="redeploy-artifacts" />
-    <deployment>
-      <artifact name="TheEarDude">
-        <settings DEPLOYMENT_METHOD="Weblogic.Deployer">
-          <option name="CHECK_EJB_CMP_DATASOURCES" value="false" />
-        </settings>
-      </artifact>
-    </deployment>
+    <deployment />
     <server-settings>
       <option name="PASSWORD" value="weblogic" />
       <option name="SERVER_NAME" value="examplesServer" />
@@ -28,9 +22,6 @@
     <ConfigurationWrapper RunnerId="Run" />
     <method>
       <option name="AntTarget" enabled="false" antfile="file://$repos$/Configurator-ToyotaApp/dave.xml" target="rr" />
-      <option name="BuildArtifacts" enabled="true">
-        <artifact name="TheEarDude" />
-      </option>
       <option name="Make" enabled="false" />
     </method>
   </configuration>

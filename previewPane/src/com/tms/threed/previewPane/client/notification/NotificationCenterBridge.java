@@ -103,12 +103,6 @@ public class NotificationCenterBridge {
 
     public static native void addAccessoryWithFlashOrientationHandler(AccessoryWithFlashOrientationHandler handler) /*-{
         var ff1 = handler.@com.tms.threed.previewPane.client.notification.AccessoryWithFlashOrientationHandler::handleEvent(Ljava/lang/String;I);
-//        var ff2 = $entry(ff1);
-//        var fff = function(eventName,flash_orientation){
-//            console.log("AAAA")
-//            ff2(flash_orientation);
-//            console.log("BBBB")
-//        }
         $wnd.NotificationCenter.addSubscriber("Accessory With Flash Orientation", handler, ff1);
     }-*/;
 
@@ -116,11 +110,7 @@ public class NotificationCenterBridge {
 
     }
 
-
     private NotificationCenterBridge() {}
-
-
-
 
     private static native void foo() /*-{
         var ff1 = App.vehicle

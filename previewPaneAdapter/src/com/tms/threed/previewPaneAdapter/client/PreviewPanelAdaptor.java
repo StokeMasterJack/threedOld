@@ -40,7 +40,13 @@ public class PreviewPanelAdaptor implements EntryPoint {
     }
 
     public void onModuleLoad() {
-        Console.log("PreviewPanelAdaptor onModuleLoad");
+        if (useFlash()) {
+            Console.log("UseFlash");
+            return;
+        } else {
+           Console.log("UseNonFlash");
+        }
+        
         previewPane = createPreviewPane();
         RootPanel.get(getDivId()).add(previewPane);
         setRhsLoadedFlag();
@@ -49,8 +55,12 @@ public class PreviewPanelAdaptor implements EntryPoint {
         Console.log("PreviewPanelAdaptor onModuleLoad - complete");
     }
 
+    private native boolean useFlash()/*-{
+        return $wnd.threedUseFlash;
+    }-*/;
+
     private static native void setRhsLoadedFlag()/*-{
-         $wnd.rhs_loaded = true;
+         $wnd.rhs_loaded = '1';
     }-*/;
 
     public static native void registerHooks()/*-{

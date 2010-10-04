@@ -1,21 +1,23 @@
 package com.tms.threed.threedModelBuilders;
 
 import com.tms.threed.featureModel.data.SampleFeatureSet;
-import com.tms.threed.threedCore.server.ThreedConfigHelper;
-import com.tms.threed.threedCore.shared.ThreedConfig;
 import com.tms.threed.featureModel.shared.FeatureModel;
 import com.tms.threed.featureModel.shared.picks.Picks;
 import com.tms.threed.imageModel.shared.ImPng;
 import com.tms.threed.imageModel.shared.ImSeries;
 import com.tms.threed.imageModel.shared.ImView;
 import com.tms.threed.imageModel.shared.Jpg;
-import com.tms.threed.threedModel.server.ModelFactory;
-import com.tms.threed.threedModel.server.SThreedModel;
+import com.tms.threed.threedCore.server.ThreedConfigHelper;
 import com.tms.threed.threedCore.shared.Angle;
 import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedCore.shared.SeriesInfoBuilder;
 import com.tms.threed.threedCore.shared.SeriesKey;
+import com.tms.threed.threedCore.shared.ThreedConfig;
 import com.tms.threed.threedCore.shared.ViewKey;
+import com.tms.threed.threedModel.server.JsonMarshaller;
+import com.tms.threed.threedModel.server.Repos;
+import com.tms.threed.threedModel.server.SeriesRepo;
+import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.lang.shared.Path;
 import junit.framework.TestCase;
 
@@ -37,8 +39,7 @@ public class ModelBuilderTest extends TestCase {
 
 
     public void test_GetPngsExterior() throws Exception {
-        ModelFactory modelBuilder = new ModelFactory(threedConfig);
-        SThreedModel model = modelBuilder.createModel(seriesKey);
+        ThreedModel model = Repos.createModel(seriesKey);
 
         ImSeries imageModel = model.getImageModel();
         FeatureModel fm = model.getFeatureModel();
@@ -85,11 +86,12 @@ public class ModelBuilderTest extends TestCase {
 
     }
 
+    private SeriesRepo seriesRepo(SeriesKey seriesKey) {
+        return new SeriesRepo(seriesKey, threedConfig);
+    }
+
     public void test_GetPngsExterior2() throws Exception {
-        ModelFactory modelBuilder = new ModelFactory(threedConfig);
-        SThreedModel model = modelBuilder.createModel(2011, "Sienna");
-
-
+        ThreedModel model = Repos.createModel(SeriesKey.SIENNA_2011);
         ImView view = model.getImageModel().getExteriorView();
         System.out.println("LC: " + view.getLayerCount());
 
@@ -125,9 +127,8 @@ public class ModelBuilderTest extends TestCase {
 
 
     public void test_GetPngsExterior3() throws Exception {
-        ModelFactory modelBuilder = new ModelFactory(threedConfig);
-        SThreedModel model = modelBuilder.createModel(SeriesKey.CAMRY_2011);
 
+        ThreedModel model = Repos.createModel(SeriesKey.CAMRY_2011);
 
         FeatureModel fm = model.getFeatureModel();
 
@@ -180,8 +181,7 @@ public class ModelBuilderTest extends TestCase {
 
 
     public void test_GetPngsInterior() throws Exception {
-        ModelFactory modelBuilder = new ModelFactory(threedConfig);
-        SThreedModel model = modelBuilder.createModel(2009, "Venza");
+        ThreedModel model = Repos.createModel(SeriesKey.VENZA_2009);
 
         ImView view = model.getImageModel().getInteriorView();
 

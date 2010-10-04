@@ -36,6 +36,7 @@ import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ViewKey;
 import com.tms.threed.threedCore.shared.ViewSnap;
+import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.lang.shared.Path;
 
 import javax.annotation.Nonnull;
@@ -61,6 +62,7 @@ public class PreviewPanelContext {
     private final DefaultAngleButtonHandler angleButtonHandler;
     private final ThumbClickHandler thumbClickHandler;
 
+    private ThreedModel threedModel;
     private SeriesKey seriesKey;
     private SeriesInfo seriesInfo;
     private ViewStates viewStates;
@@ -112,19 +114,20 @@ public class PreviewPanelContext {
 
     }
 
-    public void setSeriesInfo(SeriesInfo seriesInfo) {
-        if (seriesInfo == null) {
+    public void setThreedModel(ThreedModel threedModel) {
+        if (threedModel == null) {
+            threedModel = null;
             this.seriesKey = null;
             this.seriesInfo = null;
             this.viewStates = null;
         } else {
-            this.seriesKey = seriesInfo.getSeriesKey();
-            this.seriesInfo = seriesInfo;
+            this.threedModel = threedModel;
+            this.seriesKey = threedModel.getSeriesKey();
+            this.seriesInfo = threedModel.getSeriesInfo();
             this.viewStates = new ViewStates(seriesInfo);
 
             assert seriesKey != null;
             assert seriesInfo != null;
-            assert viewStates != null;
 
             refreshAfterSeriesUpdate();
         }
@@ -223,8 +226,7 @@ public class PreviewPanelContext {
 
     private void refreshAfterSeriesUpdate() {
         assert assertNonNullSeries();
-
-        headerPanel.setSeriesKey(seriesKey);
+        headerPanel.setFeatureModel(threedModel.getFeatureModel());
         chatPanel.setSeriesKey(seriesKey);
         thumbsPanel.setThumbCount(seriesInfo.getViewCount() - 1);
 

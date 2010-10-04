@@ -22,10 +22,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="util" />
-    <orderEntry type="module" module-name="threedCore" />
-    <orderEntry type="module" module-name="featureModel" />
-    <orderEntry type="module" module-name="imageModel" />
-    <orderEntry type="library" name="guava-2010-03-03" level="project" />
     <orderEntry type="library" name="dom4j-1.6.1" level="project" />
     <orderEntry type="library" name="jsr305" level="project" />
     <orderEntry type="library" name="jackson-1.5" level="project" />
@@ -34,6 +30,8 @@
     <orderEntry type="library" scope="PROVIDED" name="log4j-1.2.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="commons-logging-1.0.3" level="project" />
     <orderEntry type="library" name="gwt-user-2.1" level="project" />
+    <orderEntry type="library" name="guava-r06" level="project" />
+    <orderEntry type="library" name="jgit-0.8.4" level="project" />
   </component>
 </module>
 

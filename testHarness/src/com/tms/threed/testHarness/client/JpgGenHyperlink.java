@@ -25,7 +25,7 @@ public class JpgGenHyperlink extends Anchor{
 
     public void setSeries(SeriesKey seriesKey){
         this.url = jpgGenUrlTemplate.replace("${seriesName}", seriesKey.getName()).replace("${seriesYear}", seriesKey.getYear() + "");
-        this.setText("Generate JPGs for " + seriesKey.getLabel());
+        this.setText("Generate JPGs for " + seriesKey.getName());
     }
 
 

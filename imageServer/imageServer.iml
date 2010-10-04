@@ -20,7 +20,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="threedCore" />
     <orderEntry type="module" module-name="threedFramework" />
     <orderEntry type="module" module-name="util" />
     <orderEntry type="library" name="javaee-5" level="project" />

@@ -56,8 +56,14 @@ public class VNode {
         return directory;
     }
 
+    public Path getLocalPath(){
+        return new Path(getName());
+    }
+
     public Path getPath() {
-        return null;
+        VNode parent = getParent();
+        if(parent==null) return getLocalPath();
+        return parent.getPath().append(getLocalPath());
     }
 
     public boolean isRoot() {

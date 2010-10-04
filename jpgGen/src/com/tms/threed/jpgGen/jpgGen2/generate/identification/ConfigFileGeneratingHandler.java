@@ -5,10 +5,10 @@ import java.io.FileWriter;
 
 import com.tms.threed.imageModel.shared.ImPng;
 import com.tms.threed.imageModel.shared.Jpg;
-import com.tms.threed.threedCore.server.ThreedConfigHelper;
 import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ThreedConfig;
-import com.tms.threed.threedModel.server.SThreedModel;
+import com.tms.threed.threedModel.server.JsonMarshaller;
+import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.lang.shared.Path;
 
 //this class will take a jpg which has been identified as needing to be generated and 
@@ -17,11 +17,11 @@ public class ConfigFileGeneratingHandler implements
 		JpgIdentifiedHandlerStrategy {
 
 	protected ThreedConfig config = null;
-	protected SThreedModel model = null;
+	protected ThreedModel model = null;
 
 	protected static volatile long jpgNumber = 0;
 
-	public ConfigFileGeneratingHandler(ThreedConfig threedConfig, SThreedModel model) {
+	public ConfigFileGeneratingHandler(ThreedConfig threedConfig, ThreedModel model) {
 		this.config = threedConfig;
 		this.model = model;
 	}

@@ -3,16 +3,7 @@
 <module>
 
     <inherits name='com.tms.threed.util.Util'/>
-    <inherits name="com.tms.threed.threedCore.ThreedCore"/>
-    <inherits name="com.tms.threed.featureModel.FeatureModel"/>
     <inherits name="com.google.gwt.json.JSON"/>
-    <inherits name="com.tms.threed.imageModel.ImageModel"/>
-
-    <source path="config/shared"/>
-    <source path="core"/>
-
-    <source path="threedModel/shared"/>
-    <source path="threedModel/client"/>
 
     <source path="featureModel/shared"/>
     <source path="featureModel/client"/>
@@ -20,5 +11,12 @@
 
     <source path="imageModel/shared"/>
     <source path="imageModel/client"/>
+
+    <source path="threedCore/shared"/>
+
+    <source path="threedModel/shared"/>
+    <source path="threedModel/client"/>
+
+
 
 </module>

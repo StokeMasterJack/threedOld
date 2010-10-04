@@ -37,6 +37,7 @@ import com.tms.threed.previewPanel.shared.viewModel.AngleChangeHandler;
 import com.tms.threed.previewPanel.shared.viewModel.ViewChangeEvent;
 import com.tms.threed.previewPanel.shared.viewModel.ViewChangeHandler;
 import com.tms.threed.testHarness.client.services.ThreedServiceRpc;
+import com.tms.threed.testHarness.client.services.SeriesKeys;
 import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ViewSnap;
 import com.tms.threed.threedModel.client.JsonUnmarshaller;
@@ -195,7 +196,7 @@ public class TestHarness implements EntryPoint {
             MenuBar yearMenuBar = new MenuBar(true);
             SortedSet<SeriesKey> seriesKeys = this.seriesKeys.getSeriesKeys(year);
             for (final SeriesKey seriesKey : seriesKeys) {
-                yearMenuBar.addItem(seriesKey.getLabel(), new Command() {
+                yearMenuBar.addItem(seriesKey.getName(), new Command() {
                     @Override public void execute() {
                         pickSeries(seriesKey);
                     }

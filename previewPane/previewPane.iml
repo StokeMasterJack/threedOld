@@ -43,10 +43,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="util" />
     <orderEntry type="module" module-name="previewPanel" />
-    <orderEntry type="module" module-name="threedCore" />
     <orderEntry type="module" module-name="threedFramework" />
-    <orderEntry type="module" module-name="featureModel" />
-    <orderEntry type="module" module-name="imageModel" />
     <orderEntry type="library" name="dom4j-1.6.1" level="project" />
     <orderEntry type="library" name="jsr305" level="project" />
     <orderEntry type="library" scope="TEST" name="junit-3.8" level="project" />

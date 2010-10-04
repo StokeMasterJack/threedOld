@@ -1,5 +1,6 @@
 package com.tms.threed.threedModel.server;
 
+import com.tms.threed.threedCore.shared.SeriesKey;
 import junit.framework.TestCase;
 
 import java.net.URL;
@@ -21,7 +22,7 @@ public class ConfiguredImageProviderEbroTest extends TestCase {
         r._setPackageCodes("CF");
         r._setAccessoryCodes("WB");
 
-        final ConfiguredImageProviderEBro p = new ConfiguredImageProviderEBro("2011", "camry", r);
+        final ConfiguredImageProviderEBro p = new ConfiguredImageProviderEBro(new SeriesKey(2011,"camry"), r);
         URL exteriorUrl = p.getExteriorConfiguredImage();
         URL interiorUrl = p.getInteriorConfiguredImage();
 
@@ -40,7 +41,7 @@ public class ConfiguredImageProviderEbroTest extends TestCase {
         r._setPackageCodes("EJ");
         r._setAccessoryCodes("CF");
 
-        final ConfiguredImageProviderEBro p = new ConfiguredImageProviderEBro("2011", "avalon", r);
+        final ConfiguredImageProviderEBro p = new ConfiguredImageProviderEBro(new SeriesKey("2011", "avalon"), r);
         URL exteriorUrl = p.getExteriorConfiguredImage();
         URL interiorUrl = p.getInteriorConfiguredImage();
 

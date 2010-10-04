@@ -20,11 +20,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="threedCore" />
-    <orderEntry type="module" module-name="featureModel" />
     <orderEntry type="library" name="jsr305" level="project" />
     <orderEntry type="module" module-name="util" />
     <orderEntry type="library" name="gwt-user-2.1" level="project" />
+    <orderEntry type="module" module-name="threedFramework" />
   </component>
 </module>
 

@@ -27,7 +27,7 @@ public class Test extends TestCase {
     public void testSatAllWithPicksAndJpgsRav() throws Exception {
 
         SeriesKey seriesKey = SeriesKey.YARIS_2010;
-        ThreedModel threedModel = SThreedModels.get().getModel(seriesKey).getModel();
+        ThreedModel threedModel = SThreedModels.get().getModel(seriesKey);
         SeriesInfo seriesInfo = threedModel.getSeriesInfo();
 
         FeatureModel fm = threedModel.getFeatureModel();
@@ -63,7 +63,7 @@ public class Test extends TestCase {
     public void testSatAllWithPicksAndJpgsCamry() throws Exception {
 
         SeriesKey seriesKey = SeriesKey.CAMRY_2011;
-        ThreedModel threedModel = SThreedModels.get().getModel(seriesKey).getModel();
+        ThreedModel threedModel = SThreedModels.get().getModel(seriesKey);
         SeriesInfo seriesInfo = threedModel.getSeriesInfo();
 
         FeatureModel fm = threedModel.getFeatureModel();
@@ -98,7 +98,7 @@ public class Test extends TestCase {
     public void testSatAllWithPicksAndJpgsYaris() throws Exception {
 
         SeriesKey seriesKey = SeriesKey.YARIS_2010;
-        ThreedModel threedModel = SThreedModels.get().getModel(seriesKey, true).getModel();
+        ThreedModel threedModel = SThreedModels.get().getModel(seriesKey);
         SeriesInfo seriesInfo = threedModel.getSeriesInfo();
 
         FeatureModel fm = threedModel.getFeatureModel();

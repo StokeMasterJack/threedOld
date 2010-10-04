@@ -2,24 +2,16 @@ package com.tms.threed.jpgGen;
 
 import com.tms.threed.featureModel.shared.FeatureModel;
 import com.tms.threed.featureModelJavaBdd.BddBuilder;
-import com.tms.threed.imageModel.shared.ImPng;
 import com.tms.threed.imageModel.shared.ImSeries;
-import com.tms.threed.imageModel.shared.ImView;
-import com.tms.threed.imageModel.shared.imfm.ImFm;
 import com.tms.threed.imageModel.shared.imfm.ImFm2;
 import com.tms.threed.javabdd.BDD;
-import com.tms.threed.javabdd.BDDVarSet;
 import com.tms.threed.threedCore.server.ThreedConfigHelper;
-import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.threedCore.shared.ThreedConfig;
-import com.tms.threed.threedCore.shared.ViewKey;
 import com.tms.threed.threedModel.server.SThreedModels;
 import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.lang.shared.Path;
 import junit.framework.TestCase;
-
-import java.util.Set;
 
 public class TestImFm extends TestCase {
 
@@ -34,7 +26,7 @@ public class TestImFm extends TestCase {
 
     @Override protected void setUp() throws Exception {
         SeriesKey seriesKey = SeriesKey.TACOMA_2011;
-        threedModel = SThreedModels.get().getModel(seriesKey).getModel();
+        threedModel = SThreedModels.get().getModel(seriesKey);
 
 
     }

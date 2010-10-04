@@ -9,6 +9,7 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.Tree;
 import com.google.gwt.user.client.ui.TreeItem;
+import com.tms.threed.testHarness.client.services.SeriesKeys;
 import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.util.gwt.client.events2.SelectionHandlers;
 
@@ -84,7 +85,7 @@ public class SeriesPickerPanel extends Composite {
         private final SeriesKey seriesKey;
 
         private SeriesKeyTreeItem(SeriesKey seriesKey) {
-            super(seriesKey.getLabel());
+            super(seriesKey.getName());
             this.seriesKey = seriesKey;
         }
 

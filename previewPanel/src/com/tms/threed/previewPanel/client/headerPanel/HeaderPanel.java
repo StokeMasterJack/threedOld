@@ -9,9 +9,9 @@ import com.google.gwt.user.client.ui.InlineLabel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.LayoutPanel;
 import com.google.gwt.user.client.ui.Widget;
+import com.tms.threed.featureModel.shared.FeatureModel;
 import com.tms.threed.previewPanel.client.PreviewPanelStyles;
 import com.tms.threed.previewPanel.client.chatPanel.ChatPanel;
-import com.tms.threed.threedCore.shared.SeriesKey;
 import com.tms.threed.util.gwt.client.Console;
 
 import javax.annotation.Nonnull;
@@ -31,7 +31,7 @@ public class HeaderPanel extends LayoutPanel implements HeaderPanelDisplay {
 
     private final YearSeriesLabel yearSeriesLabel = new YearSeriesLabel();
 
-    public HeaderPanel(@Nullable SeriesKey seriesKey, String msrp, ChatPanel chatPanel) {
+    public HeaderPanel(@Nullable FeatureModel featureModel, String msrp, ChatPanel chatPanel) {
 
         HeaderTextBox textPanel = new HeaderTextBox();
         Widget background = createTransparentBackground();
@@ -52,7 +52,7 @@ public class HeaderPanel extends LayoutPanel implements HeaderPanelDisplay {
 
         chatPanel.getElement().getStyle().setZIndex(100000);
 
-        setSeriesKey(seriesKey);
+        setFeatureModel(featureModel);
         setMsrp(msrp);
 
     }
@@ -102,12 +102,13 @@ public class HeaderPanel extends LayoutPanel implements HeaderPanelDisplay {
 
         }
 
-        void setSeriesKey(SeriesKey seriesKey) {
-            if (seriesKey == null) {
+        void setSeriesKey(FeatureModel featureModel) {
+            if (featureModel == null) {
                 this.setText("YOUR 2047 OmpaLumpa");
                 this.setVisible(false);
             } else {
-                this.setText(seriesKey.getYourMessage());
+                String s = "your " + featureModel.getYear() + " " + featureModel.getDisplayName();
+                this.setText(s);
                 this.setVisible(true);
             }
         }
@@ -169,17 +170,15 @@ public class HeaderPanel extends LayoutPanel implements HeaderPanelDisplay {
         s.setOpacity(.2);
         s.setProperty("filter", "alpha(opacity=20)");/* For IE6&7 */
 //        s.setZIndex(100);
-
         return p;
-
     }
 
     @Override public void setMsrp(String msrp) {
         msrpPanel.setMsrp(msrp);
     }
 
-    @Override public void setSeriesKey(SeriesKey seriesKey) {
-        yearSeriesLabel.setSeriesKey(seriesKey);
+    @Override public void setFeatureModel(FeatureModel featureModel) {
+        yearSeriesLabel.setSeriesKey(featureModel);
     }
 
 
