@@ -8,6 +8,8 @@ import com.tms.threed.featureModel.shared.boolExpr.BoolExpr;
 import com.tms.threed.featureModel.shared.boolExpr.Junction;
 import com.tms.threed.featureModel.shared.boolExpr.Not;
 import com.tms.threed.featureModel.shared.boolExpr.Pair;
+import com.tms.threed.imageModel.shared.ImSeries;
+import com.tms.threed.threedCore.shared.JsonMarshaller;
 import org.codehaus.jackson.JsonFactory;
 import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.JsonNode;
@@ -22,9 +24,20 @@ import java.util.List;
 
 import static com.tms.threed.util.lang.shared.Strings.isEmpty;
 
-public class JsonMarshaller {
+/**
+ * stateless
+ */
+public class JsonMarshallerFm  implements JsonMarshaller<FeatureModel> {
 
     private JsonNodeFactory f = JsonNodeFactory.instance;
+
+    public static ObjectNode toJsonObject(FeatureModel fm) {
+        return new JsonMarshallerFm().mapFeatureModel(fm);
+    }
+
+    @Override public String toJsonString(FeatureModel model) {
+        return toJsonObject(model).toString();
+    }
 
     ObjectNode mapConstraints(And constraints) {
         return mapConstraintJunction(constraints);

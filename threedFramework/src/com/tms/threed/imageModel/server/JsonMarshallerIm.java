@@ -4,7 +4,10 @@ import com.tms.threed.imageModel.shared.ImFeature;
 import com.tms.threed.imageModel.shared.ImFeatureOrPng;
 import com.tms.threed.imageModel.shared.ImLayer;
 import com.tms.threed.imageModel.shared.ImPng;
+import com.tms.threed.imageModel.shared.ImSeries;
 import com.tms.threed.imageModel.shared.ImView;
+import com.tms.threed.threedCore.shared.JsonMarshaller;
+import com.tms.threed.threedModel.shared.ThreedModel;
 import org.codehaus.jackson.JsonFactory;
 import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.JsonNode;
@@ -17,9 +20,20 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-public class JsonMarshaller {
+/**
+ * Stateless
+ */
+public class JsonMarshallerIm  implements JsonMarshaller<ImSeries> {
 
     private static final JsonNodeFactory f = JsonNodeFactory.instance;
+
+    public static ArrayNode toJsonArray(ImSeries imSeries) {
+        return new JsonMarshallerIm().jsonForViews(imSeries.getViews());
+    }
+
+    public String toJsonString(ImSeries model) {
+        return toJsonArray(model).toString();
+    }
 
     public ArrayNode jsonForViews(List<ImView> imViews) {
         ArrayNode a = f.arrayNode();
@@ -80,8 +94,8 @@ public class JsonMarshaller {
 
     private JsonNode jsonForPng(ImPng imPng) {
         ObjectNode n = f.objectNode();
-//        n.put(imPng.getAngle() + "", imPng.getSha());
-        n.put(imPng.getAngle() + "", "s"); //sha is pretty big, put the s as a place holder
+        n.put(imPng.getAngle() + "", imPng.getSha());
+//        n.put(imPng.getAngle() + "", "s"); //sha is pretty big, put the s as a place holder
         return n;
     }
 

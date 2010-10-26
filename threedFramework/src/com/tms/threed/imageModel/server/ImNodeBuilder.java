@@ -128,7 +128,7 @@ public class ImNodeBuilder {
         name = name.replace(VERSION_PREFIX, "");
         String sAngle = name.replace(PNG_SUFFIX, "");
 
-        int angle = 0;
+        int angle;
         try {
             angle = Integer.parseInt(sAngle);
         } catch (NumberFormatException e) {
@@ -141,8 +141,9 @@ public class ImNodeBuilder {
 
         String fingerprint;
         try {
-            fingerprint = ImageUtil.getFingerprint(pngFile);
-        } catch (IOException e) {
+            fingerprint = ImageUtil.getFingerprint(pngFile);  //todo
+            fingerprint = "s";
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
 

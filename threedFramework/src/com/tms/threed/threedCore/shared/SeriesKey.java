@@ -5,7 +5,7 @@ import com.tms.threed.util.lang.shared.Strings;
 
 import javax.annotation.Nonnull;
 import java.io.Serializable;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class SeriesKey implements Comparable<SeriesKey>, Serializable {
@@ -54,6 +54,10 @@ public class SeriesKey implements Comparable<SeriesKey>, Serializable {
         return year + " " + name;
     }
 
+    public String getShortName() {
+        return name + "-" + year;
+    }
+
     @Override
     public int hashCode() {
         int result = year;
@@ -71,16 +75,18 @@ public class SeriesKey implements Comparable<SeriesKey>, Serializable {
     }
 
 
-    public static final String YARIS = "yaris";
-    public static final String RAV4 = "rav4";
-    public static final String TACOMA = "tacoma";
     public static final String AVALON = "avalon";
-    public static final String VENZA = "venza";
     public static final String CAMRY = "camry";
+    public static final String FJ_CRUISER = "fj";
+    public static final String FOUR_RUNNER = "4runner";
+    public static final String LAND_CRUISER = "landcruiser";
+    public static final String RAV4 = "rav4";
     public static final String SIENNA = "sienna";
     public static final String SEQUOIA = "sequoia";
+    public static final String TACOMA = "tacoma";
     public static final String TUNDRA = "tundra";
-    public static final String FOUR_RUNNER = "4runner";
+    public static final String VENZA = "venza";
+    public static final String YARIS = "yaris";
 
     public static final int VENZA_ID = 28;
     public static final int CAMRY_ID = 3;
@@ -88,6 +94,31 @@ public class SeriesKey implements Comparable<SeriesKey>, Serializable {
     public static final int TUNDRA_ID = 17;
     public static final int FOUR_RUNNER_ID = 1;
 
+    private static String[] seriesNames = {
+            SeriesKey.AVALON,
+            SeriesKey.CAMRY,
+            SeriesKey.FJ_CRUISER,
+            SeriesKey.LAND_CRUISER,
+            SeriesKey.RAV4,
+            SeriesKey.SEQUOIA,
+            SeriesKey.SIENNA,
+            SeriesKey.TACOMA,
+            SeriesKey.TUNDRA,
+            SeriesKey.VENZA,
+            SeriesKey.YARIS};
+
+
+    public static List<SeriesKey> getAll() {
+        return Arrays.asList(seriesKeys);
+    }
+
+    public static List<SeriesKey> getSeriesKeys() {
+        return Arrays.asList(seriesKeys);
+    }
+
+    public static List<String> getSeriesNames() {
+        return Arrays.asList(seriesNames);
+    }
 
     public static final SeriesKey YARIS_2010 = new SeriesKey(2010, YARIS);
     public static final SeriesKey RAV4_2010 = new SeriesKey(2010, RAV4);
@@ -96,23 +127,26 @@ public class SeriesKey implements Comparable<SeriesKey>, Serializable {
     public static final SeriesKey AVALON_2011 = new SeriesKey(2011, AVALON);
     public static final SeriesKey AVALON_2010 = new SeriesKey(2010, AVALON);
     public static final SeriesKey CAMRY_2011 = new SeriesKey(2011, CAMRY);
+    public static final SeriesKey FJ_CRUISER_2010 = new SeriesKey(2010, FJ_CRUISER);
+    public static final SeriesKey LAND_CRUISER_2010 = new SeriesKey(2010, LAND_CRUISER);
     public static final SeriesKey SEQUOIA_2011 = new SeriesKey(2011, SEQUOIA);
     public static final SeriesKey SIENNA_2011 = new SeriesKey(2011, SIENNA);
     public static final SeriesKey VENZA_2011 = new SeriesKey(2011, VENZA);
     public static final SeriesKey VENZA_2010 = new SeriesKey(2010, VENZA);
     public static final SeriesKey VENZA_2009 = new SeriesKey(2009, VENZA);
 
-    public static List<SeriesKey> getAll() {
-        ArrayList<SeriesKey> a = new ArrayList<SeriesKey>();
-        a.add(AVALON_2010);
-        a.add(AVALON_2011);
-        a.add(CAMRY_2011);
-        a.add(SIENNA_2011);
-        a.add(VENZA_2009);
-        a.add(VENZA_2010);
-        a.add(VENZA_2011);
-        return a;
-    }
+    private static SeriesKey[] seriesKeys = {
+            SeriesKey.AVALON_2011,
+            SeriesKey.CAMRY_2011,
+            SeriesKey.FJ_CRUISER_2010,
+            SeriesKey.LAND_CRUISER_2010,
+            SeriesKey.RAV4_2010,
+            SeriesKey.SEQUOIA_2011,
+            SeriesKey.SIENNA_2011,
+            SeriesKey.TACOMA_2011,
+            SeriesKey.TUNDRA_2011,
+            SeriesKey.YARIS_2010};
+
 
     public static String getSeriesName(int seriesCategoryId) {
         switch (seriesCategoryId) {

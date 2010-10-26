@@ -12,6 +12,10 @@ import java.io.File;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.security.Provider;
+import java.security.Security;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ImageUtil {
 
@@ -116,6 +120,38 @@ public class ImageUtil {
         return toBase62(digest);
     }
 
+
+    public void test() throws Exception {
+
+
+    }
+    // This method returns the available implementations for a service type
+
+    public static Set<String> getMessageDigestAlgorithms() {
+        String serviceType = "MessageDigest";
+        Set<String> result = new HashSet<String>();
+
+        // All all providers
+        Provider[] providers = Security.getProviders();
+        for (int i = 0; i < providers.length; i++) {
+            // Get services provided by each provider
+            Provider provider = providers[i];
+            Set<Object> propertyKeys = provider.keySet();
+            for (Object propertyKey : propertyKeys) {
+                String sPropertyKey = (String) propertyKey;
+                String sPropertyKey1 = sPropertyKey.split(" ")[0];
+                if (sPropertyKey1.startsWith(serviceType + ".")) {
+                    result.add(sPropertyKey1.substring(serviceType.length() + 1));
+                } else if (sPropertyKey1.startsWith("Alg.Alias." + serviceType + ".")) {
+                    // This is an alias
+                    result.add(sPropertyKey1.substring(serviceType.length() + 11) + " [alias]"); 
+                }
+            }
+        }
+        return result;
+    }
+
+
     /**
      * Convert a byte array to base64 string
      */
@@ -124,58 +160,55 @@ public class ImageUtil {
     }
 
 
-     /**
+    /**
      * Convert a byte array to base62 string
      */
     public static String toBase62(byte[] byteArray) {
-         String base64 = toBase64(byteArray);
-         return toBase62(base64);
+        String base64 = toBase64(byteArray);
+        return toBase62(base64);
     }
 
     /**
-	 * Takes a base64 encoded string and eliminates the '+' and '/'.
-	 * Also eliminates any CRs.
-	 *
-	 * Having tokens that are a seamless string of letters and numbers
-	 * means that MUAs are less likely to linebreak a long token.
-	 */
-	protected static String toBase62(String base64)
-	{
-		StringBuffer buf = new StringBuffer(base64.length() * 2);
+     * Takes a base64 encoded string and eliminates the '+' and '/'.
+     * Also eliminates any CRs.
+     *
+     * Having tokens that are a seamless string of letters and numbers
+     * means that MUAs are less likely to linebreak a long token.
+     */
+    protected static String toBase62(String base64) {
+        StringBuffer buf = new StringBuffer(base64.length() * 2);
 
-		for (int i=0; i<base64.length(); i++)
-		{
-			char ch = base64.charAt(i);
-			switch (ch)
-			{
-				case 'i':
-					buf.append("ii");
-					break;
+        for (int i = 0; i < base64.length(); i++) {
+            char ch = base64.charAt(i);
+            switch (ch) {
+                case 'i':
+                    buf.append("ii");
+                    break;
 
-				case '+':
-					buf.append("ip");
-					break;
+                case '+':
+                    buf.append("ip");
+                    break;
 
-				case '/':
-					buf.append("is");
-					break;
+                case '/':
+                    buf.append("is");
+                    break;
 
-				case '=':
-					buf.append("ie");
-					break;
+                case '=':
+                    buf.append("ie");
+                    break;
 
-				case '\n':
-					// Strip out
-					break;
+                case '\n':
+                    // Strip out
+                    break;
 
-				default:
-					buf.append(ch);
-			}
-		}
+                default:
+                    buf.append(ch);
+            }
+        }
 
 
-		return buf.toString();
-	}
+        return buf.toString();
+    }
 
 
 }

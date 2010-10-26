@@ -1,6 +1,6 @@
 package com.tms.threed.previewPane.server.threedModelService;
 
-import com.tms.threed.threedModel.server.JsonMarshaller;
+import com.tms.threed.threedModel.server.JsonMarshallerTm;
 import com.tms.threed.threedModel.server.SThreedModels;
 import com.tms.threed.threedModel.shared.ThreedModel;
 
@@ -27,7 +27,7 @@ public class ThreedModelServiceServlet extends HttpServlet {
 
             String contentType = "application/json;charset=UTF-8";
 
-            JsonMarshaller jsonMarshaller = new JsonMarshaller();
+            JsonMarshallerTm jsonMarshaller = new JsonMarshallerTm();
             String s = jsonMarshaller.toJsonString(model);
 
             int contentLength = s.length();

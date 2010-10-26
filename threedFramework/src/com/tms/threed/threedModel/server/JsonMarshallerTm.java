@@ -1,7 +1,10 @@
 package com.tms.threed.threedModel.server;
 
+import com.tms.threed.featureModel.server.JsonMarshallerFm;
 import com.tms.threed.featureModel.shared.FeatureModel;
+import com.tms.threed.imageModel.server.JsonMarshallerIm;
 import com.tms.threed.imageModel.shared.ImSeries;
+import com.tms.threed.threedCore.shared.JsonMarshaller;
 import com.tms.threed.threedCore.shared.SeriesId;
 import com.tms.threed.threedModel.shared.ThreedModel;
 import com.tms.threed.util.lang.shared.Path;
@@ -9,15 +12,23 @@ import org.codehaus.jackson.node.ArrayNode;
 import org.codehaus.jackson.node.JsonNodeFactory;
 import org.codehaus.jackson.node.ObjectNode;
 
-public class JsonMarshaller {
+public class JsonMarshallerTm implements JsonMarshaller<ThreedModel> {
 
-    private com.tms.threed.featureModel.server.JsonMarshaller fmMarshaller = new com.tms.threed.featureModel.server.JsonMarshaller();
-    private com.tms.threed.imageModel.server.JsonMarshaller imMarshaller = new com.tms.threed.imageModel.server.JsonMarshaller();
+    private JsonMarshallerFm fmMarshaller = new JsonMarshallerFm();
+    private JsonMarshallerIm imMarshaller = new JsonMarshallerIm();
 
     private static final JsonNodeFactory f = JsonNodeFactory.instance;
 
-    public static String marshal(ThreedModel threedModel){
-        return new JsonMarshaller().toJsonString(threedModel);
+    public static String marshal(ThreedModel threedModel) {
+        return new JsonMarshallerTm().toJsonString(threedModel);
+    }
+
+    public ObjectNode toJsonObject(ThreedModel threedModel) {
+        return new JsonMarshallerTm().toJsonNode(threedModel);
+    }
+
+    @Override public String toJsonString(ThreedModel model) {
+        return toJsonObject(model).toString();
     }
 
     public ObjectNode toJsonNode(ThreedModel model) {
@@ -47,8 +58,8 @@ public class JsonMarshaller {
     }
 
 
-    public String toJsonString(ThreedModel model) {
-        return toJsonNode(model).toString();
-    }
+//    public String toJsonString(ThreedModel model) {
+//        return toJsonNode(model).toString();
+//    }
 
 }

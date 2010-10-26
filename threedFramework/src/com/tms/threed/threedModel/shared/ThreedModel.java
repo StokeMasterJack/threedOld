@@ -1,6 +1,5 @@
 package com.tms.threed.threedModel.shared;
 
-import com.tms.threed.threedCore.shared.SeriesId;
 import com.tms.threed.featureModel.shared.FeatureModel;
 import com.tms.threed.featureModel.shared.Var;
 import com.tms.threed.featureModel.shared.picks.Picks;
@@ -9,10 +8,14 @@ import com.tms.threed.imageModel.shared.ImPng;
 import com.tms.threed.imageModel.shared.ImSeries;
 import com.tms.threed.imageModel.shared.ImView;
 import com.tms.threed.imageModel.shared.Jpg;
+import com.tms.threed.threedCore.shared.ModelType;
+import com.tms.threed.threedCore.shared.SeriesId;
 import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedCore.shared.SeriesKey;
+import com.tms.threed.threedCore.shared.SeriesModel;
 import com.tms.threed.threedCore.shared.ViewKey;
 import com.tms.threed.threedCore.shared.ViewSnap;
+import com.tms.threed.threedModel.server.ModelTypeTm;
 import com.tms.threed.util.lang.shared.Path;
 
 import javax.annotation.Nonnull;
@@ -21,7 +24,7 @@ import java.util.Set;
 
 import static com.tms.threed.util.lang.shared.Strings.isEmpty;
 
-public class ThreedModel  {
+public class ThreedModel implements SeriesModel {
 
     private final SeriesId seriesId;
     private final FeatureModel featureModel;
@@ -30,7 +33,7 @@ public class ThreedModel  {
     private final Path httpJpgRoot;
     private final Path httpPngRoot;
 
-    public ThreedModel(@Nonnull FeatureModel featureModel, @Nonnull ImSeries imageModel,@Nonnull Path httpImageRoot) {
+    public ThreedModel(@Nonnull FeatureModel featureModel, @Nonnull ImSeries imageModel, @Nonnull Path httpImageRoot) {
         assert featureModel != null;
         assert imageModel != null;
         assert httpImageRoot != null;
@@ -77,25 +80,25 @@ public class ThreedModel  {
 //    }
 
     public Jpg getJpg(String viewName, int angleValue, PicksRO picks) {
-        assert picks != null:"Picks is required";
+        assert picks != null : "Picks is required";
         return imageModel.getJpg(viewName, angleValue, picks);
     }
 
     public Jpg getJpg(ViewSnap viewState, PicksRO picks) {
-        assert picks != null:"Picks is required";
+        assert picks != null : "Picks is required";
         assert viewState != null;
         return imageModel.getJpg(viewState.getView(), viewState.getAngle(), picks);
     }
 
     public Path getJpgUrl(ViewSnap viewState, PicksRO picks) {
-        assert picks != null:"Picks is required";
+        assert picks != null : "Picks is required";
         assert viewState != null;
         return this.getJpg(viewState, picks).getPath(httpJpgRoot);
     }
 
     @Nullable
     public Path getBlinkPngUrl(ViewSnap viewState, PicksRO picks, Var blinkFeature) {
-        assert picks != null:"Picks is required";
+        assert picks != null : "Picks is required";
         assert viewState != null;
         assert blinkFeature != null;
 
@@ -151,5 +154,11 @@ public class ThreedModel  {
 
     public Path getHttpPngRoot() {
         return httpPngRoot;
+    }
+
+    private static final ModelType modelType = new ModelTypeTm();
+
+    @Override public ModelType getModelType() {
+        return modelType;
     }
 }

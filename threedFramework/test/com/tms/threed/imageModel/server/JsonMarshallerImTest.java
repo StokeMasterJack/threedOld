@@ -8,24 +8,29 @@ import com.tms.threed.threedModel.server.Repos;
 import junit.framework.TestCase;
 import org.codehaus.jackson.node.ArrayNode;
 
-public class JsonMarshallerTest extends TestCase {
+public class JsonMarshallerImTest extends TestCase {
 
     ThreedConfig threedConfig = ThreedConfigHelper.get().getThreedConfig();
 
-    public void test() throws Exception {
-        ImSeries imSeries = getTestImageModel();
 
-        JsonMarshaller m2 = new JsonMarshaller();
+    public void test() throws Exception {
+
+        ImSeries imSeries = getTestImageModel(); //slow
+
+        JsonMarshallerIm m2 = new JsonMarshallerIm();
 
         ArrayNode jsonNode2 = m2.jsonForViews(imSeries.getViews());
 
-        String s2 = jsonNode2.toString();
 
-        System.out.println(s2);
+        String imJson = jsonNode2.toString();
+
+
+        System.out.println(imJson);
 //        JsonMarshaller.prettyPrint(s2);
 
 
     }
+
 
     ImSeries getTestImageModel() {
 //        return Repos.createModel(SeriesKey.TUNDRA_2011).getImageModel();

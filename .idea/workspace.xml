@@ -10,243 +10,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="674f6dc2-6df2-44a8-8318-029d73441737" name="Default" comment="Camry and Avalon to use XML configs">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/test/com/tms/threed/featureModel/shared/exprParser/ExprParserTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/featureModel/shared/exprParser/ExprParserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/picks/RawPicksChangeEvent.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/picks/RawPicksChangeEvent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/JsonMarshaller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Or.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Or.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/CommonVarNames.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/CommonVarNames.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gwt_servlet_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gwt_servlet_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/JsSeriesId.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/ProposePickResponse.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/ProposePickResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImSeries.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImSeries.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/test/com/tms/ebrochure/toyota/reface/OldOrNewTest.java" afterPath="$repos$/Configurator-ToyotaFramework/src/test/com/tms/ebrochure/toyota/reface/OldOrNewTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/blink/BlinkPngMaker.java" afterPath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/blink/BlinkPngMaker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/ModelTypeFm.java" />
       <change type="MODIFICATION" beforePath="$repos$/htdocs/source/js/build_page/PreviewPane3D.js" afterPath="$repos$/htdocs/source/js/build_page/PreviewPane3D.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/testHarness.iml" afterPath="$PROJECT_DIR$/testHarness/testHarness.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/DependsOnVisitor.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/DependsOnVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureModelJavaBdd/featureModelJavaBdd.iml" afterPath="$PROJECT_DIR$/featureModelJavaBdd/featureModelJavaBdd.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/Test.java" afterPath="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/Test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImPng.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImPng.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/dev.sh" afterPath="$PROJECT_DIR$/testHarness/dev.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/nonFlashConfig/ExternalState.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/nonFlashConfig/ExternalState.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PickTester.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/picks/PickTester.java" />
-      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/app/handler/ToyotaEbrochureHandler.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/app/handler/ToyotaEbrochureHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/data/Avalon2011.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/Avalon2011.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureModel/featureModel.iml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Junction.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Junction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/data/TrimLight.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/TrimLight.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/FeatureClasses.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureClasses.java" />
-      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImNode.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImNode.java" />
-      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/build-bootstrap.xml" afterPath="$repos$/Configurator-ToyotaFramework/build-bootstrap.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/ModelCode.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/ModelCode.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imageModel/imageModel.iml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/SeriesKeys.java" afterPath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/services/SeriesKeys.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/CheckForNonLeafReferenceVisitor.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/CheckForNonLeafReferenceVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/SampleData.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/SampleData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/True.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/True.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/http___ssdev_toyota_com_17771.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/http___ssdev_toyota_com_17771.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Pair.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Pair.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PrefetchStrategy2.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PrefetchStrategy2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/Product.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/Product.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/data/Camry2011VarOrder.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/Camry2011VarOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/JsonUnmarshaller.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/JsonUnmarshaller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImChildBase.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImChildBase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/Bit.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/Bit.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/test/com/tms/threed/featureModel/shared/FeatureModelTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/featureModel/shared/FeatureModelTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/PicksInfoPanel.java" afterPath="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/client/PicksInfoPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/jpgGen2/generate/identification/ProcessKickoff.java" afterPath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/jpgGen2/generate/identification/ProcessKickoff.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/ModelBuilderTest2.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/ModelBuilderTest2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/VarCodeFixer.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/VarCodeFixer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SeriesRepo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/ProductDef.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/ProductDef.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/JpgFallbackModelTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/JpgFallbackModelTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/shared/viewModel/ViewChangeEvent.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/shared/viewModel/ViewChangeEvent.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/FeatureModelFactoryXml.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jackson_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_1_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/PreviewPanel.gwt.xml" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/PreviewPanel.gwt.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/ViewSnap.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/ViewSnap.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/ImageModel.gwt.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImNodeType.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImNodeType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/data/TrimColor.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/TrimColor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/FeatureModelBuilderXml.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/server/FeatureModelBuilderXml.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/ProductSet.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/ProductSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/PreviewPane.gwt.xml" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/PreviewPane.gwt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/JsonMarshaller.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/JsonMarshaller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/com/tms/threed/util/lang/shared/Path.java" afterPath="$PROJECT_DIR$/util/src/com/tms/threed/util/lang/shared/Path.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/client/PreviewPanelAdaptor.java" afterPath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/client/PreviewPanelAdaptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/chatPanel/ChatPanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/chatPanel/ChatPanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/JsonMarshaller.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/server/JsonMarshaller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/FeaturePicker.gwt.xml" afterPath="$PROJECT_DIR$/featurePicker/src/com/tms/threed/featurePicker/FeaturePicker.gwt.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/Var.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/Var.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jpgGen.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jpgGen.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml" afterPath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/server/SImageModel.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/TestHarness.java" afterPath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/TestHarness.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PicksMutable.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/picks/PicksMutable.java" />
-      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/storage/ToyotaBaseConfigBuilder.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/storage/ToyotaBaseConfigBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/ViewKey.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/ViewKey.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/jpgGen.iml" afterPath="$PROJECT_DIR$/jpgGen/jpgGen.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/ThreedCore.gwt.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImSeries.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImSeries.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/JpgGenHyperlink.java" afterPath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/JpgGenHyperlink.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PicksSnapshotImpl.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/picks/PicksSnapshotImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/testHarness_Web_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/testHarness_Web_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Configurator_Toyota.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Configurator_Toyota.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/Source.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/Source.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SalesLeadProcessor_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SalesLeadProcessor_2_3_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/JsThreedModel.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/JsThreedModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/CardinalityGuesser.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/CardinalityGuesser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/ProductMapper.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/ProductMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/raw/ExternalStateSnapshot.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/externalState/raw/ExternalStateSnapshot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/IsLeaf.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/IsLeaf.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/PngMatch.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/PngMatch.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PicksSnapshot.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/picks/PicksSnapshot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PicksKey.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/picks/PicksKey.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/AbstractProgressProvider.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/AbstractProgressProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ModelTypeTm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/JsonMarshallerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/jpgGen2/generate/identification/ConfigFileGeneratingHandler.java" afterPath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/jpgGen2/generate/identification/ConfigFileGeneratingHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/server/services/ThreedServiceRpcServlet.java" afterPath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/server/services/ThreedServiceRpcServlet.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/ModelType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/jpgGen2/generate/JpgGenerationProcess.java" afterPath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/jpgGen2/generate/JpgGenerationProcess.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/JsonMarshaller.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/JsonMarshallerTm.java" />
+      <change type="DELETED" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/util/DefaultPickAccess.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesKey.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesKey.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/server/JsonMarshaller.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/server/JsonMarshallerFm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/server/threedModelService/ThreedModelServiceServlet.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/server/threedModelService/ThreedModelServiceServlet.java" />
       <change type="NEW" beforePath="" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/util/ToyotaConfigUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageUtil.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/JpgStatusHyperlink.java" afterPath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/JpgStatusHyperlink.java" />
-      <change type="MODIFICATION" beforePath="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" afterPath="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/data/Trim.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/Trim.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/summaryPane/SummarySeriesContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/summaryPane/SummarySeriesContext.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImFeature.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImFeature.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureModelJavaBdd/test/com/tms/threed/featureModelJavaBdd/BddBuilderTestCamry.java" afterPath="$PROJECT_DIR$/featureModelJavaBdd/test/com/tms/threed/featureModelJavaBdd/BddBuilderTestCamry.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Iff.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Iff.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SeriesDir.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/ConfiguredImageProviderEbroTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/ConfiguredImageProviderEbroTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SThreedModel.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/Threed.gwt.xml" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/Threed.gwt.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImFeatureOrPng.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImFeatureOrPng.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/UnknownVarCodeException.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/UnknownVarCodeException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/FieldDef.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FieldDef.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/client/JsVar.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/client/JsVar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageModelBuilder.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageModelBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imageServer/imageServer.iml" afterPath="$PROJECT_DIR$/imageServer/imageServer.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PicksRO.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/picks/PicksRO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/VarPicksSnapshot.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/VarPicksSnapshot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/LayersPanel.java" afterPath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/LayersPanel.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/FeatureModel.gwt.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImageStack.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImageStack.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/Angle.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/Angle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ConfiguredImageProviderEBro.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ConfiguredImageProviderEBro.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/Assignment.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/Assignment.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/app/handler/ToyotaEbrochureHandler.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/app/handler/ToyotaEbrochureHandler.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp" afterPath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/featureModel/server/JsonMarshallerTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/featureModel/server/JsonMarshallerFmTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/shared/ThreedModel.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/shared/ThreedModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/builders/client/JsonUnmarshaller.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/client/JsonUnmarshaller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/server/ThreedConfigHelper.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/server/ThreedConfigHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/test/com/tms/threed/threedCore/shared/SeriesInfoTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedCore/shared/SeriesInfoTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/client/JsFeatureModel.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/client/JsFeatureModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Configurator_CommonFramework_1_0_196.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Configurator_CommonFramework_1_0_196.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageModels.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageModels.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/ModelBuilderTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/ModelBuilderTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/SFeatureModel.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/server/FmHelper.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imageModel/test/com/tms/threed/imageModel/builders/server/JsonImMapper2Test.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/lib.properties" afterPath="$repos$/Configurator-ToyotaFramework/lib.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/JsonTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/JsonTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/client/JsBoolExpr.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/client/JsBoolExpr.java" />
-      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/test/com/tms/ebrochure/toyota/reface/OldOrNewTest.java" afterPath="$repos$/Configurator-ToyotaFramework/src/test/com/tms/ebrochure/toyota/reface/OldOrNewTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImLayer.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImLayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/BoolExpr.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/BoolExpr.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Not.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Not.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PicksChangeEvent.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/picks/PicksChangeEvent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/ProgressProvider.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/ProgressProvider.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/FeatureModelFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/server/FeatureModelFactoryJava.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ModelFactory.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Implication.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Implication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanelDisplay.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanelDisplay.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/client/JsSeriesKey.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/jpgGen2/generate/identification/ConfigFileGeneratingHandler.java" afterPath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/jpgGen2/generate/identification/ConfigFileGeneratingHandler.java" />
-      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/dford.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/dford.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/jpgGen2/generate/JpgGenerationProcess.java" afterPath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/jpgGen2/generate/JpgGenerationProcess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/threed_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/threed_jar.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/Cardinality.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/Cardinality.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/example.model.xml" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/example.model.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/Picks.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/picks/Picks.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/client/JsonUnmarshaller.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/client/JsonUnmarshaller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SThreedModels.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SThreedModels.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/_notes/bdd-performance.txt" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/_notes/bdd-performance.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threedCore/threedCore.iml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/PartialProduct.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/PartialProduct.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/BoolField.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/BoolField.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/data/Camry2011.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/Camry2011.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesId.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/IsRoot.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/IsRoot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/JpgCounter.java" afterPath="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/JpgCounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/previewPaneAdapter/dev-jeff.sh" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/test/com/tms/threed/featureModel/server/JsonMarshallerTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/featureModel/server/JsonMarshallerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPaneAdapter/previewPaneAdapter.iml" afterPath="$PROJECT_DIR$/previewPaneAdapter/previewPaneAdapter.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Constant.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Constant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureModelJavaBdd/test/com/tms/threed/featureModelJavaBdd/BddBuilderTest.java" afterPath="$PROJECT_DIR$/featureModelJavaBdd/test/com/tms/threed/featureModelJavaBdd/BddBuilderTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/test/com/tms/threed/imageModel/server/ImageUtilTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/ImageUtilTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/data/SampleFeatureSet.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/SampleFeatureSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/previewPanel.iml" afterPath="$PROJECT_DIR$/previewPanel/previewPanel.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/GetVarsVisitor.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/GetVarsVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/guava_r06.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/test/com/tms/threed/imageModel/server/EmptyPngFinderTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/EmptyPngFinderTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/server/ConfigHelper.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/server/ConfigHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/PicksChangeHandler.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/picks/PicksChangeHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Conflict.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Conflict.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/Jpg.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/Jpg.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesInfo.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/JsonMarshallerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/TestImFm.java" afterPath="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/TestImFm.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/picks/IllegalPicksStateException.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/picks/IllegalPicksStateException.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/builders/server/ImageModelBuilder.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/ExprParser.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/ExprParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/TestYaris2.java" afterPath="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/TestYaris2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageUtil.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageUtil.java" />
+      <change type="MODIFICATION" beforePath="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" afterPath="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/ModelBuilderTest2.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/ModelBuilderTest2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImNodeBuilder.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImNodeBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImView.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/test/com/tms/threed/featureModel/shared/picks/PicksTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/featureModel/shared/picks/PicksTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/FeatureModel.json" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/test/com/tms/threed/threedCore/shared/SeriesKeyTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedCore/shared/SeriesKeyTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/JsonMarshaller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/ModelBuilderTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/ModelBuilderTest.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_your_vehicle.jsp" afterPath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_your_vehicle.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/JsonMarshallerTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/JsonMarshallerImTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ModelTypeIm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/IsChild.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/IsChild.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImLayerOrFeature.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImLayerOrFeature.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/GetLeafVarsVisitor.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/GetLeafVarsVisitor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/data/TrimColorOption.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/TrimColorOption.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Xor.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Xor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Nand.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Nand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/TestYaris.java" afterPath="$PROJECT_DIR$/jpgGen/test/com/tms/threed/jpgGen/TestYaris.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/Repos.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImNodeBase.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImNodeBase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/ChoiceField.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/ChoiceField.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/data/Camry2011O1.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/Camry2011O1.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/test/com/tms/threed/imageModel/builders/ImageModelBuilderTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/ImageModelBuilderTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/imfm/ImFm2.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/imfm/ImFm2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/IteratorBase.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/IteratorBase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/Unary.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/Unary.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/ThreedConfig.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/ThreedConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/blink/BlinkPngMaker.java" afterPath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/blink/BlinkPngMaker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/BoolExprVisitor.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/BoolExprVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featurePicker/featurePicker.iml" afterPath="$PROJECT_DIR$/featurePicker/featurePicker.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jgit_0_8_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/threedFramework.iml" afterPath="$PROJECT_DIR$/threedFramework/threedFramework.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/ImageModelPrinter.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImageModelPrinter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/server/services/ThreedServiceRpcServlet.java" afterPath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/server/services/ThreedServiceRpcServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesKey.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesKey.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/previewPane.iml" afterPath="$PROJECT_DIR$/previewPane/previewPane.iml" />
-      <change type="DELETED" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/util/DefaultPickAccess.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/threedCore/src/com/tms/threed/threedCore/shared/SeriesInfoBuilder.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesInfoBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/imfm/ImFm.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/imfm/ImFm.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/And.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/And.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/VarCollection.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/VarCollection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/UnsatException.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/UnsatException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPaneAdapter/dev.sh" afterPath="$PROJECT_DIR$/previewPaneAdapter/dev.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/boolExpr/False.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/boolExpr/False.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/SeriesPickerPanel.java" afterPath="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/SeriesPickerPanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featureModel/src/com/tms/threed/featureModel/shared/FeatureModel.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/Avalon2010.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/Avalon2010.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/com/tms/threed/util/vnode/shared/VNode.java" afterPath="$PROJECT_DIR$/util/src/com/tms/threed/util/vnode/shared/VNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imageModel/src/com/tms/threed/imageModel/shared/IsParent.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/IsParent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/notification/NotificationCenterBridge.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/notification/NotificationCenterBridge.java" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/lib.properties" afterPath="$repos$/Configurator-ToyotaFramework/lib.properties" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/build-bootstrap.xml" afterPath="$repos$/Configurator-ToyotaFramework/build-bootstrap.xml" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/storage/ToyotaBaseConfigBuilder.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/storage/ToyotaBaseConfigBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/JsonTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModelBuilders/JsonTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/JsonMarshaller.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/JsonMarshallerIm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/ImageUtilTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/ImageUtilTest.java" />
     </list>
     <list id="c92f8435-0af5-46bf-8a50-127d5152783a" name="Failed commit: Default (3)" comment="Commit before adding accessory png loader" />
     <list id="229d6cae-4042-4709-9202-621ef1e681bb" name="Failed commit: Default" comment="added server package" />
@@ -353,19 +157,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JsonMarshallerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/JsonMarshallerTest.java">
+      <file leaf-file-name="FeatureModel.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="41" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
+            <state line="29" column="25" selection-start="939" selection-end="939" vertical-scroll-proportion="0.40714285">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImNodeBuilder.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImNodeBuilder.java">
+      <file leaf-file-name="Var.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/Var.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="21" selection-start="4657" selection-end="4657" vertical-scroll-proportion="0.025815217">
+            <state line="28" column="56" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -385,22 +189,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/ConfiguredImageProviderEbroTest.java" />
-        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesKey.java" />
-        <option value="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/app/handler/ToyotaEbrochureHandler.java" />
-        <option value="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" />
-        <option value="$repos$/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/SetStartOptionsAction.java" />
-        <option value="$repos$/Configurator-ToyotaApp/lib.properties" />
-        <option value="$repos$/Configurator-ToyotaApp/src/java/com/tms/configurator/toyota/web/action/ToyotaShowSummaryAction.java" />
-        <option value="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp" />
-        <option value="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/client/PreviewPanelAdaptor.java" />
-        <option value="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" />
-        <option value="$PROJECT_DIR$/previewPaneAdapter/dev.sh" />
-        <option value="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_your_vehicle.jsp" />
-        <option value="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/singleJpgGen/JpgGeneratorPureJava.java" />
-        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/Avalon2010.java" />
-        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/JsonMarshaller.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ModelTypeTm.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SeriesModel.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/ModelTypeFm.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImSeries.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/shared/ThreedModel.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/JsonMarshaller.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/JsonMarshallerIm.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/server/JsonMarshallerFm.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/JsonMarshallerTm.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesModel.java" />
+        <option value="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/JsonMarshallerTest.java" />
         <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImNodeBuilder.java" />
+        <option value="$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/ImageUtilTest.java" />
+        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageUtil.java" />
+        <option value="$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/tmp.html" />
       </list>
     </option>
   </component>
@@ -471,9 +275,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -484,105 +287,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -628,11 +333,11 @@
       <recent name="com.tms.threed.featureModelJavaBdd" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tms.threed.threedModel.server" />
+      <recent name="com.tms.threed.imageModel.server" />
       <recent name="com.tms.threed.threedCore.shared" />
       <recent name="com.tms.threed.previewPanel.shared.viewModel" />
       <recent name="com.tms.threed.previewPane.client.notification" />
-      <recent name="com.tms.threed.jpgGen" />
-      <recent name="com.tms.threed.util.gwt.client.logging" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/testHarness" />
@@ -648,10 +353,6 @@
       <recent name="com.tms.threed.featureModel.shared.picks" />
       <recent name="com.tms.threed.previewPanel.client.buttonBars.interior" />
     </key>
-    <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="com.tms.threed.featureModel.server.FmHelper" />
-      <recent name="com.tms.threed.imageModel.shared.ImView" />
-    </key>
     <key name="IntroduceConstantDialog.RECENTS_KEY">
       <recent name="com.tms.threed.threedModel.server.SeriesRepo" />
       <recent name="com.tms.ebrochure.toyota.generator.AbstractSectionBuilder" />
@@ -659,19 +360,16 @@
       <recent name="com.tms.threed.imageModel.shared.ImPng" />
       <recent name="com.tms.threed.imageModelBuilder2.ImNode" />
     </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.tms.threed.featureModel.server.FmHelper" />
+      <recent name="com.tms.threed.imageModel.shared.ImView" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tms.threed.threedCore.shared" />
       <recent name="com.tms.threed.util.gwt.client.logging" />
       <recent name="com.tms.threed.testHarness.client" />
       <recent name="com.tms.threed.previewPanel.client.thumbsPanel" />
       <recent name="com.tms.threed.previewPanel.client" />
-      <recent name="com.tms.threed.previewPanel.client.buttonBars.exterior" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.tms.threed.testHarness.client.services" />
-      <recent name="com.tms.threed.testHarness.shared" />
-      <recent name="com.tms.threed.imageModel.server" />
-      <recent name="com.tms.threed.jpgGen.jpgGen2" />
-      <recent name="com.tms.threed.featureModel.shared.exprParser" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="/../_projects/tmsRepo/TMS/htdocs/configurator_toyota/source/web/scratch" />
@@ -680,81 +378,44 @@
       <recent name="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/jsonTest" />
       <recent name="$PROJECT_DIR$/previewPane/web" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tms.threed.imageModel.shared" />
+      <recent name="com.tms.threed.featureModel.shared" />
+      <recent name="com.tms.threed.threedCore.shared" />
+      <recent name="com.tms.threed.testHarness.client.services" />
+      <recent name="com.tms.threed.testHarness.shared" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.JsonMarshallerTest.test">
-    <configuration default="false" name="Test.testVersion" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.ImageUtilTest.test">
+    <configuration default="false" name="JsonMarshallerFmTest.test_generateJsonFeatureModelsForAllSeriesKeys" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="threedFramework" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.tms.threed.featureModel.server" />
+      <option name="MAIN_CLASS_NAME" value="com.tms.threed.featureModel.server.JsonMarshallerFmTest" />
+      <option name="METHOD_NAME" value="test_generateJsonFeatureModelsForAllSeriesKeys" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Xmx512m  -DconfigDir=/temp/tmsConfig -Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="JsonMarshallerTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="threedFramework" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="PACKAGE_NAME" value="com.tms.threed.threedModel.server" />
-      <option name="MAIN_CLASS_NAME" value="com.tms.threed.threedModel.server.Test" />
-      <option name="METHOD_NAME" value="testVersion" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -Xmx512m  -DconfigDir=/temp/tmsConfig -Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JsonMarshallerTest.test" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <module name="threedFramework" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="com.tms.threed.imageModel.server" />
-      <option name="MAIN_CLASS_NAME" value="com.tms.threed.imageModel.server.JsonMarshallerTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -Xmx512m  -DconfigDir=/temp/tmsConfig -Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ImageModelBuilderTest.test_VNodeBuilder" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <module name="threedFramework" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="com.tms.threed.imageModel.server" />
-      <option name="MAIN_CLASS_NAME" value="com.tms.threed.imageModel.server.ImageModelBuilderTest" />
-      <option name="METHOD_NAME" value="test_VNodeBuilder" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -Xmx512m  -DconfigDir=/temp/tmsConfig -Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Test" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <module name="threedFramework" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="com.tms.threed.threedModel.server" />
-      <option name="MAIN_CLASS_NAME" value="com.tms.threed.threedModel.server.Test" />
+      <option name="MAIN_CLASS_NAME" value="com.tms.threed.threedModel.server.JsonMarshallerTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea -Xmx512m  -DconfigDir=/temp/tmsConfig -Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml" />
@@ -766,23 +427,61 @@
         <value defaultName="moduleWithDependencies" />
       </option>
       <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="29541" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="OldOrNewTest.test" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="JsonMarshallerImTest.test_generateJsonImageModelsForAllSeriesKeys" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
-      <module name="Configurator-ToyotaFramework" />
+      <module name="threedFramework" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="com.tms.ebrochure.toyota.reface" />
-      <option name="MAIN_CLASS_NAME" value="com.tms.ebrochure.toyota.reface.OldOrNewTest" />
+      <option name="PACKAGE_NAME" value="com.tms.threed.imageModel.server" />
+      <option name="MAIN_CLASS_NAME" value="com.tms.threed.imageModel.server.JsonMarshallerImTest" />
+      <option name="METHOD_NAME" value="test_generateJsonImageModelsForAllSeriesKeys" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Xmx512m  -DconfigDir=/temp/tmsConfig -Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="JsonMarshallerTest.test_generateJsonForAllSeriesKeys" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="threedFramework" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.tms.threed.threedModel.server" />
+      <option name="MAIN_CLASS_NAME" value="com.tms.threed.threedModel.server.JsonMarshallerTest" />
+      <option name="METHOD_NAME" value="test_generateJsonForAllSeriesKeys" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Xmx512m  -DconfigDir=/temp/tmsConfig -Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ImageUtilTest.test" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="threedFramework" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.tms.threed.imageModel.server" />
+      <option name="MAIN_CLASS_NAME" value="com.tms.threed.imageModel.server.ImageUtilTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea -Xmx512m  -DconfigDir=/temp/tmsConfig -Dlog4j.configuration=file:///temp/tmsConfig/log4j/threed_framework_log4j.xml" />
@@ -1069,11 +768,11 @@
       </method>
     </configuration>
     <list size="10">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Test.testVersion" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.JsonMarshallerTest.test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ImageModelBuilderTest.test_VNodeBuilder" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.OldOrNewTest.test" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.JsonMarshallerFmTest.test_generateJsonFeatureModelsForAllSeriesKeys" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.JsonMarshallerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JsonMarshallerImTest.test_generateJsonImageModelsForAllSeriesKeys" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JsonMarshallerTest.test_generateJsonForAllSeriesKeys" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ImageUtilTest.test" />
       <item index="5" class="java.lang.String" itemvalue="Application.ModelCode" />
       <item index="6" class="java.lang.String" itemvalue="JUnit.Unnamed" />
       <item index="7" class="java.lang.String" itemvalue="JUnit.TestYaris.test" />
@@ -1138,8 +837,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="698" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48929337" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20503597" sideWeight="0.6615385" order="0" side_tool="true" content_ui="tabs" />
@@ -1147,20 +846,20 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.32820514" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38846153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43461537" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328777" sideWeight="0.33589745" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30791366" sideWeight="0.43974358" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.6615385" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3" sideWeight="0.31953642" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3" sideWeight="0.17307693" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43974358" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="-144" y="140" width="1440" height="874" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8179487" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="-144" y="140" width="1440" height="874" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32948717" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.66887414" sideWeight="0.9992598" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6679487" sideWeight="0.9992598" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.6615385" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43461537" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1233,102 +932,88 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/src.jar!/src/javax/imageio/stream/ImageOutputStream.java">
+    <entry file="file://$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/ImageUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="635" column="66" selection-start="25737" selection-end="25737" vertical-scroll-proportion="0.0" />
+        <state line="2" column="4" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/src.jar!/src/javax/imageio/stream/ImageOutputStreamImpl.java">
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="27" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" />
+        <state line="115" column="23" selection-start="3488" selection-end="3488" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/src.jar!/src/javax/imageio/stream/FileCacheImageOutputStream.java">
+    <entry file="file://$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/tmp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" />
+        <state line="206" column="16" selection-start="6224" selection-end="6224" vertical-scroll-proportion="-137.77777" />
       </provider>
     </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/src.jar!/src/com/sun/imageio/plugins/png/PNGImageWriter.java">
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImageStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="12" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.0" />
+        <state line="38" column="28" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/src.jar!/src/javax/imageio/stream/FileImageOutputStream.java">
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImNodeBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="52" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" />
+        <state line="103" column="27" selection-start="2373" selection-end="2373" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/src.jar!/src/javax/imageio/stream/MemoryCacheImageOutputStream.java">
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImPng.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="47" selection-start="4489" selection-end="4489" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/singleJpgGen/JpgGeneratorPureJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="32" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.025815217">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/singleJpgGen/JpgGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="67" selection-end="67" vertical-scroll-proportion="0.050599203">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/Repos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="45" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SeriesRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="39" selection-start="4795" selection-end="4795" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="13" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SeriesDir.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="41" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.0">
+        <state line="59" column="24" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ConfiguredImageProviderEBro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="33" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="62" selection-start="11995" selection-end="11995" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SThreedModels.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="70" selection-start="2928" selection-end="2994" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/SeriesRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="11" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/shared/ThreedModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="13" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file:///cvsCheckouts/Configurator-CommonFramework/src/java/com/tms/configurator/app/handler/AppHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="335" column="75" selection-start="11949" selection-end="11949" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file:///cvsCheckouts/Configurator-CommonFramework/src/java/com/tms/configurator/app/util/AppStatics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="67" selection-start="2047" selection-end="2047" vertical-scroll-proportion="0.14086956">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImageModelBuilder.java">
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/Var.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="35" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0">
+        <state line="28" column="56" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/data/Avalon2010.java">
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="41" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/JsonMarshaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="10" selection-start="2573" selection-end="2573" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/test/com/tms/threed/imageModel/server/JsonMarshallerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/server/ImNodeBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="21" selection-start="4657" selection-end="4657" vertical-scroll-proportion="0.025815217">
+        <state line="29" column="25" selection-start="939" selection-end="939" vertical-scroll-proportion="0.40714285">
           <folding />
         </state>
       </provider>
