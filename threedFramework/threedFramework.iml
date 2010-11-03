@@ -5,7 +5,7 @@
       <configuration>
         <setting name="compilerMaxHeapSize" value="128" />
         <setting name="gwtScriptOutputStyle" value="DETAILED" />
-        <setting name="gwtSdkUrl" value="file:///../../../../p-java/gwt-2.0.3" />
+        <setting name="gwtSdkUrl" value="file://$jarRepo$/gwt/2.1.0.M3" />
         <packaging>
           <module name="com.tms.csp.Csp" path="/com.tms.csp.Csp" />
           <module name="com.tms.threed.Threed" path="/com.tms.threed.Threed" />

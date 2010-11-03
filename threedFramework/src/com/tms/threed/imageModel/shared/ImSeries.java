@@ -1,15 +1,12 @@
 package com.tms.threed.imageModel.shared;
 
-import com.tms.threed.featureModel.shared.ModelTypeFm;
 import com.tms.threed.featureModel.shared.Var;
 import com.tms.threed.featureModel.shared.picks.PicksRO;
 import com.tms.threed.threedCore.shared.Angle;
-import com.tms.threed.threedCore.shared.ModelType;
 import com.tms.threed.threedCore.shared.SeriesId;
 import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedCore.shared.SeriesInfoBuilder;
 import com.tms.threed.threedCore.shared.SeriesKey;
-import com.tms.threed.threedCore.shared.SeriesModel;
 import com.tms.threed.threedCore.shared.ViewKey;
 import com.tms.threed.threedCore.shared.ViewSnap;
 import com.tms.threed.util.gwt.client.Console;
@@ -19,7 +16,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class ImSeries extends ImNodeBase implements IsParent<ImView>, IsRoot , SeriesModel{
+public class ImSeries extends ImNodeBase implements IsParent<ImView>, IsRoot {
 
     private final SeriesId seriesId;
     private final SeriesInfo seriesInfo;
@@ -44,11 +41,7 @@ public class ImSeries extends ImNodeBase implements IsParent<ImView>, IsRoot , S
         return seriesInfo;
     }
 
-    private static final ModelType modelType = new ModelTypeIm();
-
-    @Override public ModelType getModelType() {
-        return modelType;
-    }
+   
 
     public SeriesId getSeriesId() {
         return seriesId;

@@ -33,7 +33,7 @@ public class SeriesKey implements Comparable<SeriesKey>, Serializable {
         this.name = s3;
     }
 
-    private SeriesKey() {
+    protected SeriesKey() {
     }
 
     public static int parserModelYear(String modelYear) {

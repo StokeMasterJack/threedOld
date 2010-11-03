@@ -92,7 +92,7 @@ public class PreviewPanelContext {
 
         topImagePanel = new TopImagePanel(mainThreedImagePanel, blinkOverlay, dragToSpin, headerPanel, footerPanel);
 
-        thumbsPanel = new ThumbsPanel();
+        thumbsPanel = new ThumbsPanel("$00000");
         thumbsPanel.addThumbClickHandler(thumbClickHandler);
 
 
@@ -274,7 +274,7 @@ public class PreviewPanelContext {
     }
 
     public void setMsrp(String msrp) {
-        getHeaderPanel().setMsrp(msrp);
+        getThumbsPanel().setMsrp(msrp);
     }
 
     public void setChatInfo(ChatInfo chatInfo) {

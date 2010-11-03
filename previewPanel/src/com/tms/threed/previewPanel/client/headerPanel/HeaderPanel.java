@@ -27,7 +27,6 @@ public class HeaderPanel extends LayoutPanel implements HeaderPanelDisplay {
     private static final int FONT_SIZE_PX = 20;
 
 
-    private final MsrpPanel msrpPanel = new MsrpPanel();
 
     private final YearSeriesLabel yearSeriesLabel = new YearSeriesLabel();
 
@@ -53,7 +52,6 @@ public class HeaderPanel extends LayoutPanel implements HeaderPanelDisplay {
         chatPanel.getElement().getStyle().setZIndex(100000);
 
         setFeatureModel(featureModel);
-        setMsrp(msrp);
 
     }
 
@@ -65,7 +63,6 @@ public class HeaderPanel extends LayoutPanel implements HeaderPanelDisplay {
 
         private HeaderTextBox() {
             add(yearSeriesLabel);
-            add(msrpPanel);
 
             Style style = getElement().getStyle();
             style.setPadding(0, Style.Unit.PX);
@@ -115,49 +112,7 @@ public class HeaderPanel extends LayoutPanel implements HeaderPanelDisplay {
     }
 
 
-    private class MsrpPanel extends FlowPanel {
 
-        private final InlineLabel prefix = new InlineLabel("MRSP*");
-        private final InlineLabel msrpValue = new InlineLabel("$XX,XXXX");
-
-        private MsrpPanel() {
-            add(prefix);
-            add(new InlineHTML("&nbsp;"));
-            add(new InlineHTML("&nbsp;"));
-            add(msrpValue);
-
-            Style prefixStyle = prefix.getElement().getStyle();
-            prefixStyle.setFontSize((int) (FONT_SIZE_PX * .5), Style.Unit.PX);
-
-            Style style = getElement().getStyle();
-            style.setMargin(0, Style.Unit.PX);
-            style.setPadding(0, Style.Unit.PX);
-
-            style.setFontSize(FONT_SIZE_PX, Style.Unit.PX);
-
-//        style.setBackgroundColor("pink");
-
-        }
-
-        void setMsrp(String msrp) {
-            if (isEmpty(msrp)) {
-                msrpValue.setText("$99,999");
-                this.setVisible(false);
-            } else if (isMsrpValid(msrp)) {
-                msrpValue.setText(msrp);
-                this.setVisible(true);
-            } else {
-                msrpValue.setText("$99,999");
-                this.setVisible(false);
-                Console.log("Invalid MSRP[" + msrp + "]");
-            }
-        }
-    }
-
-    private boolean isMsrpValid(@Nonnull String msrp) {
-        assert msrp != null;
-        return msrp.length() > 3;
-    }
 
     private Widget createTransparentBackground() {
         HTML p = new HTML();
@@ -173,9 +128,7 @@ public class HeaderPanel extends LayoutPanel implements HeaderPanelDisplay {
         return p;
     }
 
-    @Override public void setMsrp(String msrp) {
-        msrpPanel.setMsrp(msrp);
-    }
+
 
     @Override public void setFeatureModel(FeatureModel featureModel) {
         yearSeriesLabel.setSeriesKey(featureModel);

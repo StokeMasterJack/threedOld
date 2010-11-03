@@ -5,7 +5,6 @@ import com.tms.threed.featureModel.server.JsonMarshallerFm;
 import com.tms.threed.imageModel.server.JsonMarshallerIm;
 import com.tms.threed.threedCore.shared.JsonMarshaller;
 import com.tms.threed.threedCore.shared.SeriesKey;
-import com.tms.threed.threedCore.shared.SeriesModel;
 import com.tms.threed.threedModel.shared.ThreedModel;
 import junit.framework.TestCase;
 
@@ -26,22 +25,22 @@ public class JsonMarshallerTest extends TestCase {
             ThreedModel threedModel = Repos.createModel(seriesKey);
 
 
-            createFile(new JsonMarshallerFm(), threedModel.getFeatureModel());
-            createFile(new JsonMarshallerIm(), threedModel.getImageModel());
-            createFile(new JsonMarshallerTm(), threedModel);
+//            createFile(new JsonMarshallerFm(), threedModel.getFeatureModel());
+//            createFile(new JsonMarshallerIm(), threedModel.getImageModel());
+//            createFile(new JsonMarshallerTm(), threedModel);
 
 
         }
 
     }
 
-    public <MT extends SeriesModel> void createFile(JsonMarshaller<MT> jsonMarshaller, MT model) throws Exception {
-        String jsonString = jsonMarshaller.toJsonString(model);
-        File dir = new File(getThreedModelsDir(), model.getModelType().getShortName());
-        File jsonFile = new File(dir, model.getSeriesKey().getShortName() + ".json");
-        Files.createParentDirs(jsonFile);
-        Files.write(jsonString, jsonFile, Charset.defaultCharset());
-    }
+//    public <MT extends SeriesModel> void createFile(JsonMarshaller<MT> jsonMarshaller, MT model) throws Exception {
+//        String jsonString = jsonMarshaller.toJsonString(model);
+//        File dir = new File(getThreedModelsDir(), model.getModelType().getShortName());
+//        File jsonFile = new File(dir, model.getSeriesKey().getShortName() + ".json");
+//        Files.createParentDirs(jsonFile);
+//        Files.write(jsonString, jsonFile, Charset.defaultCharset());
+//    }
 
 
     public static File getTempDir() {

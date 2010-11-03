@@ -21,6 +21,7 @@
           <element id="library" level="project" name="gwt-log-3.01" />
           <element id="library" level="project" name="gwt-servlet-2.1" />
           <element id="library" level="project" name="guava-r06" />
+          <element id="library" level="project" name="jgit-0.8.4" />
         </element>
       </element>
     </root>

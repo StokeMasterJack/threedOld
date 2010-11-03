@@ -8,14 +8,11 @@ import com.tms.threed.imageModel.shared.ImPng;
 import com.tms.threed.imageModel.shared.ImSeries;
 import com.tms.threed.imageModel.shared.ImView;
 import com.tms.threed.imageModel.shared.Jpg;
-import com.tms.threed.threedCore.shared.ModelType;
 import com.tms.threed.threedCore.shared.SeriesId;
 import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedCore.shared.SeriesKey;
-import com.tms.threed.threedCore.shared.SeriesModel;
 import com.tms.threed.threedCore.shared.ViewKey;
 import com.tms.threed.threedCore.shared.ViewSnap;
-import com.tms.threed.threedModel.server.ModelTypeTm;
 import com.tms.threed.util.lang.shared.Path;
 
 import javax.annotation.Nonnull;
@@ -24,7 +21,7 @@ import java.util.Set;
 
 import static com.tms.threed.util.lang.shared.Strings.isEmpty;
 
-public class ThreedModel implements SeriesModel {
+public class ThreedModel  {
 
     private final SeriesId seriesId;
     private final FeatureModel featureModel;
@@ -156,9 +153,4 @@ public class ThreedModel implements SeriesModel {
         return httpPngRoot;
     }
 
-    private static final ModelType modelType = new ModelTypeTm();
-
-    @Override public ModelType getModelType() {
-        return modelType;
-    }
 }

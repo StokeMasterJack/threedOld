@@ -2,16 +2,12 @@ repos=/repos
 repo=$repos/threed
 lib=/svnCheckouts/lib
 
-src1=$repos/threed/previewPanel/src
 src2=$repos/threed/threedFramework/src
-src3=$repos/threed/featurePicker/src
 src4=$repos/threed/util/src
-src5=$repos/threed/previewPane/src
-src6=$repos/threed/testHarness/src
 
-src="$src1:$src2:$src3:$src4:$src5:$src6"
+src="$src2:$src4"
 
-gwtVersion=2.1.0.M3
+gwtVersion=2.1.0.rc1
 gwtHome=$lib/gwt/$gwtVersion
 
 lib1=$gwtHome/gwt-dev.jar
@@ -22,8 +18,8 @@ lib5=$lib/gwt-log/3.0.1/gwt-log-3.0.1.jar
 
 warClasses=$war/WEB-INF/classes
 
-modName=com.tms.threed.testHarness.TestHarness
-startupUrl="TestHarness.html"
+modName=com.tms.threed.admintool.AdminTool
+startupUrl="AdminTool.html"
 
 bindAddress=10.211.55.2
 war=/temp/gwt-jetty/exploded-wars/testHarness

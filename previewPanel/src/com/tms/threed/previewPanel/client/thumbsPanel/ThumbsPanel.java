@@ -6,15 +6,21 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.FlowPanel;
+import com.google.gwt.user.client.ui.InlineHTML;
+import com.google.gwt.user.client.ui.InlineLabel;
 import com.google.gwt.user.client.ui.LayoutPanel;
 import com.tms.threed.previewPanel.client.TopImagePanel;
 import com.tms.threed.threedCore.shared.SeriesInfo;
 import com.tms.threed.threedCore.shared.SeriesInfoBuilder;
+import com.tms.threed.util.gwt.client.Console;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 
 import static com.tms.threed.util.lang.shared.Strings.getSimpleName;
+import static com.tms.threed.util.lang.shared.Strings.isEmpty;
 
 public class ThumbsPanel extends Composite {
 
@@ -34,11 +40,13 @@ public class ThumbsPanel extends Composite {
     private static final int PREFERRED_WIDTH_PX = TopImagePanel.PREFERRED_WIDTH_PX;
     public static final int PREFERRED_HEIGHT_PX = ThumbPanel.PREFERRED_HEIGHT_PX;
 
-    public ThumbsPanel() {
-        this(new DefaultThumbPanelFactory());
+    private final MsrpPanel msrpPanel = new MsrpPanel();
+
+    public ThumbsPanel(String msrp) {
+        this(new DefaultThumbPanelFactory(), msrp);
     }
 
-    public ThumbsPanel(ThumbPanelFactory thumbPanelFactory) {
+    public ThumbsPanel(ThumbPanelFactory thumbPanelFactory, String msrp) {
         this.thumbPanelFactory = thumbPanelFactory;
         initWidget(layoutPanel);
         ensureDebugId(getSimpleName(this));
@@ -49,6 +57,8 @@ public class ThumbsPanel extends Composite {
 //        getElement().getStyle().setBackgroundColor("brown");
 
         refreshThumbCount();
+
+        setMsrp(msrp);
     }
 
     public HandlerRegistration addThumbClickHandler(ThumbClickHandler handler) {
@@ -102,6 +112,62 @@ public class ThumbsPanel extends Composite {
             layoutPanel.add(thumbPanel);
             layoutPanel.setWidgetLeftWidth(thumbPanel, Li, Style.Unit.PX, ThumbPanel.PREFERRED_WIDTH_PX, Style.Unit.PX);
         }
+
+
+        layoutPanel.add(msrpPanel);
+        layoutPanel.setWidgetLeftWidth(msrpPanel, 0, Style.Unit.PX, 100, Style.Unit.PX);
+    }
+
+    private class MsrpPanel extends FlowPanel {
+
+        private static final String FONT_COLOR = "white";
+        private static final int FONT_SIZE_PX = 20;
+
+        private final InlineLabel prefix = new InlineLabel("MRSP*");
+        private final InlineLabel msrpValue = new InlineLabel("$XX,XXXX");
+
+        private MsrpPanel() {
+            add(new InlineHTML("&nbsp;"));
+            add(msrpValue);
+            add(prefix);
+
+            Style prefixStyle = prefix.getElement().getStyle();
+            prefixStyle.setFontSize((int) (FONT_SIZE_PX * .5), Style.Unit.PX);
+            prefixStyle.setColor("#AAAAAA");
+
+            Style style = getElement().getStyle();
+            style.setMargin(0, Style.Unit.PX);
+            style.setPadding(0, Style.Unit.PX);
+            style.setPaddingTop(7, Style.Unit.PX);
+
+            style.setFontSize(FONT_SIZE_PX, Style.Unit.PX);
+
+//        style.setBackgroundColor("pink");
+
+        }
+
+        void setMsrp(String msrp) {
+            if (isEmpty(msrp)) {
+                msrpValue.setText("$99,999");
+                this.setVisible(false);
+            } else if (isMsrpValid(msrp)) {
+                msrpValue.setText(msrp);
+                this.setVisible(true);
+            } else {
+                msrpValue.setText("$99,999");
+                this.setVisible(false);
+                Console.log("Invalid MSRP[" + msrp + "]");
+            }
+        }
+    }
+
+    private boolean isMsrpValid(@Nonnull String msrp) {
+        assert msrp != null;
+        return msrp.length() > 3;
+    }
+
+    public void setMsrp(String msrp) {
+        msrpPanel.setMsrp(msrp);
     }
 
 
@@ -122,7 +188,7 @@ public class ThumbsPanel extends Composite {
         int thumbWidth = ThumbPanel.PREFERRED_WIDTH_PX;
 
         int thumbsWidth = thumbCount * thumbWidth;
-        double L = ((double)(totalWidth - thumbsWidth)) / 2.0;
+        double L = ((double) (totalWidth - thumbsWidth)) / 2.0;
         double Li = L + thumbIndex * thumbWidth;
         return (int) Li;
     }

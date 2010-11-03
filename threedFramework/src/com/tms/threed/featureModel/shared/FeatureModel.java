@@ -2,10 +2,8 @@ package com.tms.threed.featureModel.shared;
 
 import com.tms.threed.featureModel.shared.boolExpr.*;
 import com.tms.threed.featureModel.shared.picks.Picks;
-import com.tms.threed.threedCore.shared.ModelType;
 import com.tms.threed.threedCore.shared.SeriesId;
 import com.tms.threed.threedCore.shared.SeriesKey;
-import com.tms.threed.threedCore.shared.SeriesModel;
 import com.tms.threed.util.lang.shared.Path;
 import com.tms.threed.util.lang.shared.Strings;
 
@@ -19,7 +17,7 @@ import java.util.Set;
 
 import static com.tms.threed.util.lang.shared.Strings.isEmpty;
 
-public class FeatureModel implements SeriesModel {
+public class FeatureModel {
 
     private static final String ROOT_VAR_CODE = "Root";
 
@@ -42,12 +40,6 @@ public class FeatureModel implements SeriesModel {
         this.displayName = displayName;
         rootVar = new Var(this, null, ROOT_VAR_CODE, ROOT_VAR_CODE);
         vars.add(rootVar);
-    }
-
-    private static final ModelType modelType = new ModelTypeFm();
-
-    @Override public ModelType getModelType() {
-        return modelType;
     }
 
     public SeriesId getSeriesId() {
