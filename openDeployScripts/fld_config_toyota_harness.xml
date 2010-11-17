@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploymentConfiguration nodeSetFile="/opt/iw-home/OpenDeployNG/etc/odnodes.xml">
+    <localNode host="tswebd01" />
+    <deployment name="tswebd01" transactional="no">
+        <execDeploymentTask useDefinition="dev_toyota2007">
+        </execDeploymentTask>
+    </deployment>
+    <definition name="dev_toyota2007">
+        <source>
+            <sourceFilesystem area="/iwmnt/default/main/Configurator/Configurator_Test_Harness/EDITION">       
+             <pathSpecification>
+                    <path name="./web_docs">
+                    </path>
+                    <targetRules area="/www/toyota_config">
+                        <comparisonRules dateDifferent="no" ignoreModes="yes" />
+                        <permissionRules group="toyota" user="iwod" directory="775" file="775" />
+                    </targetRules>
+                </pathSpecification>
+            </sourceFilesystem>
+        </source>
+        <target useReplicationFarm="REPFARM_0">
+            <targetFilesystem area="/www/vdev/deploy_sample" />
+        </target>
+    </definition>
+    <replicationFarmSet>
+        <replicationFarm name="REPFARM_0">
+            <nodeRef useNode="tswebd01-zd02" />
+        </replicationFarm>
+    </replicationFarmSet>
+    <logRules maxBytes="32Mb" level="normal" />
+</deploymentConfiguration>

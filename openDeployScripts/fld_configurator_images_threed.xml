@@ -1,0 +1,41 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<deploymentConfiguration nodeSetFile="/opt/iw-home/OpenDeployNG/etc/odnodes.xml">
+    <localNode host="tswebd01" />
+    <deployment name="tswebd01" transactional="no">
+        <execDeploymentTask useDefinition="dev_toyota2007">
+        <deployNRun>
+		                <dnrDeployment location="target" when="after" state="always">
+		<script cmd="/www/wls10/scripts/redeploy/redeploy.sh Configurator_Toyota /export/home/tmsbuild/configurator.txt" as="wls10" where="/www/wls10/scripts/redeploy" async="no" >
+		                         
+		</script>
+		                </dnrDeployment>	                
+	            </deployNRun>
+        </execDeploymentTask>
+    </deployment>
+    <definition name="dev_toyota2007">
+        <source>
+            <sourceFilesystem area="/iwmnt/default/main/Configurator/Configurator_Toyota/Configurator_Images/WORKAREA/Threed_Images">       
+                                <pathSpecification>
+                                    <path name="./threed_framework">
+                                    </path>
+                                    <targetRules area="/www/wls10/tmsdomain/application_config/threed_framework">
+                                        <comparisonRules dateDifferent="yes" ignoreUser="yes" ignoreGroup="yes" ignoreModes="yes"/>
+                                        <permissionRules group="wls10" user="wls10" directory="775" file="775" />
+                                        <transferRules doDeletes="yes" />
+                                    </targetRules>
+                                </pathSpecification>
+            </sourceFilesystem>
+        </source>
+        <target useReplicationFarm="REPFARM_0">
+            <targetFilesystem area="/www/vdev/deploy_sample" />
+        </target>
+    </definition>
+    <replicationFarmSet>
+        <replicationFarm name="REPFARM_0">
+            <nodeRef useNode="tswebd01-zd02" />
+        </replicationFarm>
+    </replicationFarmSet>
+    <logRules maxBytes="32Mb" level="normal" />
+</deploymentConfiguration>

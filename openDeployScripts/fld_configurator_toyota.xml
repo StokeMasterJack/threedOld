@@ -1,0 +1,61 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<deploymentConfiguration nodeSetFile="/opt/iw-home/OpenDeployNG/etc/odnodes.xml">
+    <localNode host="tswebd01" />
+    <deployment name="tswebd01" transactional="no">
+        <execDeploymentTask useDefinition="dev_toyota2007">
+        <deployNRun>
+		                <dnrDeployment location="target" when="after" state="always">
+		<script cmd="/www/wls10/scripts/redeploy/redeploy.sh Configurator_Toyota /export/home/tmsbuild/configurator.txt" as="wls10" where="/www/wls10/scripts/redeploy" async="no" >
+		                         
+		</script>
+		                </dnrDeployment>	                
+	            </deployNRun>
+        </execDeploymentTask>
+    </deployment>
+    <definition name="dev_toyota2007">
+        <source>
+            <sourceFilesystem area="/iwmnt/default/main/Configurator/Configurator_Toyota/EDITION">       
+             <pathSpecification>
+                    <path name="./web_docs">
+                    </path>
+                    <targetRules area="/www/toyota_config">
+                        <comparisonRules dateDifferent="no" ignoreModes="yes" />
+                        <transferRules doDeletes="no" />
+                        <permissionRules group="toyota" user="iwod" directory="775" file="775" />
+                    </targetRules>
+                </pathSpecification>
+		                <pathSpecification>
+		                    <path name="./webApp" />
+		                    <targetRules area="/www/wls10/tmsdomain/applications/Configurator_Toyota">
+		                        <comparisonRules dateDifferent="no" ignoreModes="yes" />
+		                        <permissionRules group="wls10" user="wls10" directory="775" file="775" />
+		                        <transferRules doDeletes="yes" />
+		                    </targetRules>
+		                </pathSpecification>
+		                <pathSpecification>
+		                    <path name="./webApp_config/vdev/devcpd2">
+		                    </path>
+		                    <targetRules area="/www/wls10/tmsdomain/application_config">
+                        <filters>
+                            <excludePath subPath="toyota_ebrochure" />
+                            <excludePath subPath="threed_framework" />
+                        </filters>
+		                        <comparisonRules dateDifferent="no" />
+		                        <permissionRules group="wls10" user="wls10" directory="775" file="775" />
+		                    </targetRules>
+                </pathSpecification>
+            </sourceFilesystem>
+        </source>
+        <target useReplicationFarm="REPFARM_0">
+            <targetFilesystem area="/www/vdev/deploy_sample" />
+        </target>
+    </definition>
+    <replicationFarmSet>
+        <replicationFarm name="REPFARM_0">
+            <nodeRef useNode="tswebd01-zd02" />
+        </replicationFarm>
+    </replicationFarmSet>
+    <logRules maxBytes="32Mb" level="normal" />
+</deploymentConfiguration>
