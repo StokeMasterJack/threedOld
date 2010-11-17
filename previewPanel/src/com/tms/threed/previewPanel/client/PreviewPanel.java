@@ -9,23 +9,15 @@ public class PreviewPanel extends AbstractPreviewPanel {
     public static final int PREFERRED_WIDTH_PX = TopImagePanel.PREFERRED_WIDTH_PX;
     public static final int PREFERRED_HEIGHT_PX = TopImagePanel.PREFERRED_HEIGHT_PX + ThumbsPanel.PREFERRED_HEIGHT_PX;
 
-
-
-    private final TopImagePanel topImagePanel;
-    private final ThumbsPanel thumbsPanel;
-
-    public PreviewPanel(TopImagePanel topImagePanel, ThumbsPanel thumbsPanel) {
+    public PreviewPanel(TopImagePanel topImagePanel, BottomPanel bottomPanel) {
 //        assert previewPanelModel != null;
         DockLayoutPanel dock = new DockLayoutPanel(Style.Unit.PX);
         dock.setPixelSize(PREFERRED_WIDTH_PX, PREFERRED_HEIGHT_PX);
 
-        this.topImagePanel = topImagePanel;
-        this.thumbsPanel = thumbsPanel;
-
-        thumbsPanel.setSize("100%", "100%");
+        bottomPanel.setSize("100%", "100%");
         topImagePanel.setSize("100%", "100%");
 
-        dock.addSouth(thumbsPanel, ThumbsPanel.PREFERRED_HEIGHT_PX);
+        dock.addSouth(bottomPanel, ThumbsPanel.PREFERRED_HEIGHT_PX);
         dock.add(topImagePanel);
 
         initWidget(dock);

@@ -1,4 +1,4 @@
-package com.tms.threed.previewPane.client;
+package com.tms.threed.previewPanel.client;
 
 import com.google.gwt.event.dom.client.ErrorEvent;
 import com.google.gwt.event.dom.client.ErrorHandler;
@@ -8,8 +8,10 @@ import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.Command;
 import com.tms.threed.previewPanel.client.BlinkOverlay;
+import com.tms.threed.previewPanel.client.BottomPanel;
 import com.tms.threed.previewPanel.client.ChatInfo;
 import com.tms.threed.previewPanel.client.FooterPanel;
+import com.tms.threed.previewPanel.client.MsrpPanel;
 import com.tms.threed.previewPanel.client.PreviewPanel;
 import com.tms.threed.previewPanel.client.ThreedImagePanel;
 import com.tms.threed.previewPanel.client.TopImagePanel;
@@ -53,7 +55,11 @@ public class PreviewPanelContext {
     private final ChatPanel chatPanel;
     private final HeaderPanel headerPanel;
 
+    private final MsrpPanel msrpPanel;
     private final ThumbsPanel thumbsPanel;
+    private final BottomPanel bottomPanel;
+
+
     private final PreviewPanel previewPanel;
     private final ExteriorButtonPanel exteriorButtonPanel;
     private final InteriorButtonPanel interiorButtonPanel;
@@ -92,11 +98,14 @@ public class PreviewPanelContext {
 
         topImagePanel = new TopImagePanel(mainThreedImagePanel, blinkOverlay, dragToSpin, headerPanel, footerPanel);
 
-        thumbsPanel = new ThumbsPanel("$00000");
+        msrpPanel = new MsrpPanel();
+        thumbsPanel = new ThumbsPanel();
         thumbsPanel.addThumbClickHandler(thumbClickHandler);
 
+        bottomPanel = new BottomPanel(msrpPanel, thumbsPanel);
 
-        previewPanel = new PreviewPanel(topImagePanel, thumbsPanel);
+
+        previewPanel = new PreviewPanel(topImagePanel, bottomPanel);
 
         hideButtonPanels();
 
@@ -274,7 +283,7 @@ public class PreviewPanelContext {
     }
 
     public void setMsrp(String msrp) {
-        getThumbsPanel().setMsrp(msrp);
+        msrpPanel.setMsrp(msrp);
     }
 
     public void setChatInfo(ChatInfo chatInfo) {

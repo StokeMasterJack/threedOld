@@ -8,7 +8,6 @@
 
     <inherits name='com.tms.threed.previewPane.PreviewPane'/>
 
-
     <entry-point class='com.tms.threed.previewPaneAdapter.client.PreviewPanelAdaptor'/>
 
     <source path='client'/>

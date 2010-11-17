@@ -6,6 +6,7 @@ import com.tms.threed.previewPane.client.externalState.picks.SeriesNotSetExcepti
 import com.tms.threed.previewPane.client.series.SeriesContext;
 import com.tms.threed.previewPanel.client.ChatInfo;
 import com.tms.threed.previewPanel.client.PreviewPanel;
+import com.tms.threed.previewPanel.client.PreviewPanelContext;
 import com.tms.threed.previewPanel.shared.viewModel.AngleChangeHandler;
 import com.tms.threed.previewPanel.shared.viewModel.ViewChangeHandler;
 import com.tms.threed.threedCore.shared.SeriesKey;

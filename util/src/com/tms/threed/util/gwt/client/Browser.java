@@ -1,5 +1,6 @@
 package com.tms.threed.util.gwt.client;
 
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.Window;
 
 public class Browser {
@@ -14,6 +15,8 @@ public class Browser {
     private static Browser INSTANCE;
 
     private Browser() {
+
+        GWT.create()
 
         //init user agents
         String tmp = Window.Navigator.getUserAgent();

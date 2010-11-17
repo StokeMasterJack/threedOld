@@ -1,5 +1,8 @@
 package com.tms.threed.jpgGen;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import java.awt.Dimension;
 
 public class GenDetails {
@@ -59,4 +62,6 @@ public class GenDetails {
     public Dimension getJpgSize() {
         return jpgSize;
     }
+
+    private static final Log log = LogFactory.getLog(GenDetails.class);
 }

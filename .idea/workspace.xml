@@ -6,49 +6,35 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" line="92" mnemonic="G" />
+    <bookmark url="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanelContext.java" line="98" mnemonic="G" />
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="674f6dc2-6df2-44a8-8318-029d73441737" name="Default" comment="Camry and Avalon to use XML configs">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImSeries.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImSeries.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanel.java" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/test/com/tms/ebrochure/toyota/reface/OldOrNewTest.java" afterPath="$repos$/Configurator-ToyotaFramework/src/test/com/tms/ebrochure/toyota/reface/OldOrNewTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admintool/admintool.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/server/ModelTypeTm.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/testHarness_Web_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/testHarness_Web_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admintool/src/com/tms/configurator/admintool/public/AdminTool.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/Browser.java" afterPath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/Browser.java" />
       <change type="MODIFICATION" beforePath="$repos$/htdocs/source/js/build_page/PreviewPane3D.js" afterPath="$repos$/htdocs/source/js/build_page/PreviewPane3D.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanelDisplay.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanelDisplay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/threedFramework.iml" afterPath="$PROJECT_DIR$/threedFramework/threedFramework.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/JsonMarshallerTest.java" afterPath="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/JsonMarshallerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/FooterPanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/FooterPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admintool/src/com/tms/configurator/admintool/public/AdminTool.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" />
       <change type="DELETED" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/util/DefaultPickAccess.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testHarness/dev.sh" afterPath="$PROJECT_DIR$/testHarness/dev.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ModelTypeIm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/ModelType.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesKey.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admintool/dev.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admintool/src/com/tms/configurator/admintool/client/AdminTool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/MsrpPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbPanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbPanel.java" />
       <change type="NEW" beforePath="" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/util/ToyotaConfigUtil.java" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/app/handler/ToyotaEbrochureHandler.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/app/handler/ToyotaEbrochureHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/shared/ThreedModel.java" afterPath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/shared/ThreedModel.java" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp" afterPath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesModel.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java" />
       <change type="MODIFICATION" beforePath="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" afterPath="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbsPanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbsPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml" afterPath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admintool/src/com/tms/configurator/admintool/AdminTool.gwt.xml" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_your_vehicle.jsp" afterPath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_your_vehicle.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/build-bootstrap.xml" afterPath="$repos$/Configurator-ToyotaFramework/build-bootstrap.xml" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/lib.properties" afterPath="$repos$/Configurator-ToyotaFramework/lib.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/ModelTypeFm.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/GenDetails.java" afterPath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/GenDetails.java" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/storage/ToyotaBaseConfigBuilder.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/storage/ToyotaBaseConfigBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/BottomPanel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanelContext.java" />
     </list>
     <list id="c92f8435-0af5-46bf-8a50-127d5152783a" name="Failed commit: Default (3)" comment="Commit before adding accessory png loader" />
     <list id="229d6cae-4042-4709-9202-621ef1e681bb" name="Failed commit: Default" comment="added server package" />
@@ -140,8 +126,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -155,19 +141,54 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ThumbsPanel.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbsPanel.java">
+      <file leaf-file-name="PreviewPaneAdapter.gwt.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="41" selection-start="4748" selection-end="4748" vertical-scroll-proportion="0.025815217">
+            <state line="9" column="35" selection-start="261" selection-end="261" vertical-scroll-proportion="0.2973913">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreedServiceRpc.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/services/ThreedServiceRpc.java">
+      <file leaf-file-name="GenDetails.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/GenDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="23" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+            <state line="65" column="14" selection-start="1623" selection-end="1623" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsoleGwt.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/ConsoleGwt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="12" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1289505783000" expanded="true" signature="145:176" placeholder="{...}" />
+                <marker date="1289505783000" expanded="true" signature="234:266" placeholder="{...}" />
+                <marker date="1289505783000" expanded="true" signature="327:362" placeholder="{...}" />
+                <marker date="1289505783000" expanded="true" signature="423:458" placeholder="{...}" />
+                <marker date="1289505783000" expanded="true" signature="522:560" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreviewPane.gwt.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/PreviewPane.gwt.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="54" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreviewPanel.gwt.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/PreviewPanel.gwt.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="39" selection-start="370" selection-end="381" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -187,22 +208,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/admintool/dev.sh" />
-        <option value="$PROJECT_DIR$/admintool/src/com/tms/configurator/admintool/client/AdminTool.java" />
-        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanelDisplay.java" />
-        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanel.java" />
-        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/FooterPanel.java" />
-        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" />
-        <option value="$PROJECT_DIR$/testHarness/dev.sh" />
-        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/ModelTypeTm.java" />
-        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/ModelType.java" />
-        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.java" />
-        <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/shared/ThreedModel.java" />
         <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImSeries.java" />
         <option value="$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/JsonMarshallerTest.java" />
         <option value="$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/services/SeriesKeys.java" />
         <option value="$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesKey.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" />
+        <option value="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPanel/client/PreviewPanelContext.java" />
+        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanelContext.java" />
+        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanel.java" />
         <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbsPanel.java" />
+        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/BottomPanel.java" />
+        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbPanel.java" />
+        <option value="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/MsrpPanel.java" />
+        <option value="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/Browser.java" />
+        <option value="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml" />
+        <option value="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/GenDetails.java" />
+        <option value="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/ConsoleGwt.java" />
       </list>
     </option>
   </component>
@@ -263,6 +284,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,487 +293,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedCore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedCore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imageModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imageModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="featureModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threedFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="featureModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testHarness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testHarness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testHarness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testHarness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testHarness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testHarness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testHarness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="previewPanel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="previewPanel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="previewPanel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="previewPanel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="previewPanel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -759,16 +302,16 @@
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -781,12 +324,12 @@
     <property name="project.structure.side.proportion" value="0.21991701" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" stopOnFirstError="true" overwriteAll="false" createEmptyFolders="true" traceLevel="DETAILS" filePermissions="420" folderPermissions="493" />
   <component name="RecentsManager">
@@ -798,11 +341,11 @@
       <recent name="com.tms.threed.featureModelJavaBdd" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tms.threed.previewPanel.client" />
       <recent name="com.tms.threed.threedModel.server" />
       <recent name="com.tms.threed.imageModel.server" />
       <recent name="com.tms.threed.threedCore.shared" />
       <recent name="com.tms.threed.previewPanel.shared.viewModel" />
-      <recent name="com.tms.threed.previewPane.client.notification" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admintool" />
@@ -818,16 +361,16 @@
       <recent name="com.tms.threed.featureModel.shared.picks" />
       <recent name="com.tms.threed.previewPanel.client.buttonBars.interior" />
     </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.tms.threed.featureModel.server.FmHelper" />
+      <recent name="com.tms.threed.imageModel.shared.ImView" />
+    </key>
     <key name="IntroduceConstantDialog.RECENTS_KEY">
       <recent name="com.tms.threed.threedModel.server.SeriesRepo" />
       <recent name="com.tms.ebrochure.toyota.generator.AbstractSectionBuilder" />
       <recent name="com.tms.threed.previewPanel.client.TopImagePanel" />
       <recent name="com.tms.threed.imageModel.shared.ImPng" />
       <recent name="com.tms.threed.imageModelBuilder2.ImNode" />
-    </key>
-    <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="com.tms.threed.featureModel.server.FmHelper" />
-      <recent name="com.tms.threed.imageModel.shared.ImView" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.tms.threed.threedCore.shared" />
@@ -836,19 +379,19 @@
       <recent name="com.tms.threed.previewPanel.client.thumbsPanel" />
       <recent name="com.tms.threed.previewPanel.client" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tms.threed.previewPanel.client" />
+      <recent name="com.tms.threed.threedCore.shared" />
+      <recent name="com.tms.threed.imageModel.shared" />
+      <recent name="com.tms.threed.featureModel.shared" />
+      <recent name="com.tms.threed.testHarness.client.services" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="/../_projects/tmsRepo/TMS/htdocs/configurator_toyota/source/web/scratch" />
       <recent name="/../_projects/tmsRepo/TMS/htdocs/configurator_toyota/pub/configurator/images/start_page" />
       <recent name="$PROJECT_DIR$/previewPaneAdapter" />
       <recent name="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/jsonTest" />
       <recent name="$PROJECT_DIR$/previewPane/web" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.tms.threed.threedCore.shared" />
-      <recent name="com.tms.threed.imageModel.shared" />
-      <recent name="com.tms.threed.featureModel.shared" />
-      <recent name="com.tms.threed.testHarness.client.services" />
-      <recent name="com.tms.threed.testHarness.shared" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ImageUtilTest.test">
@@ -1032,12 +575,8 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="WebLogic Instance" factoryName="Local">
-      <option name="PORT" value="7001" />
-      <deployment />
-      <server-settings />
-      <predefined_log_file id="WEBLOGIC_DOMAIN_LOG_FILE" enabled="true" />
-      <predefined_log_file id="WEBLOGIC_SERVER_LOG_FILE" enabled="true" />
+    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
+      <module name="" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1045,8 +584,12 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
-      <module name="" />
+    <configuration default="true" type="WebLogic Instance" factoryName="Local">
+      <option name="PORT" value="7001" />
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="WEBLOGIC_DOMAIN_LOG_FILE" enabled="true" />
+      <predefined_log_file id="WEBLOGIC_SERVER_LOG_FILE" enabled="true" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1302,7 +845,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="698" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48929337" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1322,9 +865,9 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32948717" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6679487" sideWeight="0.9992598" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.66721857" sideWeight="0.9992598" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.6615385" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43461537" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43361884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1397,84 +940,104 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanelDisplay.java">
+    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanelContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="183" selection-end="183" vertical-scroll-proportion="0.15179761" />
+        <state line="100" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/headerPanel/HeaderPanel.java">
+    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbClickHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="7" selection-start="1912" selection-end="1912" vertical-scroll-proportion="0.0" />
+        <state line="4" column="17" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/FooterPanel.java">
+    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" />
+        <state line="10" column="31" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java">
+    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/BottomPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="277" column="37" selection-start="9671" selection-end="9671" vertical-scroll-proportion="0.0" />
+        <state line="20" column="18" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testHarness/dev.sh">
+    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/MsrpPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" />
+        <state line="17" column="59" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/featureModel/shared/FeatureModel.java">
+    <entry file="file://$PROJECT_DIR$/previewPaneAdapter/dev.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" />
+        <state line="49" column="0" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.27304348" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedModel/shared/ThreedModel.java">
+    <entry file="file://$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/Browser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="28" selection-start="4933" selection-end="4933" vertical-scroll-proportion="0.0" />
+        <state line="21" column="50" selection-start="490" selection-end="502" vertical-scroll-proportion="0.69391304" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/imageModel/shared/ImSeries.java">
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/servletUtil/http/ResponseDecorator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="3" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0" />
+        <state line="214" column="13" selection-start="6981" selection-end="6981" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/test/com/tms/threed/threedModel/server/JsonMarshallerTest.java">
+    <entry file="jar://$jarRepo$/gwt/2.1.0.M3/gwt-user.jar!/com/google/gwt/core/client/GWT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="16" selection-start="989" selection-end="1152" vertical-scroll-proportion="0.0" />
+        <state line="77" column="19" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/services/SeriesKeys.java">
+    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/servletUtil/http/headers/CacheControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" />
+        <state line="65" column="15" selection-start="2375" selection-end="2375" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/SeriesPickerPanel.java">
+    <entry file="file://$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/Console.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="30" selection-start="2342" selection-end="2342" vertical-scroll-proportion="0.0" />
+        <state line="13" column="20" selection-start="636" selection-end="643" vertical-scroll-proportion="0.13035715">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/TestHarness.java">
+    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/PreviewPane.gwt.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="405" column="36" selection-start="14679" selection-end="14679" vertical-scroll-proportion="0.0" />
+        <state line="4" column="54" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/services/ThreedServiceRpcAsync.java">
+    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/PreviewPanel.gwt.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" />
+        <state line="7" column="39" selection-start="370" selection-end="381" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/threedCore/shared/SeriesKey.java">
+    <entry file="file://$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/ConsoleGwt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="79" selection-start="368" selection-end="368" vertical-scroll-proportion="0.20239681" />
+        <state line="13" column="12" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1289505783000" expanded="true" signature="145:176" placeholder="{...}" />
+            <marker date="1289505783000" expanded="true" signature="234:266" placeholder="{...}" />
+            <marker date="1289505783000" expanded="true" signature="327:362" placeholder="{...}" />
+            <marker date="1289505783000" expanded="true" signature="423:458" placeholder="{...}" />
+            <marker date="1289505783000" expanded="true" signature="522:560" placeholder="{...}" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testHarness/src/com/tms/threed/testHarness/client/services/ThreedServiceRpc.java">
+    <entry file="file://$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/GenDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" />
+        <state line="65" column="14" selection-start="1623" selection-end="1623" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbsPanel.java">
+    <entry file="file://$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="41" selection-start="4748" selection-end="4748" vertical-scroll-proportion="0.025815217">
+        <state line="9" column="35" selection-start="261" selection-end="261" vertical-scroll-proportion="0.2973913">
           <folding />
         </state>
       </provider>
