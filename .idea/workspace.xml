@@ -11,36 +11,30 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="674f6dc2-6df2-44a8-8318-029d73441737" name="Default" comment="Camry and Avalon to use XML configs">
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/test/com/tms/ebrochure/toyota/reface/OldOrNewTest.java" afterPath="$repos$/Configurator-ToyotaFramework/src/test/com/tms/ebrochure/toyota/reface/OldOrNewTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/Browser.java" afterPath="$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/Browser.java" />
-      <change type="MODIFICATION" beforePath="$repos$/htdocs/source/js/build_page/PreviewPane3D.js" afterPath="$repos$/htdocs/source/js/build_page/PreviewPane3D.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPaneContext.java" />
-      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" />
-      <change type="DELETED" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/util/DefaultPickAccess.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/MsrpPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbPanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbPanel.java" />
       <change type="NEW" beforePath="" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/util/ToyotaConfigUtil.java" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/app/handler/ToyotaEbrochureHandler.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/app/handler/ToyotaEbrochureHandler.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openDeployScripts/fld_configurator_images_threed.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp" afterPath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_main_configuration.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java" afterPath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/series/SeriesContext.java" />
       <change type="MODIFICATION" beforePath="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" afterPath="$repos$/htdocs/source/js/summary_page/SummaryPageController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbsPanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/thumbsPanel/ThumbsPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanel.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml" afterPath="$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml" />
+      <change type="MODIFICATION" beforePath="$repos$/htdocs/source/js/build_page/PreviewPane3D.js" afterPath="$repos$/htdocs/source/js/build_page/PreviewPane3D.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openDeployScripts/fld_configurator_images_web_ebro.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/OldOrNew.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_your_vehicle.jsp" afterPath="$repos$/Configurator-ToyotaApp/src/docroot/WEB-INF/jsp/show_your_vehicle.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/ebrochure/toyota/reface/RefaceConfiguredEBrochureBuilder.java" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/build-bootstrap.xml" afterPath="$repos$/Configurator-ToyotaFramework/build-bootstrap.xml" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/lib.properties" afterPath="$repos$/Configurator-ToyotaFramework/lib.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/GenDetails.java" afterPath="$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/GenDetails.java" />
       <change type="MODIFICATION" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/storage/ToyotaBaseConfigBuilder.java" afterPath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/storage/ToyotaBaseConfigBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/BottomPanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/client/PreviewPanelContext.java" afterPath="$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/client/PreviewPanelContext.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openDeployScripts/fld_configurator_toyota.xml" afterPath="" />
+      <change type="DELETED" beforePath="$repos$/Configurator-ToyotaFramework/src/java/com/tms/configurator/toyota/util/DefaultPickAccess.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openDeployScripts/fld_config_toyota_harness.xml" afterPath="" />
     </list>
     <list id="c92f8435-0af5-46bf-8a50-127d5152783a" name="Failed commit: Default (3)" comment="Commit before adding accessory png loader" />
     <list id="229d6cae-4042-4709-9202-621ef1e681bb" name="Failed commit: Default" comment="added server package" />
     <list id="a85d6a27-d74e-494e-936e-18dffe5a1466" name="Failed commit: Default (2)" comment="Failed commit: Default (2)" />
-    <ignored path="tmsRepoThreed.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="tmsRepoThreed.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,8 +120,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -144,7 +138,7 @@
       <file leaf-file-name="PreviewPaneAdapter.gwt.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="35" selection-start="261" selection-end="261" vertical-scroll-proportion="0.2973913">
+            <state line="9" column="35" selection-start="261" selection-end="261" vertical-scroll-proportion="0.23233695">
               <folding />
             </state>
           </provider>
@@ -154,9 +148,7 @@
         <entry file="file://$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/GenDetails.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="65" column="14" selection-start="1623" selection-end="1623" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,13 +157,7 @@
         <entry file="file://$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/ConsoleGwt.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="12" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1289505783000" expanded="true" signature="145:176" placeholder="{...}" />
-                <marker date="1289505783000" expanded="true" signature="234:266" placeholder="{...}" />
-                <marker date="1289505783000" expanded="true" signature="327:362" placeholder="{...}" />
-                <marker date="1289505783000" expanded="true" signature="423:458" placeholder="{...}" />
-                <marker date="1289505783000" expanded="true" signature="522:560" placeholder="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -284,7 +270,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,25 +279,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deploymentScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -324,12 +320,12 @@
     <property name="project.structure.side.proportion" value="0.21991701" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PublishConfig" stopOnFirstError="true" overwriteAll="false" createEmptyFolders="true" traceLevel="DETAILS" filePermissions="420" folderPermissions="493" />
   <component name="RecentsManager">
@@ -575,8 +571,12 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
-      <module name="" />
+    <configuration default="true" type="WebLogic Instance" factoryName="Local">
+      <option name="PORT" value="7001" />
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="WEBLOGIC_DOMAIN_LOG_FILE" enabled="true" />
+      <predefined_log_file id="WEBLOGIC_SERVER_LOG_FILE" enabled="true" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -584,12 +584,8 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="WebLogic Instance" factoryName="Local">
-      <option name="PORT" value="7001" />
-      <deployment />
-      <server-settings />
-      <predefined_log_file id="WEBLOGIC_DOMAIN_LOG_FILE" enabled="true" />
-      <predefined_log_file id="WEBLOGIC_SERVER_LOG_FILE" enabled="true" />
+    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
+      <module name="" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -845,8 +841,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="698" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48929337" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20503597" sideWeight="0.6615385" order="0" side_tool="true" content_ui="tabs" />
@@ -859,7 +855,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30791366" sideWeight="0.43974358" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.6615385" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3" sideWeight="0.55641025" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3" sideWeight="0.55641025" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8179487" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="-144" y="140" width="1440" height="874" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32948717" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
@@ -987,57 +983,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/threedFramework/src/com/tms/threed/servletUtil/http/headers/CacheControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="15" selection-start="2375" selection-end="2375" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="65" column="15" selection-start="2375" selection-end="2375" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/Console.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="636" selection-end="643" vertical-scroll-proportion="0.13035715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/PreviewPane.gwt.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="54" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/PreviewPanel.gwt.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="370" selection-end="381" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/ConsoleGwt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1289505783000" expanded="true" signature="145:176" placeholder="{...}" />
-            <marker date="1289505783000" expanded="true" signature="234:266" placeholder="{...}" />
-            <marker date="1289505783000" expanded="true" signature="327:362" placeholder="{...}" />
-            <marker date="1289505783000" expanded="true" signature="423:458" placeholder="{...}" />
-            <marker date="1289505783000" expanded="true" signature="522:560" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="13" column="20" selection-start="636" selection-end="643" vertical-scroll-proportion="0.13035715" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jpgGen/src/com/tms/threed/jpgGen/GenDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="14" selection-start="1623" selection-end="1623" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="65" column="14" selection-start="1623" selection-end="1623" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/src/com/tms/threed/util/gwt/client/ConsoleGwt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="12" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previewPane/src/com/tms/threed/previewPane/PreviewPane.gwt.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="54" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previewPanel/src/com/tms/threed/previewPanel/PreviewPanel.gwt.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="39" selection-start="370" selection-end="381" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/previewPaneAdapter/src/com/tms/threed/previewPaneAdapter/PreviewPaneAdapter.gwt.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="261" selection-end="261" vertical-scroll-proportion="0.2973913">
+        <state line="9" column="35" selection-start="261" selection-end="261" vertical-scroll-proportion="0.23233695">
           <folding />
         </state>
       </provider>
@@ -1060,10 +1036,10 @@
           <last-edited>testHarness:Web exploded</last-edited>
           <settings>
             <show-content>
-              <type id="library" />
+              <type id="jpa-descriptors" />
               <type id="artifact" />
               <type id="javaee-facet-resources" />
-              <type id="jpa-descriptors" />
+              <type id="library" />
             </show-content>
           </settings>
         </UIState>

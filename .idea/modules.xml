@@ -5,6 +5,7 @@
       <module fileurl="file://$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iml" filepath="$repos$/Configurator-ToyotaApp/Configurator-ToyotaApp.iml" />
       <module fileurl="file://$repos$/Configurator-ToyotaFramework/Configurator-ToyotaFramework.iml" filepath="$repos$/Configurator-ToyotaFramework/Configurator-ToyotaFramework.iml" />
       <module fileurl="file://$PROJECT_DIR$/admintool/admintool.iml" filepath="$PROJECT_DIR$/admintool/admintool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deploymentScripts/deploymentScripts.iml" filepath="$PROJECT_DIR$/deploymentScripts/deploymentScripts.iml" />
       <module fileurl="file://$PROJECT_DIR$/featureModelJavaBdd/featureModelJavaBdd.iml" filepath="$PROJECT_DIR$/featureModelJavaBdd/featureModelJavaBdd.iml" />
       <module fileurl="file://$PROJECT_DIR$/featurePicker/featurePicker.iml" filepath="$PROJECT_DIR$/featurePicker/featurePicker.iml" />
       <module fileurl="file://$repos$/htdocs/htdocs.iml" filepath="$repos$/htdocs/htdocs.iml" />
